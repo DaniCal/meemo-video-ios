@@ -14,6 +14,7 @@
 		8278B4571EA9F8890064EFFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8278B4551EA9F8890064EFFD /* LaunchScreen.storyboard */; };
 		8278B4621EA9F8890064EFFD /* MeemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8278B4611EA9F8890064EFFD /* MeemoTests.swift */; };
 		8278B46D1EA9F8890064EFFD /* MeemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8278B46C1EA9F8890064EFFD /* MeemoUITests.swift */; };
+		829BC4901EAB71A400F8A672 /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 829BC48F1EAB71A400F8A672 /* Video.mp4 */; };
 		BAAF3C3A18DE5D393AC35AE5 /* Pods_Meemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE65C38F884CD40FC350C97 /* Pods_Meemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		8278B4681EA9F8890064EFFD /* MeemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8278B46C1EA9F8890064EFFD /* MeemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeemoUITests.swift; sourceTree = "<group>"; };
 		8278B46E1EA9F8890064EFFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829BC48F1EAB71A400F8A672 /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video.mp4; sourceTree = "<group>"; };
 		B8D46095D957D80B6BEF3135 /* Pods-Meemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meemo/Pods-Meemo.release.xcconfig"; sourceTree = "<group>"; };
 		FCE65C38F884CD40FC350C97 /* Pods_Meemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 				8278B4531EA9F8890064EFFD /* Assets.xcassets */,
 				8278B4551EA9F8890064EFFD /* LaunchScreen.storyboard */,
 				8278B4581EA9F8890064EFFD /* Info.plist */,
+				829BC48F1EAB71A400F8A672 /* Video.mp4 */,
 			);
 			path = Meemo;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				8278B4571EA9F8890064EFFD /* LaunchScreen.storyboard in Resources */,
 				8278B4541EA9F8890064EFFD /* Assets.xcassets in Resources */,
 				8278B4521EA9F8890064EFFD /* Main.storyboard in Resources */,
+				829BC4901EAB71A400F8A672 /* Video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
