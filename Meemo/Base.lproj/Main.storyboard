@@ -64,13 +64,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="AKr-xp-Gzd" secondAttribute="trailing" constant="24" id="1E7-wb-4sJ"/>
                             <constraint firstItem="AKr-xp-Gzd" firstAttribute="top" secondItem="2KA-Kp-iGB" secondAttribute="bottom" constant="24" id="TVa-pB-8jp"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ku4-m6-akT" appends="YES" id="miv-vB-IQF"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tj1-2S-P65" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ku4-m6-akT">
+                    <connections>
+                        <action selector="handleGesture:" destination="qni-p9-tDL" id="r1e-RM-p2N"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="819" y="42"/>
         </scene>

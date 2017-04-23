@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     var playerController = AVPlayerViewController()
     var player:AVPlayer?
     
+    let interactor = Interactor()
+    
     let testURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/Video.mp4?alt=media&token=88591412-30a1-4bdf-af82-6bffef5268d2"
 
     @IBAction func playVideo(_ sender: AnyObject) {
@@ -26,6 +28,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationViewController = segue.destination as? ModalViewController {
             destinationViewController.transitioningDelegate = self
+            destinationViewController.interactor = interactor
         }
     }
     
@@ -54,4 +57,9 @@ extension ViewController: UIViewControllerTransitioningDelegate {
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return DismissAnimator()
     }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactor.hasStarted ? interactor : nil
+    }
+    
 }
