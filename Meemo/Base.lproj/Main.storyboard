@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y37-Ss-XhI">
-                                <state key="normal" title="Play"/>
-                                <connections>
-                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZj-rK-rkU"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-V0-C3p">
                                 <state key="normal" title="Open Modal"/>
                                 <connections>
@@ -34,10 +27,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="y37-Ss-XhI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Cq-jh-XYI"/>
-                            <constraint firstItem="cSV-V0-C3p" firstAttribute="top" secondItem="y37-Ss-XhI" secondAttribute="bottom" constant="26" id="BGK-GT-JrW"/>
-                            <constraint firstItem="cSV-V0-C3p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IqL-Tl-vMB"/>
-                            <constraint firstItem="y37-Ss-XhI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QCS-nF-Mvn"/>
+                            <constraint firstItem="cSV-V0-C3p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f2Z-6d-OSS"/>
+                            <constraint firstItem="cSV-V0-C3p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rqW-oa-Al3"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -55,20 +46,8 @@
                     <view key="view" contentMode="scaleToFill" id="yCn-2K-sof">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKr-xp-Gzd">
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="close:" destination="qni-p9-tDL" eventType="touchUpInside" id="31u-Y5-XRm"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="AKr-xp-Gzd" secondAttribute="trailing" constant="24" id="1E7-wb-4sJ"/>
-                            <constraint firstItem="AKr-xp-Gzd" firstAttribute="top" secondItem="2KA-Kp-iGB" secondAttribute="bottom" constant="24" id="TVa-pB-8jp"/>
-                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ku4-m6-akT" appends="YES" id="miv-vB-IQF"/>
                         </connections>

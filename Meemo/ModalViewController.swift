@@ -13,6 +13,8 @@ class ModalViewController: UIViewController {
     public var player:AVPlayer?
     var interactor:Interactor? = nil
     
+     let testURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp4?alt=media&token=2f20af88-6ca9-4b1b-8000-b21ff8da3676"
+    
     @IBAction func handleGesture(_ sender: UIPanGestureRecognizer) {
         
         let percentThreshold:CGFloat = 0.3
@@ -57,6 +59,21 @@ class ModalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let videoString:String? = testURL
+        
+        if let url = videoString {
+            let videoURL = NSURL(string: url)
+            self.player = AVPlayer(url: videoURL as! URL)
+            //self.playerController.player = self.player
+        }
+        
+        
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = self.view.bounds
+        self.view.layer.addSublayer(playerLayer)
+        self.player?.play()
+
     }
     
 }
