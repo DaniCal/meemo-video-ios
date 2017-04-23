@@ -6,9 +6,11 @@
 //  Copyright © 2017 Superstudio. All rights reserved.
 //
 import UIKit
+import AVFoundation
 
 class ModalViewController: UIViewController {
     
+    public var player:AVPlayer?
     var interactor:Interactor? = nil
     
     @IBAction func handleGesture(_ sender: UIPanGestureRecognizer) {
@@ -26,6 +28,7 @@ class ModalViewController: UIViewController {
         
         switch sender.state {
         case .began:
+            player?.pause()
             interactor.hasStarted = true
             dismiss(animated: true, completion: nil)
         case .changed:
@@ -36,9 +39,12 @@ class ModalViewController: UIViewController {
             interactor.cancel()
         case .ended:
             interactor.hasStarted = false
-            interactor.shouldFinish
-                ? interactor.finish()
-            : interactor.cancel()
+            if(interactor.shouldFinish){
+                interactor.finish()
+            }else{
+                interactor.cancel()
+                player?.play()
+            }
         default: break
         
         }
@@ -47,6 +53,10 @@ class ModalViewController: UIViewController {
     }
     @IBAction func close(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
 }

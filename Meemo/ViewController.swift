@@ -29,6 +29,11 @@ class ViewController: UIViewController {
         if let destinationViewController = segue.destination as? ModalViewController {
             destinationViewController.transitioningDelegate = self
             destinationViewController.interactor = interactor
+            let playerLayer = AVPlayerLayer(player: player)
+            playerLayer.frame = destinationViewController.view.bounds
+            destinationViewController.view.layer.addSublayer(playerLayer)
+            destinationViewController.player = self.player
+            self.player?.play()
         }
     }
     
