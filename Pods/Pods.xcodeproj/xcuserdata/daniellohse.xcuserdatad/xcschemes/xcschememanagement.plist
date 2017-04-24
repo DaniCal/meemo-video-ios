@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>OHCubeView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Meemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -12,7 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>653806FFD3543EC00748A6B8DC8758C6</key>
+		<key>369EAF1E919B1C38835AA2C0D19EF0EA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>615D419106F527AE0A4727EB8393E8D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

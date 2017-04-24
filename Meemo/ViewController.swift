@@ -16,9 +16,11 @@ class ViewController: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destinationViewController = segue.destination as? ModalViewController {
-            destinationViewController.transitioningDelegate = self
-            destinationViewController.interactor = interactor
+        if(segue.identifier == "modal"){
+            if let destinationViewController = segue.destination as? ModalViewController {
+                destinationViewController.transitioningDelegate = self
+                destinationViewController.interactor = interactor
+            }
         }
     }
     

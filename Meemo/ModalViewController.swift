@@ -11,7 +11,7 @@ import AVFoundation
 class ModalViewController: UIViewController {
     
     
-    public var player:AVPlayer?
+    open var player:AVPlayer?
     var interactor:Interactor? = nil
     var video:Bool = true
     var playerLayer:AVPlayerLayer?
@@ -71,8 +71,8 @@ class ModalViewController: UIViewController {
         let videoString:String? = videoTestURL
         
         if let url = videoString {
-            let videoURL = NSURL(string: url)
-            self.player = AVPlayer(url: videoURL as! URL)
+            let videoURL = URL(string: url)
+            self.player = AVPlayer(url: videoURL!)
         }
         playerLayer = AVPlayerLayer(player: player)
         playerLayer?.frame = self.view.bounds
@@ -91,8 +91,8 @@ class ModalViewController: UIViewController {
         let audioString:String? = audioTestURL
         
         if let url = audioString {
-            let audioURL = NSURL(string: url)
-            self.player = AVPlayer(url: audioURL as! URL)
+            let audioURL = URL(string: url)
+            self.player = AVPlayer(url: audioURL!)
         }
         self.player?.play()
         self.player?.seek(to: time!)

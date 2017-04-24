@@ -24,10 +24,18 @@
                                     <segue destination="qni-p9-tDL" kind="presentation" id="BIU-BE-Oqe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlJ-dP-eaI">
+                                <state key="normal" title="Open Cube"/>
+                                <connections>
+                                    <segue destination="Whc-7k-G7E" kind="presentation" identifier="cube" id="IBD-Wa-vts"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="IlJ-dP-eaI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bUE-zG-wPA"/>
                             <constraint firstItem="cSV-V0-C3p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f2Z-6d-OSS"/>
+                            <constraint firstItem="IlJ-dP-eaI" firstAttribute="top" secondItem="cSV-V0-C3p" secondAttribute="bottom" constant="27.5" id="lLE-cn-a0p"/>
                             <constraint firstItem="cSV-V0-C3p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rqW-oa-Al3"/>
                         </constraints>
                     </view>
@@ -74,7 +82,34 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="819" y="42"/>
+            <point key="canvasLocation" x="988" y="-204"/>
+        </scene>
+        <!--Cube View Controller-->
+        <scene sceneID="nfI-zE-ZcB">
+            <objects>
+                <viewController id="Whc-7k-G7E" customClass="CubeViewController" customModule="Meemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CaS-zx-Fk5"/>
+                        <viewControllerLayoutGuide type="bottom" id="pJp-es-Ot0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a6v-TQ-QZN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CBI-By-CXp" customClass="OHCubeView" customModule="OHCubeView">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cubeView" destination="CBI-By-CXp" id="xml-ay-kg6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmK-dx-88b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="515.8920539730135"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.13604035973548889" green="0.13792967796325684" blue="0.94144952297210693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
