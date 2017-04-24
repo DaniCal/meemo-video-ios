@@ -10,10 +10,15 @@ import AVFoundation
 
 class ModalViewController: UIViewController {
     
+    
     public var player:AVPlayer?
     var interactor:Interactor? = nil
+    var video:Bool = true
+    var playerLayer:AVPlayerLayer?
     
-     let testURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp4?alt=media&token=2f20af88-6ca9-4b1b-8000-b21ff8da3676"
+     let videoTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp4?alt=media&token=2f20af88-6ca9-4b1b-8000-b21ff8da3676"
+    
+    let audioTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp3?alt=media&token=3736b81e-bee5-494e-bd0b-fd0080b5a905"
     
     @IBAction func handleGesture(_ sender: UIPanGestureRecognizer) {
         
@@ -50,30 +55,55 @@ class ModalViewController: UIViewController {
         default: break
         
         }
-        
-        
-    }
-    @IBAction func close(_ sender: AnyObject) {
-        dismiss(animated: true, completion: nil)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let videoString:String? = testURL
+    
+    @IBAction func videoOnOff(_ sender: AnyObject) {
+        if(video){
+            playAudio()
+        }else{
+            playVideo()
+        }
+    }
+    
+    func playVideo(){
+        let time = self.player?.currentTime()
+        let videoString:String? = videoTestURL
         
         if let url = videoString {
             let videoURL = NSURL(string: url)
             self.player = AVPlayer(url: videoURL as! URL)
-            //self.playerController.player = self.player
         }
-        
-        
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = self.view.bounds
-        self.view.layer.addSublayer(playerLayer)
+        playerLayer = AVPlayerLayer(player: player)
+        playerLayer?.frame = self.view.bounds
+        self.view.layer.addSublayer(playerLayer!)
         self.player?.play()
+        if(time != nil){
+         self.player?.seek(to: time!)
+        }
+        video = true
+    }
+    
+    func playAudio(){
+        let time = self.player?.currentTime()
+        self.player?.pause()
+        playerLayer?.removeFromSuperlayer()
+        let audioString:String? = audioTestURL
+        
+        if let url = audioString {
+            let audioURL = NSURL(string: url)
+            self.player = AVPlayer(url: audioURL as! URL)
+        }
+        self.player?.play()
+        self.player?.seek(to: time!)
+        video = false
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.player?.pause()
 
+        playVideo()
     }
     
 }

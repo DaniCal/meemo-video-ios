@@ -21,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-V0-C3p">
                                 <state key="normal" title="Open Modal"/>
                                 <connections>
-                                    <segue destination="qni-p9-tDL" kind="presentation" id="2BG-C6-WMI"/>
+                                    <segue destination="qni-p9-tDL" kind="presentation" id="BIU-BE-Oqe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -46,8 +46,22 @@
                     <view key="view" contentMode="scaleToFill" id="yCn-2K-sof">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9o3-Ay-ZNI">
+                                <state key="normal" title="Video On/Off">
+                                    <color key="titleColor" red="0.99586588144302368" green="1" blue="0.9999271035194397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="videoOnOff:" destination="qni-p9-tDL" eventType="touchUpInside" id="yJk-3t-IZB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="W2A-Ac-fUb" firstAttribute="top" secondItem="9o3-Ay-ZNI" secondAttribute="bottom" constant="20" id="DGZ-k8-nTC"/>
+                            <constraint firstItem="9o3-Ay-ZNI" firstAttribute="centerX" secondItem="yCn-2K-sof" secondAttribute="centerX" id="X0J-H8-VSI"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ku4-m6-akT" appends="YES" id="miv-vB-IQF"/>
                         </connections>
@@ -63,4 +77,5 @@
             <point key="canvasLocation" x="819" y="42"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.13604035973548889" green="0.13792967796325684" blue="0.94144952297210693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
