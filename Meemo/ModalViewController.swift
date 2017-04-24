@@ -11,12 +11,12 @@ import AVFoundation
 class ModalViewController: UIViewController {
     
     
-    open var player:AVPlayer?
+    public var player:AVPlayer?
     var interactor:Interactor? = nil
     var video:Bool = true
     var playerLayer:AVPlayerLayer?
     
-     let videoTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp4?alt=media&token=2f20af88-6ca9-4b1b-8000-b21ff8da3676"
+    let videoTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp4?alt=media&token=2f20af88-6ca9-4b1b-8000-b21ff8da3676"
     
     let audioTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp3?alt=media&token=3736b81e-bee5-494e-bd0b-fd0080b5a905"
     
@@ -53,7 +53,7 @@ class ModalViewController: UIViewController {
                 player?.play()
             }
         default: break
-        
+            
         }
     }
     
@@ -71,15 +71,15 @@ class ModalViewController: UIViewController {
         let videoString:String? = videoTestURL
         
         if let url = videoString {
-            let videoURL = URL(string: url)
-            self.player = AVPlayer(url: videoURL!)
+            let videoURL = NSURL(string: url)
+            self.player = AVPlayer(url: videoURL as! URL)
         }
         playerLayer = AVPlayerLayer(player: player)
         playerLayer?.frame = self.view.bounds
         self.view.layer.addSublayer(playerLayer!)
         self.player?.play()
         if(time != nil){
-         self.player?.seek(to: time!)
+            self.player?.seek(to: time!)
         }
         video = true
     }
@@ -91,8 +91,8 @@ class ModalViewController: UIViewController {
         let audioString:String? = audioTestURL
         
         if let url = audioString {
-            let audioURL = URL(string: url)
-            self.player = AVPlayer(url: audioURL!)
+            let audioURL = NSURL(string: url)
+            self.player = AVPlayer(url: audioURL as! URL)
         }
         self.player?.play()
         self.player?.seek(to: time!)
@@ -102,7 +102,7 @@ class ModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.player?.pause()
-
+        
         playVideo()
     }
     

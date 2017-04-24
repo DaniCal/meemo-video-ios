@@ -21,7 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-V0-C3p">
                                 <state key="normal" title="Open Modal"/>
                                 <connections>
-                                    <segue destination="qni-p9-tDL" kind="presentation" id="BIU-BE-Oqe"/>
+                                    <segue destination="qni-p9-tDL" kind="presentation" identifier="modal" id="BIU-BE-Oqe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlJ-dP-eaI">
