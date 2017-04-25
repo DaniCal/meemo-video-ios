@@ -21,6 +21,11 @@ class ViewController: UIViewController {
                 destinationViewController.transitioningDelegate = self
                 destinationViewController.interactor = interactor
             }
+        }else if(segue.identifier == "cube"){
+            if let destinationViewController = segue.destination as? CubeViewController{
+                destinationViewController.transitioningDelegate = self
+                destinationViewController.interactor = interactor
+            }
         }
     }
     

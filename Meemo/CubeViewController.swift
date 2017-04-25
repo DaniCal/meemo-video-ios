@@ -11,20 +11,97 @@ import AVFoundation
 import AVKit
 import OHCubeView
 
-class CubeViewController: UIViewController, OHCubeViewDelegate{
+class CubeViewController: UIViewController, OHCubeViewDelegate, UIGestureRecognizerDelegate{
+    @IBOutlet var gestureRecognizer: UIPanGestureRecognizer!
+   
+    var startLocation:CGPoint?
+    var translation:CGPoint?
     
     @IBOutlet weak var cubeView: OHCubeView!
-    
+    var interactor:Interactor? = nil
+
     
     func cubeViewDidFinishScroll(toIndex: Int){
-        print("here")
+        print("I'm on page \(toIndex)")
     }
+    
+    func configGesture(){
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
+        swipeDown.direction = UISwipeGestureRecognizerDirection.down
+        swipeDown.delegate = self
+        self.view.addGestureRecognizer(swipeDown)
+        
+//        let swipeDown = UIPanGestureRecognizer(target: self, action: #selector(respondToSwipeGesture(_:)))
+//        swipeDown.delegate = self
+//        self.view.addGestureRecognizer(swipeDown)
+        
+        
+    }
+    
+    func handleGesture(_ sender: UIGestureRecognizer) {
+        if let panGesture = sender as? UIPanGestureRecognizer{
+            
+            let percentThreshold:CGFloat = 0.3
+            
+            // convert y-position to downward pull progress (percentage)
+            let translation = panGesture.translation(in: view)
+            let verticalMovement = translation.y / view.bounds.height
+            let downwardMovement = fmaxf(Float(verticalMovement), 0.0)
+            let downwardMovementPercent = fminf(downwardMovement, 1.0)
+            let progress = CGFloat(downwardMovementPercent)
+            
+            guard let interactor = interactor else { return }
+            
+            switch sender.state {
+            case .began:
+//                player?.pause()
+                interactor.hasStarted = true
+                dismiss(animated: true, completion: nil)
+            case .changed:
+                interactor.shouldFinish = progress > percentThreshold
+                interactor.update(progress)
+            case .cancelled:
+                interactor.hasStarted = false
+                interactor.cancel()
+            case .ended:
+                interactor.hasStarted = false
+                if(interactor.shouldFinish){
+                    interactor.finish()
+                }else{
+                    interactor.cancel()
+//                    player?.play()
+                }
+            default: break
+            }
+        }
+    }
+    
+    
+    // here are those protocol methods with Swift syntax
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        handleGesture(gestureRecognizer)
+        return true
+    }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        return true
+    }
+    
+    // Debugging - All Swipes Are Detected Now
+    func respondToSwipeGesture(_ gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer{
+            if(swipeGesture.direction == .down){
+                dismiss(animated: true, completion: nil)
+            }
+        }
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         cubeView.cubeDelegate = self
-        
+        configGesture()
         
 //      let vid1 = ModalViewController()
         

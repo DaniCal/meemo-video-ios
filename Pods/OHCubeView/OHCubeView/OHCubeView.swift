@@ -17,7 +17,7 @@ import UIKit
 }
 
 @available(iOS 9.0, *)
-open class OHCubeView: UIScrollView, UIScrollViewDelegate {
+open class OHCubeView: UIScrollView, UIScrollViewDelegate{
     
     public var cubeDelegate: OHCubeViewDelegate?
     
@@ -109,10 +109,13 @@ open class OHCubeView: UIScrollView, UIScrollViewDelegate {
         var page:Int = Int(contentOffset / width);
         cubeDelegate?.cubeViewDidFinishScroll?(toIndex: page)
     }
+    
+    
 
     // MARK: Private methods
     
     fileprivate func configureScrollView() {
+        
         
         // Configure scroll view properties
         
