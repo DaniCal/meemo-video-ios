@@ -9,15 +9,17 @@
 import UIKit
 
 @available(iOS 9.0, *)
-@objc protocol OHCubeViewDelegate: class {
+@objc public protocol OHCubeViewDelegate: class {
     
     @objc optional func cubeViewDidScroll(_ cubeView: OHCubeView)
+    
+    @objc optional func cubeViewDidFinishScroll(toIndex: Int)
 }
 
 @available(iOS 9.0, *)
 open class OHCubeView: UIScrollView, UIScrollViewDelegate {
     
-    weak var cubeDelegate: OHCubeViewDelegate?
+    public var cubeDelegate: OHCubeViewDelegate?
     
     fileprivate let maxAngle: CGFloat = 60.0
     
@@ -101,6 +103,13 @@ open class OHCubeView: UIScrollView, UIScrollViewDelegate {
         cubeDelegate?.cubeViewDidScroll?(self)
     }
     
+    open func scrollViewDidEndDecelerating(_ scrollView: UIScrollView){
+        var contentOffset = scrollView.contentOffset.x
+        var width = scrollView.frame.size.width
+        var page:Int = Int(contentOffset / width);
+        cubeDelegate?.cubeViewDidFinishScroll?(toIndex: page)
+    }
+
     // MARK: Private methods
     
     fileprivate func configureScrollView() {
