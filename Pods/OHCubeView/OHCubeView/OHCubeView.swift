@@ -21,9 +21,13 @@ open class OHCubeView: UIScrollView, UIScrollViewDelegate{
     
     public var cubeDelegate: OHCubeViewDelegate?
     
+    public var swipeDown:Bool = false
+    
     fileprivate let maxAngle: CGFloat = 60.0
     
     fileprivate var childViews = [UIView]()
+    
+    
     
     fileprivate lazy var stackView: UIStackView = {
         
@@ -33,6 +37,14 @@ open class OHCubeView: UIScrollView, UIScrollViewDelegate{
         
         return sv
     }()
+    
+    open func disableScrollView(){
+        self.isScrollEnabled = false
+    }
+    
+    open func enableScrollView(){
+        self.isScrollEnabled = true
+    }
     
     open override func awakeFromNib() {
         super.awakeFromNib()
@@ -99,6 +111,9 @@ open class OHCubeView: UIScrollView, UIScrollViewDelegate{
     // MARK: Scroll view delegate
     
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if(swipeDown){
+            return
+        }
         transformViewsInScrollView(scrollView)
         cubeDelegate?.cubeViewDidScroll?(self)
     }

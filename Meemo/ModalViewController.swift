@@ -24,7 +24,6 @@ class ModalViewController: UIViewController {
     }
     
     
-    
     @IBAction func handleGesture(_ sender: UIPanGestureRecognizer) {
 
         let percentThreshold:CGFloat = 0.3
@@ -32,6 +31,21 @@ class ModalViewController: UIViewController {
         // convert y-position to downward pull progress (percentage)
         let translation = sender.translation(in: view)
         let verticalMovement = translation.y / view.bounds.height
+        
+        if(verticalMovement < 0){
+            let presentSummaryThreshold:CGFloat = 0.1
+            
+            let upwardMovement = fminf(Float(verticalMovement), 0.0)
+            let upwardMovementPercent = fmaxf(upwardMovement, 1.0)
+            let upwardProgress = CGFloat(upwardMovementPercent)
+            
+            print(upwardMovement)
+            
+            //TODO: Initiate Present SummaryView Segue and take
+            
+        }
+        
+        
         let downwardMovement = fmaxf(Float(verticalMovement), 0.0)
         let downwardMovementPercent = fminf(downwardMovement, 1.0)
         let progress = CGFloat(downwardMovementPercent)
