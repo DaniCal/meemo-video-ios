@@ -17,12 +17,31 @@ class CubeViewController: UIViewController, OHCubeViewDelegate, UIGestureRecogni
     var startLocation:CGPoint?
     var translation:CGPoint?
     
+    let vid1 = ModalViewController()
+    let vid2 = ModalViewController()
+    let vid3 = ModalViewController()
+    let vid4 = ModalViewController()
+    
     @IBOutlet weak var cubeView: OHCubeView!
     var interactor:Interactor? = nil
 
     
     func cubeViewDidFinishScroll(toIndex: Int){
         print("I'm on page \(toIndex)")
+
+
+        switch toIndex {
+        case 0:
+            vid1.playVideo()
+        case 1:
+            vid2.playVideo()
+        case 2:
+            vid3.playVideo()
+        case 3:
+            vid1.playVideo()
+        default:
+            break
+        }
     }
     
     func configGesture(){
@@ -103,14 +122,15 @@ class CubeViewController: UIViewController, OHCubeViewDelegate, UIGestureRecogni
         cubeView.cubeDelegate = self
         configGesture()
         
-//      let vid1 = ModalViewController()
+       
+
         
-        let iv1 = UIImageView(image: UIImage(named: "img1"))
-        let iv2 = UIImageView(image: UIImage(named: "img2"))
-        let iv3 = UIImageView(image: UIImage(named: "img3"))
+//        let iv1 = UIImageView(image: UIImage(named: "img1"))
+//        let iv2 = UIImageView(image: UIImage(named: "img2"))
+//        let iv3 = UIImageView(image: UIImage(named: "img3"))
         
         
-        cubeView.addChildViews([iv1, iv2, iv3])
+        cubeView.addChildViews([vid1.view, vid2.view, vid3.view, vid4.view])
         
         cubeView.scrollToViewAtIndex(2, animated: true)
         

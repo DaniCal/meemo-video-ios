@@ -1,10 +1,3 @@
-//
-//  ModalViewController.swift
-//  Meemo
-//
-//  Created by Daniel Lohse on 4/22/17.
-//  Copyright © 2017 Superstudio. All rights reserved.
-//
 import UIKit
 import AVFoundation
 
@@ -21,6 +14,7 @@ class ModalViewController: UIViewController {
     let audioTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp3?alt=media&token=3736b81e-bee5-494e-bd0b-fd0080b5a905"
     
     @IBAction func handleGesture(_ sender: UIPanGestureRecognizer) {
+
         
         let percentThreshold:CGFloat = 0.3
         
