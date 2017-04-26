@@ -120,7 +120,7 @@ extension ModalViewController: UIViewControllerTransitioningDelegate {
     }
     
     func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        return summaryInteractor.hasStarted ? interactor : nil
+        return summaryInteractor.hasStarted ? summaryInteractor : nil
     }
     
 }

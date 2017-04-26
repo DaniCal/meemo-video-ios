@@ -120,15 +120,24 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Ae1-rN-uNC" secondAttribute="trailing" constant="3" id="9v4-S3-fXQ"/>
                             <constraint firstItem="UkI-Qt-C3E" firstAttribute="centerY" secondItem="9Bh-xg-jun" secondAttribute="centerY" id="FaR-Sh-oKj"/>
                             <constraint firstItem="Ae1-rN-uNC" firstAttribute="top" secondItem="zFK-Sa-ZYO" secondAttribute="bottom" constant="8" id="OWc-sx-rcE"/>
                             <constraint firstItem="UkI-Qt-C3E" firstAttribute="centerX" secondItem="9Bh-xg-jun" secondAttribute="centerX" id="lB6-Yp-ga8"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Baz-tV-ox5" appends="YES" id="1aK-BB-zHF"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZoM-fc-S8B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Baz-tV-ox5">
+                    <connections>
+                        <action selector="handleGesture:" destination="n1c-bl-PSZ" id="aYd-df-CAI"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1815" y="-205"/>
         </scene>
