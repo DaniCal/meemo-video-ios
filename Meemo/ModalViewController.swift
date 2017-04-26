@@ -3,7 +3,8 @@ import AVFoundation
 
 class ModalViewController: UIViewController {
     
-    
+    let summaryInteractor = Interactor()
+
     public var player:AVPlayer?
     var interactor:Interactor? = nil
     var video:Bool = true
@@ -13,9 +14,19 @@ class ModalViewController: UIViewController {
     
     let audioTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp3?alt=media&token=3736b81e-bee5-494e-bd0b-fd0080b5a905"
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "summary"){
+            if let destinationViewController = segue.destination as? SummaryViewController {
+                destinationViewController.transitioningDelegate = self
+                destinationViewController.interactor = summaryInteractor
+            }
+        }
+    }
+    
+    
+    
     @IBAction func handleGesture(_ sender: UIPanGestureRecognizer) {
 
-        
         let percentThreshold:CGFloat = 0.3
         
         // convert y-position to downward pull progress (percentage)
@@ -98,6 +109,18 @@ class ModalViewController: UIViewController {
         self.player?.pause()
         
         playVideo()
+    }
+}
+
+
+
+extension ModalViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissAnimator()
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return summaryInteractor.hasStarted ? interactor : nil
     }
     
 }

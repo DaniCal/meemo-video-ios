@@ -69,7 +69,7 @@
                                     <color key="titleColor" red="0.99586588144302368" green="1" blue="0.9999271035194397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="n1c-bl-PSZ" kind="presentation" id="d2J-H8-5VG"/>
+                                    <segue destination="n1c-bl-PSZ" kind="presentation" identifier="summary" id="d2J-H8-5VG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="988" y="-204"/>
         </scene>
-        <!--View Controller-->
+        <!--Summary View Controller-->
         <scene sceneID="5NR-1H-wjl">
             <objects>
-                <viewController id="n1c-bl-PSZ" sceneMemberID="viewController">
+                <viewController id="n1c-bl-PSZ" customClass="SummaryViewController" customModule="Meemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zFK-Sa-ZYO"/>
                         <viewControllerLayoutGuide type="bottom" id="wt5-Ck-Ebw"/>
@@ -112,10 +112,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae1-rN-uNC">
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close:" destination="n1c-bl-PSZ" eventType="touchUpInside" id="5d2-z5-H5v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ae1-rN-uNC" secondAttribute="trailing" constant="3" id="9v4-S3-fXQ"/>
                             <constraint firstItem="UkI-Qt-C3E" firstAttribute="centerY" secondItem="9Bh-xg-jun" secondAttribute="centerY" id="FaR-Sh-oKj"/>
+                            <constraint firstItem="Ae1-rN-uNC" firstAttribute="top" secondItem="zFK-Sa-ZYO" secondAttribute="bottom" constant="8" id="OWc-sx-rcE"/>
                             <constraint firstItem="UkI-Qt-C3E" firstAttribute="centerX" secondItem="9Bh-xg-jun" secondAttribute="centerX" id="lB6-Yp-ga8"/>
                         </constraints>
                     </view>
