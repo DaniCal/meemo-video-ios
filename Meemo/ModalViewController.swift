@@ -10,7 +10,7 @@ class ModalViewController: UIViewController {
     var video:Bool = true
     var playerLayer:AVPlayerLayer?
     
-    let videoTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp4?alt=media&token=2f20af88-6ca9-4b1b-8000-b21ff8da3676"
+    let videoTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/Video.mp4?alt=media&token=88591412-30a1-4bdf-af82-6bffef5268d2"
     
     let audioTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp3?alt=media&token=3736b81e-bee5-494e-bd0b-fd0080b5a905"
     
@@ -32,18 +32,18 @@ class ModalViewController: UIViewController {
         let translation = sender.translation(in: view)
         let verticalMovement = translation.y / view.bounds.height
         
-        if(verticalMovement < 0){
-            let presentSummaryThreshold:CGFloat = 0.1
-            
-            let upwardMovement = fminf(Float(verticalMovement), 0.0)
-            let upwardMovementPercent = fmaxf(upwardMovement, 1.0)
-            let upwardProgress = CGFloat(upwardMovementPercent)
-            
-            print(upwardMovement)
-            
-            //TODO: Initiate Present SummaryView Segue and take
-            
-        }
+//        if(verticalMovement < 0){
+//            let presentSummaryThreshold:CGFloat = 0.1
+//            
+//            let upwardMovement = fminf(Float(verticalMovement), 0.0)
+//            let upwardMovementPercent = fmaxf(upwardMovement, 1.0)
+//            let upwardProgress = CGFloat(upwardMovementPercent)
+//            
+//            print(upwardMovement)
+//            
+//            //TODO: Initiate Present SummaryView Segue and take
+//            
+//        }
         
         
         let downwardMovement = fmaxf(Float(verticalMovement), 0.0)

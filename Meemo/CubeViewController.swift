@@ -118,13 +118,40 @@ class CubeViewController: UIViewController, OHCubeViewDelegate, UIGestureRecogni
         cubeView.cubeDelegate = self
         configGesture()
         
+//        
+//        let iv1 = UIImageView(image: UIImage(named: "img2"))
+//        let iv2 = UIImageView(image: UIImage(named: "img2"))
+//        let iv3 = UIImageView(image: UIImage(named: "img3"))
         
-        let iv1 = UIImageView(image: UIImage(named: "img1"))
-        let iv2 = UIImageView(image: UIImage(named: "img2"))
-        let iv3 = UIImageView(image: UIImage(named: "img3"))
+//        let videoController1 = VideoViewController()
+//        videoController1.loadView()
+//        
+//        let videoController2 = VideoViewController()
+//        videoController1.loadView()
+//        
+//        videoController1.playVideo()
+
+
+//        let videoView2 = VideoView.instanceViewFromNib()
+
         
+//        let videoView1 = VideoView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
+//        let videoView2 = VideoView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
+//        let videoView3 = VideoView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
+//        let videoView4 = VideoView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
+
+        let video1 = ModalViewController()
         
-        cubeView.addChildViews([iv1, iv2, iv3])        
+//        videoView1.addVideoLayer()
+//        videoView1.playVideo()
+//        self.view.addSubview(videoView1)
+
+//        let videoView2 = VideoView()
+//
+//        videoView1.addVideoLayer()
+//        videoView1.playVideo()
+        
+        cubeView.addChildViews([video1.view])
         
     }
 
