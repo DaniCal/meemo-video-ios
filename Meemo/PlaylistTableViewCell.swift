@@ -9,6 +9,10 @@
 import UIKit
 
 class PlaylistTableViewCell: UITableViewCell {
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var author: UILabel!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
     
 //    @IBOutlet weak var titleLabel: UILabel!
 //    @IBOutlet weak var descriptionLabel: UILabel!
@@ -22,16 +26,20 @@ class PlaylistTableViewCell: UITableViewCell {
 //        super.setSelected(selected, animated: animated)
 //    }
     
-    func setTitle(_ title: String){
-//        titleLabel.text = title
+    func setProgramTitle(_ title: String){
+        self.title.text = title
     }
     
-    func setSubtitle(_ subtitle: String){
-//        descriptionLabel.text = subtitle
+    func setProgramAuthor(_ author: String){
+        self.author.text = author
     }
     
-    func setImageData(data: Data){
-//        picture.image = UIImage(data: data)
+    func setProgramDuration(_ duration: String){
+        self.time.text = duration
+    }
+    
+    func setImageData(_ fileName: String){
+        backgroundImage.image = UIImage(named: fileName)
     }
     
 }

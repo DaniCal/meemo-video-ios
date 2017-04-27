@@ -244,25 +244,28 @@
                                                     <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WATCHED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugo-w0-k0H">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="11" id="5Ep-wU-bQl"/>
-                                                        <constraint firstAttribute="width" constant="65" id="wSe-ml-S8M"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WATCHED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugo-w0-k0H">
+                                                    <frame key="frameInset" minX="247" minY="8" width="65" height="11"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
                                                     <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Ugo-w0-k0H" firstAttribute="top" secondItem="GE4-Es-GHx" secondAttribute="topMargin" id="Ls2-yz-htM"/>
                                                 <constraint firstItem="8Bu-hO-Ysf" firstAttribute="leading" secondItem="GE4-Es-GHx" secondAttribute="leadingMargin" constant="5" id="MHy-pY-hA0"/>
-                                                <constraint firstItem="Ugo-w0-k0H" firstAttribute="top" secondItem="GE4-Es-GHx" secondAttribute="topMargin" id="PsF-QP-Naz"/>
                                                 <constraint firstItem="8Bu-hO-Ysf" firstAttribute="top" secondItem="fKU-RX-P9P" secondAttribute="bottom" constant="3" id="Xxw-O1-nBB"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="8Bu-hO-Ysf" secondAttribute="bottom" id="cZy-s0-UIq"/>
                                                 <constraint firstItem="fKU-RX-P9P" firstAttribute="leading" secondItem="GE4-Es-GHx" secondAttribute="leadingMargin" constant="5" id="e4n-i5-F6V"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Ugo-w0-k0H" secondAttribute="trailing" id="o6Y-yM-ud6"/>
+                                                <constraint firstItem="Ugo-w0-k0H" firstAttribute="trailing" secondItem="GE4-Es-GHx" secondAttribute="trailingMargin" id="qnd-VT-KSy"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="author" destination="fKU-RX-P9P" id="0bh-eA-0cE"/>
+                                            <outlet property="backgroundImage" destination="bxu-NM-Tbc" id="Lkf-Xc-MiH"/>
+                                            <outlet property="time" destination="Ugo-w0-k0H" id="s1v-o1-gpV"/>
+                                            <outlet property="title" destination="8Bu-hO-Ysf" id="Ube-Ca-p22"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -275,6 +278,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="kKb-k5-cRk" id="cHA-ve-s8c"/>
+                        <segue destination="qni-p9-tDL" kind="presentation" identifier="goToVideo" id="0F5-FR-1E9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sI6-TF-Idh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -317,5 +321,8 @@
     <resources>
         <image name="img1" width="540" height="960"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0F5-FR-1E9"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.13604035973548889" green="0.13792967796325684" blue="0.94144952297210693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
