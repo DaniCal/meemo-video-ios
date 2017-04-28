@@ -11,6 +11,7 @@ import AVFoundation
 
 @IBDesignable class VideoView: UIView {
 
+    @IBOutlet weak var readMoreButton: UIButton!
     @IBOutlet weak var videoProgress: UIProgressView!
     @IBOutlet weak var containerView: UIView!
     
@@ -23,6 +24,8 @@ import AVFoundation
     open func setPogress(_ progress: Float){
         videoProgress.setProgress(progress, animated: true)
     }
+    
+    
     
     
     // Our custom view from the XIB file

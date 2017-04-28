@@ -40,6 +40,10 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         return programNames.count
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "playlistCell", for: indexPath) as! PlaylistTableViewCell
         cell.setProgramTitle(programNames[indexPath.row])

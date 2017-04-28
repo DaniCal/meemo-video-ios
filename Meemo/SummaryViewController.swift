@@ -17,6 +17,10 @@ class SummaryViewController: UIViewController {
     
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     @IBAction func handleGesture(_ sender: UIPanGestureRecognizer) {
         let percentThreshold:CGFloat = 0.3
         

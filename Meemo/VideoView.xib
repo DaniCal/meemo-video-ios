@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoView" customModule="Meemo" customModuleProvider="target">
             <connections>
+                <outlet property="readMoreButton" destination="Cqc-7q-4rq" id="QeH-ld-HS4"/>
                 <outlet property="videoProgress" destination="Tin-l9-hwl" id="ezC-Ys-UZU"/>
             </connections>
         </placeholder>

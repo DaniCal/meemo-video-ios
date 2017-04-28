@@ -12,6 +12,7 @@ class ModalViewController: UIViewController {
     var timer = Timer.init()
     var duration:Float = 120
     var overlay:VideoView?
+    var summarySegueIdentifier:String = "summary"
     
     public var videoName:String = "vid2"
     
@@ -145,12 +146,18 @@ class ModalViewController: UIViewController {
         overlay = VideoView()
         overlay?.frame = self.view.bounds
         self.view.addSubview(overlay!)
+        overlay?.readMoreButton.addTarget(self, action: #selector(self.showSummaryView), for: UIControlEvents.touchUpInside)
         
     }
     
     func updateVideoProgress(){
         let ratio = Float((self.player?.currentTime().seconds)!) / self.duration
         overlay?.setPogress(ratio)
+    }
+    
+    func showSummaryView(){
+        self.performSegue(withIdentifier: summarySegueIdentifier , sender: nil)
+
     }
 }
 
