@@ -10,11 +10,14 @@ import UIKit
 
 class PlaylistViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var tableView: UITableView!
+    let interactor = Interactor()
+
+    var programNames: [String] = ["Authentic Leadership & Self-Awareness", "3 Ways to define personal achievement", "Leadership Advice from the best", "How to lead through Storytelling"]
+    var programImageFileNames: [String] = ["img01", "img02", "img03", "img01"]
+    var programAuthorNames: [String] = ["BILL GEORGE", "JULLIEN GORDON", "MARSHALL GOLDSMITH", "SHANE SHNOW"]
+    var programDurations: [String] = ["WATCHED", "2:33", "3:10", "1:23"]
+    var videoName: [String] = ["vid5", "vid4", "vid2", "vid6"]
     
-    var programNames: [String] = ["Authentic Leadership & Self-Awareness", "3 Ways to define personal achievement", "Leadership Advice from the best"]
-    var programImageFileNames: [String] = ["img1", "img2", "img3"]
-    var programAuthorNames: [String] = ["BILL GEORGE", "JULLIEN GORDON", "MARSHALL GOLDSMITH"]
-    var programDurations: [String] = ["WATCHED", "2:33", "3:10"]
 
     let videoSegueIdentifier = "goToVideo"
 
@@ -25,6 +28,9 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
             let destination = segue.destination as? ModalViewController,
             let blogIndex = tableView.indexPathForSelectedRow?.row
         {
+            destination.transitioningDelegate = self
+            destination.interactor = interactor
+            destination.videoName = videoName[blogIndex]
             //destination.program = content.programs[blogIndex]
             
         }
@@ -57,4 +63,15 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         //tableView.deselectRow(at: indexPath, animated: true)
     }
 
+}
+
+extension PlaylistViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissAnimator()
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactor.hasStarted ? interactor : nil
+    }
+    
 }

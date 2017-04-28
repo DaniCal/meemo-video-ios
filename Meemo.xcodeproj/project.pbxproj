@@ -26,10 +26,19 @@
 		829BC4961EAB78DD00F8A672 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC4951EAB78DD00F8A672 /* ModalViewController.swift */; };
 		829BC4981EAB79DD00F8A672 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC4971EAB79DD00F8A672 /* DismissAnimator.swift */; };
 		829BC49A1EAB88F300F8A672 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC4991EAB88F300F8A672 /* Interactor.swift */; };
+		82B8077F1EB24B0900F9D543 /* vid4.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B8077E1EB24B0900F9D543 /* vid4.mov */; };
+		82B807831EB2512800F9D543 /* vid5.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B807821EB2512800F9D543 /* vid5.mov */; };
+		82B807851EB2566300F9D543 /* vid6.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B807841EB2566300F9D543 /* vid6.mov */; };
 		82E634F01EB1C63A00D2153A /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E634EF1EB1C63A00D2153A /* VideoView.xib */; };
 		82E634F21EB1C9C500D2153A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E634F11EB1C9C500D2153A /* VideoView.swift */; };
 		82E634F41EB21C7300D2153A /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E634F31EB21C7300D2153A /* PlaylistViewController.swift */; };
 		82E634F61EB21DB600D2153A /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E634F51EB21DB600D2153A /* PlaylistTableViewCell.swift */; };
+		82E634FA1EB2253100D2153A /* img01.png in Resources */ = {isa = PBXBuildFile; fileRef = 82E634F71EB2253100D2153A /* img01.png */; };
+		82E634FB1EB2253100D2153A /* img02.png in Resources */ = {isa = PBXBuildFile; fileRef = 82E634F81EB2253100D2153A /* img02.png */; };
+		82E634FC1EB2253100D2153A /* img03.png in Resources */ = {isa = PBXBuildFile; fileRef = 82E634F91EB2253100D2153A /* img03.png */; };
+		82E634FE1EB22AFA00D2153A /* vid1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 82E634FD1EB22AB300D2153A /* vid1.mp4 */; };
+		82E635001EB235B900D2153A /* vid2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82E634FF1EB235B900D2153A /* vid2.mov */; };
+		82E635021EB2429C00D2153A /* vid3.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82E635011EB2429C00D2153A /* vid3.mov */; };
 		BAAF3C3A18DE5D393AC35AE5 /* Pods_Meemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE65C38F884CD40FC350C97 /* Pods_Meemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,10 +86,19 @@
 		829BC4951EAB78DD00F8A672 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		829BC4971EAB79DD00F8A672 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		829BC4991EAB88F300F8A672 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		82B8077E1EB24B0900F9D543 /* vid4.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid4.mov; path = ../../../../vid4.mov; sourceTree = "<group>"; };
+		82B807821EB2512800F9D543 /* vid5.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid5.mov; path = ../../../../vid5.mov; sourceTree = "<group>"; };
+		82B807841EB2566300F9D543 /* vid6.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid6.mov; path = ../../../../vid6.mov; sourceTree = "<group>"; };
 		82E634EF1EB1C63A00D2153A /* VideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
 		82E634F11EB1C9C500D2153A /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		82E634F31EB21C7300D2153A /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		82E634F51EB21DB600D2153A /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		82E634F71EB2253100D2153A /* img01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img01.png; path = ../../../Meemo/img01.png; sourceTree = "<group>"; };
+		82E634F81EB2253100D2153A /* img02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img02.png; path = ../../../Meemo/img02.png; sourceTree = "<group>"; };
+		82E634F91EB2253100D2153A /* img03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img03.png; path = ../../../Meemo/img03.png; sourceTree = "<group>"; };
+		82E634FD1EB22AB300D2153A /* vid1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = vid1.mp4; path = ../../../Meemo/Content/vid1.mp4; sourceTree = "<group>"; };
+		82E634FF1EB235B900D2153A /* vid2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid2.mov; path = ../../../../vid2.mov; sourceTree = "<group>"; };
+		82E635011EB2429C00D2153A /* vid3.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid3.mov; path = ../../../../vid3.mov; sourceTree = "<group>"; };
 		B8D46095D957D80B6BEF3135 /* Pods-Meemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meemo/Pods-Meemo.release.xcconfig"; sourceTree = "<group>"; };
 		FCE65C38F884CD40FC350C97 /* Pods_Meemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -148,6 +166,15 @@
 		8278B44B1EA9F8890064EFFD /* Meemo */ = {
 			isa = PBXGroup;
 			children = (
+				82B807821EB2512800F9D543 /* vid5.mov */,
+				82B8077E1EB24B0900F9D543 /* vid4.mov */,
+				82E635011EB2429C00D2153A /* vid3.mov */,
+				82E634FF1EB235B900D2153A /* vid2.mov */,
+				82E634FD1EB22AB300D2153A /* vid1.mp4 */,
+				82B807841EB2566300F9D543 /* vid6.mov */,
+				82E634F71EB2253100D2153A /* img01.png */,
+				82E634F81EB2253100D2153A /* img02.png */,
+				82E634F91EB2253100D2153A /* img03.png */,
 				8278B44C1EA9F8890064EFFD /* AppDelegate.swift */,
 				8278B44E1EA9F8890064EFFD /* ViewController.swift */,
 				829BC4991EAB88F300F8A672 /* Interactor.swift */,
@@ -315,13 +342,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E634FE1EB22AFA00D2153A /* vid1.mp4 in Resources */,
+				82B807851EB2566300F9D543 /* vid6.mov in Resources */,
 				8278B4571EA9F8890064EFFD /* LaunchScreen.storyboard in Resources */,
 				821B29141EADFAAA00E40B66 /* img3.jpg in Resources */,
+				82E635021EB2429C00D2153A /* vid3.mov in Resources */,
+				82E634FA1EB2253100D2153A /* img01.png in Resources */,
 				821B29131EADFAAA00E40B66 /* img2.jpg in Resources */,
+				82B807831EB2512800F9D543 /* vid5.mov in Resources */,
+				82E634FC1EB2253100D2153A /* img03.png in Resources */,
 				82E634F01EB1C63A00D2153A /* VideoView.xib in Resources */,
 				821B29121EADFAAA00E40B66 /* img1.jpg in Resources */,
 				8278B4541EA9F8890064EFFD /* Assets.xcassets in Resources */,
+				82E635001EB235B900D2153A /* vid2.mov in Resources */,
+				82B8077F1EB24B0900F9D543 /* vid4.mov in Resources */,
 				8278B4521EA9F8890064EFFD /* Main.storyboard in Resources */,
+				82E634FB1EB2253100D2153A /* img02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

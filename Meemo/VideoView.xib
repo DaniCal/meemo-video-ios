@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoView" customModule="Meemo" customModuleProvider="target">
             <connections>
-                <outlet property="containerView" destination="HJY-Ku-iuk" id="dQv-aC-wGt"/>
+                <outlet property="videoProgress" destination="Tin-l9-hwl" id="ezC-Ys-UZU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -16,35 +16,31 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJY-Ku-iuk">
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="dGF-C8-Aya">
-                            <frame key="frameInset" width="320" height="568"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" red="0.040085248649120331" green="0.93043661117553711" blue="0.089893542230129242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqc-7q-4rq">
-                    <state key="normal" title="Read More"/>
+                    <state key="normal" title="Read More">
+                        <color key="titleColor" red="0.46666666666666667" green="0.83137254901960789" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="readMore:" destination="-1" eventType="touchUpInside" id="uIa-F9-vsa"/>
                     </connections>
                 </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-l9-hwl">
+                    <frame key="frameInset" width="320" height="6"/>
+                    <color key="tintColor" red="0.46666666666666667" green="0.83137254901960789" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="5" id="e9p-qa-Z4a"/>
+                    </constraints>
+                </progressView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.87124389410018921" green="0.044379569590091705" blue="0.90559214353561401" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="HJY-Ku-iuk" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="333-YO-FB0"/>
-                <constraint firstItem="HJY-Ku-iuk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3oa-cu-xUf"/>
                 <constraint firstAttribute="bottom" secondItem="Cqc-7q-4rq" secondAttribute="bottom" constant="15" id="5Pw-tS-4ji"/>
-                <constraint firstItem="HJY-Ku-iuk" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Tzc-vL-llL"/>
-                <constraint firstItem="HJY-Ku-iuk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Xd9-hc-KZ5"/>
                 <constraint firstItem="Cqc-7q-4rq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xwc-cy-wM0"/>
+                <constraint firstItem="Tin-l9-hwl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hD0-Mv-hoI"/>
+                <constraint firstAttribute="trailing" secondItem="Tin-l9-hwl" secondAttribute="trailing" id="pdQ-Zn-anU"/>
+                <constraint firstItem="Tin-l9-hwl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qtf-I3-Jhb"/>
             </constraints>
             <point key="canvasLocation" x="-4" y="44"/>
         </view>
     </objects>
-    <resources>
-        <image name="img1" width="540" height="960"/>
-    </resources>
 </document>

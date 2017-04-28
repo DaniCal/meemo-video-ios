@@ -119,9 +119,9 @@ class CubeViewController: UIViewController, OHCubeViewDelegate, UIGestureRecogni
         configGesture()
         
 //        
-//        let iv1 = UIImageView(image: UIImage(named: "img2"))
-//        let iv2 = UIImageView(image: UIImage(named: "img2"))
-//        let iv3 = UIImageView(image: UIImage(named: "img3"))
+        let iv1 = UIImageView(image: UIImage(named: "img1"))
+        let iv2 = UIImageView(image: UIImage(named: "img2"))
+        let iv3 = UIImageView(image: UIImage(named: "img3"))
         
 //        let videoController1 = VideoViewController()
 //        videoController1.loadView()
@@ -140,7 +140,7 @@ class CubeViewController: UIViewController, OHCubeViewDelegate, UIGestureRecogni
 //        let videoView3 = VideoView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
 //        let videoView4 = VideoView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height))
 
-        let video1 = ModalViewController()
+//        let video1 = ModalViewController()
         
 //        videoView1.addVideoLayer()
 //        videoView1.playVideo()
@@ -151,7 +151,7 @@ class CubeViewController: UIViewController, OHCubeViewDelegate, UIGestureRecogni
 //        videoView1.addVideoLayer()
 //        videoView1.playVideo()
         
-        cubeView.addChildViews([video1.view])
+        cubeView.addChildViews([iv1, iv2, iv3 ])
         
     }
 

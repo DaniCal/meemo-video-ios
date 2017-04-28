@@ -10,6 +10,8 @@ class ModalViewController: UIViewController {
     var video:Bool = true
     var playerLayer:AVPlayerLayer?
     
+    public var videoName:String = "vid2"
+    
     let videoTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/Video.mp4?alt=media&token=88591412-30a1-4bdf-af82-6bffef5268d2"
     
     let audioTestURL = "https://firebasestorage.googleapis.com/v0/b/meemo-external-test.appspot.com/o/AuthenticLeadership.mp3?alt=media&token=3736b81e-bee5-494e-bd0b-fd0080b5a905"
@@ -76,6 +78,9 @@ class ModalViewController: UIViewController {
         }
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
     @IBAction func videoOnOff(_ sender: AnyObject) {
         if(video){
@@ -87,12 +92,17 @@ class ModalViewController: UIViewController {
     
     func playVideo(){
         let time = self.player?.currentTime()
-        let videoString:String? = videoTestURL
+//        let videoString:String? = videoTestURL
         
-        if let url = videoString {
-            let videoURL = NSURL(string: url)
-            self.player = AVPlayer(url: videoURL as! URL)
-        }
+//        if let url = videoString {
+//            let videoURL = NSURL(string: url)
+//            self.player = AVPlayer(url: videoURL as! URL)
+//        }
+        
+        let path = Bundle.main.path(forResource: videoName, ofType:"mov")
+        
+        self.player = AVPlayer(url: URL(fileURLWithPath: path!))
+        
         playerLayer = AVPlayerLayer(player: player)
         playerLayer?.frame = self.view.bounds
         self.view.layer.addSublayer(playerLayer!)
@@ -123,6 +133,12 @@ class ModalViewController: UIViewController {
         self.player?.pause()
         
         playVideo()
+        
+        
+        let overlay = VideoView()
+        overlay.frame = self.view.bounds
+        self.view.addSubview(overlay)
+        
     }
 }
 
