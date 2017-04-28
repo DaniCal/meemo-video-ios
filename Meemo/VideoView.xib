@@ -24,7 +24,7 @@
                         <action selector="readMore:" destination="-1" eventType="touchUpInside" id="uIa-F9-vsa"/>
                     </connections>
                 </button>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" progress="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-l9-hwl">
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="Tin-l9-hwl">
                     <frame key="frameInset" width="320" height="6"/>
                     <color key="tintColor" red="0.46666666666666667" green="0.83137254901960789" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>

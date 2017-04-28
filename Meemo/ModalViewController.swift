@@ -9,6 +9,9 @@ class ModalViewController: UIViewController {
     var interactor:Interactor? = nil
     var video:Bool = true
     var playerLayer:AVPlayerLayer?
+    var timer = Timer.init()
+    var duration:Float = 120
+    var overlay:VideoView?
     
     public var videoName:String = "vid2"
     
@@ -57,6 +60,7 @@ class ModalViewController: UIViewController {
         switch sender.state {
         case .began:
             player?.pause()
+            timer.invalidate()
             interactor.hasStarted = true
             dismiss(animated: true, completion: nil)
         case .changed:
@@ -72,6 +76,7 @@ class ModalViewController: UIViewController {
             }else{
                 interactor.cancel()
                 player?.play()
+                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateVideoProgress), userInfo: nil,repeats: true)
             }
         default: break
             
@@ -107,6 +112,8 @@ class ModalViewController: UIViewController {
         playerLayer?.frame = self.view.bounds
         self.view.layer.addSublayer(playerLayer!)
         self.player?.play()
+        
+        
         if(time != nil){
             self.player?.seek(to: time!)
         }
@@ -133,12 +140,17 @@ class ModalViewController: UIViewController {
         self.player?.pause()
         
         playVideo()
+         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.updateVideoProgress), userInfo: nil,repeats: true)
         
+        overlay = VideoView()
+        overlay?.frame = self.view.bounds
+        self.view.addSubview(overlay!)
         
-        let overlay = VideoView()
-        overlay.frame = self.view.bounds
-        self.view.addSubview(overlay)
-        
+    }
+    
+    func updateVideoProgress(){
+        let ratio = Float((self.player?.currentTime().seconds)!) / self.duration
+        overlay?.setPogress(ratio)
     }
 }
 
