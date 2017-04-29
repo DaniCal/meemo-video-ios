@@ -12,30 +12,25 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var tableView: UITableView!
     let interactor = Interactor()
 
-    var programNames: [String] = ["How to lead with authenticity", "Networking - What you need to know", "Get more done by applying 3 simple techniques", "How to give better advice & feedback", "How to lead through Storytelling"]
-    var programImageFileNames: [String] = ["img01", "img05", "img06", "img02", "img04"]
-    var programAuthorNames: [String] = ["BILL GEORGE", "BETTY LIU", "BRIAN CERVINO", "JULLIEN GORDON", "SHANE SHNOW"]
-    var programDurations: [String] = ["WATCHED","1:55", "2:33", "3:10", "1:23"]
-    var videoName: [String] = ["vid7", "vid5", "vid4", "vid8", "vid6"]
-    
+//    var programNames: [String] = ["How to lead with authenticity", "Networking - What you need to know", "Get more done by applying 3 simple techniques", "How to give better advice & feedback", "How to lead through Storytelling"]
+//    var programImageFileNames: [String] = ["img01", "img05", "img06", "img02", "img04"]
+//    var programAuthorNames: [String] = ["BILL GEORGE", "BETTY LIU", "BRIAN CERVINO", "JULLIEN GORDON", "SHANE SHNOW"]
+//    var programDurations: [String] = ["WATCHED","1:55", "2:33", "3:10", "1:23"]
+//    var videoName: [String] = ["vid7", "vid5", "vid4", "vid8", "vid6"]
+//    
 
     let videoSegueIdentifier = "goToVideo"
 
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    struct Course {
-        var name: String
-        var author: String
-        var numberOfSessions: Int
-        var courseImageFile: String
-        var session: [Session]
+    var content:[MeemoCourse] = []
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        content = appDelegate.content
+        
     }
-    
-    struct Session {
-        var name: String
-        var duration: Int
-        var videoFileName: String
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         //Triggers when segues to ProgramView
@@ -45,14 +40,14 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         {
             destination.transitioningDelegate = self
             destination.interactor = interactor
-            destination.videoName = videoName[blogIndex]
+            destination.videoName = content[blogIndex].sessions[0].videoFileName!
             //destination.program = content.programs[blogIndex]
             
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return programNames.count
+        return content.count
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -61,9 +56,11 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "playlistCell", for: indexPath) as! PlaylistTableViewCell
-        cell.setProgramTitle(programNames[indexPath.row])
-        cell.setProgramAuthor(programAuthorNames[indexPath.row])
-        cell.setImageData(programImageFileNames[indexPath.row])
+        let meemoCourse:MeemoCourse = content[indexPath.row]
+        
+        cell.setProgramTitle(meemoCourse.name!)
+        cell.setProgramAuthor(meemoCourse.author!)
+        cell.setImageData(meemoCourse.courseImageFile!)
 //        cell.setProgramDuration(programDurations[indexPath.row])
         //cell.setTitle(content.programs[indexPath.row].title)
         //cell.setSubtitle(content.programs[indexPath.row].subtitle)

@@ -15,6 +15,8 @@
 		823089021EB3438000404CC2 /* img05.png in Resources */ = {isa = PBXBuildFile; fileRef = 823088FF1EB3438000404CC2 /* img05.png */; };
 		823089031EB3438000404CC2 /* img06.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089001EB3438000404CC2 /* img06.png */; };
 		823089431EB4C65B00404CC2 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089421EB4C65B00404CC2 /* gradient.png */; };
+		823089471EB4D07800404CC2 /* MeemoCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089461EB4D07800404CC2 /* MeemoCourse.swift */; };
+		823089491EB4D0A400404CC2 /* MeemoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089481EB4D0A400404CC2 /* MeemoSession.swift */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -75,6 +77,8 @@
 		823088FF1EB3438000404CC2 /* img05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img05.png; path = ../../../Meemo/img05.png; sourceTree = "<group>"; };
 		823089001EB3438000404CC2 /* img06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img06.png; path = ../../../Meemo/img06.png; sourceTree = "<group>"; };
 		823089421EB4C65B00404CC2 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = ../../../../../Dropbox/Meemo/gradient.png; sourceTree = "<group>"; };
+		823089461EB4D07800404CC2 /* MeemoCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeemoCourse.swift; path = ../MeemoCourse.swift; sourceTree = "<group>"; };
+		823089481EB4D0A400404CC2 /* MeemoSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeemoSession.swift; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +182,8 @@
 		8278B44B1EA9F8890064EFFD /* Meemo */ = {
 			isa = PBXGroup;
 			children = (
+				823089481EB4D0A400404CC2 /* MeemoSession.swift */,
+				823089461EB4D07800404CC2 /* MeemoCourse.swift */,
 				82B807821EB2512800F9D543 /* vid5.mov */,
 				82B8077E1EB24B0900F9D543 /* vid4.mov */,
 				82E635011EB2429C00D2153A /* vid3.mov */,
@@ -462,10 +468,12 @@
 				825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */,
 				82E634F21EB1C9C500D2153A /* VideoView.swift in Sources */,
 				82E634F41EB21C7300D2153A /* PlaylistViewController.swift in Sources */,
+				823089491EB4D0A400404CC2 /* MeemoSession.swift in Sources */,
 				829BC4981EAB79DD00F8A672 /* DismissAnimator.swift in Sources */,
 				825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */,
 				821B290E1EADF6E900E40B66 /* CubeViewController.swift in Sources */,
 				82E634F61EB21DB600D2153A /* PlaylistTableViewCell.swift in Sources */,
+				823089471EB4D07800404CC2 /* MeemoCourse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
