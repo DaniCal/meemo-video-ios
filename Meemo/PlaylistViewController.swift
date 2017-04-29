@@ -21,6 +21,21 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
 
     let videoSegueIdentifier = "goToVideo"
 
+    
+    struct Course {
+        var name: String
+        var author: String
+        var numberOfSessions: Int
+        var courseImageFile: String
+        var session: [Session]
+    }
+    
+    struct Session {
+        var name: String
+        var duration: Int
+        var videoFileName: String
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         //Triggers when segues to ProgramView
