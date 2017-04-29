@@ -20,6 +20,8 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
 //    
 
     let videoSegueIdentifier = "goToVideo"
+    let courseSegueIdentifier = "goToCourse"
+
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -29,21 +31,28 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         content = appDelegate.content
+        hideNavigationBar()
         
     }
+    
+    func hideNavigationBar(){
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         //Triggers when segues to ProgramView
-        if  segue.identifier == videoSegueIdentifier,
-            let destination = segue.destination as? ModalViewController,
-            let blogIndex = tableView.indexPathForSelectedRow?.row
-        {
-            destination.transitioningDelegate = self
-            destination.interactor = interactor
-            destination.videoName = content[blogIndex].sessions[0].videoFileName!
-            //destination.program = content.programs[blogIndex]
-            
-        }
+//        if  segue.identifier == videoSegueIdentifier,
+//            let destination = segue.destination as? ModalViewController,
+//            let blogIndex = tableView.indexPathForSelectedRow?.row
+//        {
+//            destination.transitioningDelegate = self
+//            destination.interactor = interactor
+//            destination.videoName = content[blogIndex].sessions[0].videoFileName!
+//            //destination.program = content.programs[blogIndex]
+//            
+//        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,7 +84,7 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: videoSegueIdentifier , sender: indexPath)
+        self.performSegue(withIdentifier: courseSegueIdentifier , sender: indexPath)
         //tableView.deselectRow(at: indexPath, animated: true)
     }
 
