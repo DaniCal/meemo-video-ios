@@ -43,16 +43,13 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         //Triggers when segues to ProgramView
-//        if  segue.identifier == videoSegueIdentifier,
-//            let destination = segue.destination as? ModalViewController,
-//            let blogIndex = tableView.indexPathForSelectedRow?.row
-//        {
-//            destination.transitioningDelegate = self
-//            destination.interactor = interactor
-//            destination.videoName = content[blogIndex].sessions[0].videoFileName!
-//            //destination.program = content.programs[blogIndex]
-//            
-//        }
+        if  segue.identifier == courseSegueIdentifier,
+            let destination = segue.destination as? CourseViewController,
+            let blogIndex = tableView.indexPathForSelectedRow?.row
+        {
+            destination.course = content[blogIndex]
+            
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -70,16 +67,6 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.setProgramTitle(meemoCourse.name!)
         cell.setProgramAuthor(meemoCourse.author!)
         cell.setImageData(meemoCourse.courseImageFile!)
-//        cell.setProgramDuration(programDurations[indexPath.row])
-        //cell.setTitle(content.programs[indexPath.row].title)
-        //cell.setSubtitle(content.programs[indexPath.row].subtitle)
-//        if(content.programs[indexPath.row].pictureSquareData == nil){
-//            loadProgramSquare(cell: cell, url: content.programs[indexPath.row].pictureSquare)
-//        }else{
-//            cell.setImageData(data: content.programs[indexPath.row].pictureSquareData)
-//        }
-        
-        
         return cell
     }
     

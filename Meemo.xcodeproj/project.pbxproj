@@ -18,6 +18,7 @@
 		823089471EB4D07800404CC2 /* MeemoCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089461EB4D07800404CC2 /* MeemoCourse.swift */; };
 		823089491EB4D0A400404CC2 /* MeemoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089481EB4D0A400404CC2 /* MeemoSession.swift */; };
 		8230894B1EB4E10900404CC2 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230894A1EB4E10900404CC2 /* CourseViewController.swift */; };
+		8230894D1EB4EF2B00404CC2 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -81,6 +82,7 @@
 		823089461EB4D07800404CC2 /* MeemoCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeemoCourse.swift; path = ../MeemoCourse.swift; sourceTree = "<group>"; };
 		823089481EB4D0A400404CC2 /* MeemoSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeemoSession.swift; sourceTree = "<group>"; };
 		8230894A1EB4E10900404CC2 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				8278B44E1EA9F8890064EFFD /* ViewController.swift */,
 				829BC4991EAB88F300F8A672 /* Interactor.swift */,
 				8278B4501EA9F8890064EFFD /* Main.storyboard */,
+				8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */,
 				8230894A1EB4E10900404CC2 /* CourseViewController.swift */,
 				82E634F51EB21DB600D2153A /* PlaylistTableViewCell.swift */,
 				82E634F31EB21C7300D2153A /* PlaylistViewController.swift */,
@@ -475,6 +478,7 @@
 				823089491EB4D0A400404CC2 /* MeemoSession.swift in Sources */,
 				829BC4981EAB79DD00F8A672 /* DismissAnimator.swift in Sources */,
 				825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */,
+				8230894D1EB4EF2B00404CC2 /* SessionTableViewCell.swift in Sources */,
 				821B290E1EADF6E900E40B66 /* CubeViewController.swift in Sources */,
 				82E634F61EB21DB600D2153A /* PlaylistTableViewCell.swift in Sources */,
 				823089471EB4D07800404CC2 /* MeemoCourse.swift in Sources */,

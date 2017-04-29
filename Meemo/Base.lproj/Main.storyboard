@@ -184,7 +184,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="UaA-KO-qky">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                    <rect key="frame" x="0.0" y="64" width="320" height="64"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0x-0i-Uy5">
@@ -205,7 +205,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="playlistCell" rowHeight="175" id="Lk5-Gv-gP0" customClass="PlaylistTableViewCell" customModule="Meemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="175"/>
+                                        <rect key="frame" x="0.0" y="156" width="320" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lk5-Gv-gP0" id="GE4-Es-GHx">
                                             <frame key="frameInset" width="320" height="174"/>
@@ -298,7 +298,7 @@
                     <connections>
                         <outlet property="tableView" destination="kKb-k5-cRk" id="cHA-ve-s8c"/>
                         <segue destination="qni-p9-tDL" kind="presentation" identifier="goToVideo" id="0F5-FR-1E9"/>
-                        <segue destination="nGZ-ft-RXG" kind="show" identifier="goToCourse" id="Z5B-N1-K0X"/>
+                        <segue destination="nGZ-ft-RXG" kind="show" identifier="goToCourse" id="74Y-xc-zKB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sI6-TF-Idh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -371,7 +371,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="hef-v0-aht">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="282"/>
+                                    <rect key="frame" x="0.0" y="64" width="320" height="282"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img01.png" translatesAutoresizingMaskIntoConstraints="NO" id="0a6-5Q-eTt">
@@ -443,8 +443,8 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sessionCell" rowHeight="53" id="Zue-PN-ktR">
-                                        <rect key="frame" x="0.0" y="310" width="320" height="53"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sessionCell" rowHeight="53" id="Zue-PN-ktR" customClass="SessionTableViewCell" customModule="Meemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="374" width="320" height="53"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zue-PN-ktR" id="Eu1-t6-s9d">
                                             <frame key="frameInset" width="320" height="52"/>
@@ -468,7 +468,7 @@
                                                     <color key="textColor" red="0.99587804079055786" green="1" blue="0.99584418535232544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_start_course" translatesAutoresizingMaskIntoConstraints="NO" id="cQE-QF-WE5">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_play_plain" translatesAutoresizingMaskIntoConstraints="NO" id="cQE-QF-WE5">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="UmM-uw-ODa"/>
                                                         <constraint firstAttribute="width" constant="40" id="y8K-eB-mDW"/>
@@ -486,6 +486,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="name" destination="hzt-ZA-b5o" id="lbS-I2-QVo"/>
+                                            <outlet property="time" destination="CkY-kw-tth" id="HOO-3G-2NF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -507,13 +511,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="button_start_course" width="855" height="157"/>
+        <image name="button_start_course" width="158" height="41"/>
         <image name="gradient.png" width="750" height="400"/>
         <image name="img01.png" width="750" height="400"/>
+        <image name="img_play_plain" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uzf-Ic-20M"/>
-        <segue reference="BIU-BE-Oqe"/>
+        <segue reference="ZCq-lN-LUE"/>
+        <segue reference="hav-mi-uQ4"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.13604035973548889" green="0.13792967796325684" blue="0.94144952297210693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

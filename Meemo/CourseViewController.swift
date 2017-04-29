@@ -15,7 +15,8 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
 
     let interactor = Interactor()
 
-    var videoFile = "vid7"
+    
+    var course:MeemoCourse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,18 +54,19 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                 {
                     destination.transitioningDelegate = self
                     destination.interactor = interactor
-                    destination.videoName = videoFile
-                    //destination.program = content.programs[blogIndex]
+                    destination.videoName = (course?.sessions[blogIndex].videoFileName)!
                     
                 }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return (course?.sessions.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "sessionCell", for: indexPath) //as! PlaylistTableViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "sessionCell", for: indexPath) as! SessionTableViewCell
+        let session = self.course?.sessions[indexPath.row]
+        cell.name.text = session!.name
         
         return cell
     }

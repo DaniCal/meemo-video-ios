@@ -36,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         course_1.addSession(session_1_1)
         
         content.append(contentsOf: [course_1, course_2, course_3, course_4, course_5])
-        
     }
     
   
