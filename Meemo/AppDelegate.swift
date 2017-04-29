@@ -31,9 +31,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let course_5 = MeemoCourse("How to lead through Storytelling", "SHANE SNOW" ,6, "img04")
 
         let session_1_1 = MeemoSession("Become Self-Aware", 296, "vid7")
+        let session_1_2 = MeemoSession("Understand your desires and fears", 96, "vid7")
+        let session_1_3 = MeemoSession("Find pride", 99, "vid7")
+        let session_1_4 = MeemoSession("Know your life story", 241, "vid7")
+        let session_1_5 = MeemoSession("Consider your crucibles", 245, "vid7")
+        let session_1_6 = MeemoSession("Learn to reflect", 168, "vid7")
+        let session_1_7 = MeemoSession("Seek Feedback", 296, "vid7")
+        let session_1_8 = MeemoSession("Accept yourself", 267, "vid7")
+        
         
         course_1.addSession(session_1_1)
-        course_1.addSession(session_1_1)
+        course_1.addSession(session_1_2)
+        course_1.addSession(session_1_3)
+        course_1.addSession(session_1_4)
+        course_1.addSession(session_1_5)
+        course_1.addSession(session_1_6)
+        course_1.addSession(session_1_7)
+        course_1.addSession(session_1_8)
         
         content.append(contentsOf: [course_1, course_2, course_3, course_4, course_5])
     }
