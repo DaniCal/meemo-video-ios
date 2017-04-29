@@ -12,11 +12,11 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var tableView: UITableView!
     let interactor = Interactor()
 
-    var programNames: [String] = ["Authentic Leadership & Self-Awareness", "3 Ways to define personal achievement", "Leadership Advice from the best", "How to lead through Storytelling"]
-    var programImageFileNames: [String] = ["img01", "img02", "img03", "img01"]
-    var programAuthorNames: [String] = ["BILL GEORGE", "JULLIEN GORDON", "MARSHALL GOLDSMITH", "SHANE SHNOW"]
-    var programDurations: [String] = ["WATCHED", "2:33", "3:10", "1:23"]
-    var videoName: [String] = ["vid5", "vid4", "vid2", "vid6"]
+    var programNames: [String] = ["How to lead with authenticity", "Networking - What you need to know", "Get more done by applying 3 simple techniques", "How to give better advice & feedback", "How to lead through Storytelling"]
+    var programImageFileNames: [String] = ["img01", "img05", "img06", "img02", "img04"]
+    var programAuthorNames: [String] = ["BILL GEORGE", "BETTY LIU", "BRIAN CERVINO", "JULLIEN GORDON", "SHANE SHNOW"]
+    var programDurations: [String] = ["WATCHED","1:55", "2:33", "3:10", "1:23"]
+    var videoName: [String] = ["vid7", "vid5", "vid4", "vid8", "vid6"]
     
 
     let videoSegueIdentifier = "goToVideo"
@@ -49,7 +49,7 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.setProgramTitle(programNames[indexPath.row])
         cell.setProgramAuthor(programAuthorNames[indexPath.row])
         cell.setImageData(programImageFileNames[indexPath.row])
-        cell.setProgramDuration(programDurations[indexPath.row])
+//        cell.setProgramDuration(programDurations[indexPath.row])
         //cell.setTitle(content.programs[indexPath.row].title)
         //cell.setSubtitle(content.programs[indexPath.row].subtitle)
 //        if(content.programs[indexPath.row].pictureSquareData == nil){

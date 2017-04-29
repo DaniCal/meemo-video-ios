@@ -9,7 +9,7 @@
 import UIKit
 
 class PlaylistTableViewCell: UITableViewCell {
-    @IBOutlet weak var time: UILabel!
+//    @IBOutlet weak var time: UILabel!
     @IBOutlet weak var author: UILabel!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -34,10 +34,10 @@ class PlaylistTableViewCell: UITableViewCell {
         self.author.text = author
     }
     
-    func setProgramDuration(_ duration: String){
-        self.time.text = duration
-    }
-    
+//    func setProgramDuration(_ duration: String){
+//        self.time.text = duration
+//    }
+//    
     func setImageData(_ fileName: String){
         backgroundImage.image = UIImage(named: fileName)
     }

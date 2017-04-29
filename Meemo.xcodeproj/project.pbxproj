@@ -11,6 +11,10 @@
 		821B29121EADFAAA00E40B66 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 821B290F1EADFAAA00E40B66 /* img1.jpg */; };
 		821B29131EADFAAA00E40B66 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 821B29101EADFAAA00E40B66 /* img2.jpg */; };
 		821B29141EADFAAA00E40B66 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 821B29111EADFAAA00E40B66 /* img3.jpg */; };
+		823089011EB3438000404CC2 /* img04.png in Resources */ = {isa = PBXBuildFile; fileRef = 823088FE1EB3438000404CC2 /* img04.png */; };
+		823089021EB3438000404CC2 /* img05.png in Resources */ = {isa = PBXBuildFile; fileRef = 823088FF1EB3438000404CC2 /* img05.png */; };
+		823089031EB3438000404CC2 /* img06.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089001EB3438000404CC2 /* img06.png */; };
+		823089431EB4C65B00404CC2 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089421EB4C65B00404CC2 /* gradient.png */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -29,6 +33,8 @@
 		82B8077F1EB24B0900F9D543 /* vid4.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B8077E1EB24B0900F9D543 /* vid4.mov */; };
 		82B807831EB2512800F9D543 /* vid5.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B807821EB2512800F9D543 /* vid5.mov */; };
 		82B807851EB2566300F9D543 /* vid6.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B807841EB2566300F9D543 /* vid6.mov */; };
+		82B807871EB33C4100F9D543 /* vid7.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B807861EB33C4100F9D543 /* vid7.mov */; };
+		82B807891EB340A900F9D543 /* vid8.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B807881EB340A900F9D543 /* vid8.mov */; };
 		82E634F01EB1C63A00D2153A /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E634EF1EB1C63A00D2153A /* VideoView.xib */; };
 		82E634F21EB1C9C500D2153A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E634F11EB1C9C500D2153A /* VideoView.swift */; };
 		82E634F41EB21C7300D2153A /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E634F31EB21C7300D2153A /* PlaylistViewController.swift */; };
@@ -65,6 +71,10 @@
 		821B290F1EADFAAA00E40B66 /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img1.jpg; path = ../../../../../Dropbox/Pictures/img1.jpg; sourceTree = "<group>"; };
 		821B29101EADFAAA00E40B66 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img2.jpg; path = ../../../../../Dropbox/Pictures/img2.jpg; sourceTree = "<group>"; };
 		821B29111EADFAAA00E40B66 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img3.jpg; path = ../../../../../Dropbox/Pictures/img3.jpg; sourceTree = "<group>"; };
+		823088FE1EB3438000404CC2 /* img04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img04.png; path = ../../../Meemo/img04.png; sourceTree = "<group>"; };
+		823088FF1EB3438000404CC2 /* img05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img05.png; path = ../../../Meemo/img05.png; sourceTree = "<group>"; };
+		823089001EB3438000404CC2 /* img06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img06.png; path = ../../../Meemo/img06.png; sourceTree = "<group>"; };
+		823089421EB4C65B00404CC2 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = ../../../../../Dropbox/Meemo/gradient.png; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +99,8 @@
 		82B8077E1EB24B0900F9D543 /* vid4.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid4.mov; path = ../../../../vid4.mov; sourceTree = "<group>"; };
 		82B807821EB2512800F9D543 /* vid5.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid5.mov; path = ../../../../vid5.mov; sourceTree = "<group>"; };
 		82B807841EB2566300F9D543 /* vid6.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid6.mov; path = ../../../../vid6.mov; sourceTree = "<group>"; };
+		82B807861EB33C4100F9D543 /* vid7.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid7.mov; path = ../../../../vid7.mov; sourceTree = "<group>"; };
+		82B807881EB340A900F9D543 /* vid8.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = vid8.mov; path = ../../../../vid8.mov; sourceTree = "<group>"; };
 		82E634EF1EB1C63A00D2153A /* VideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
 		82E634F11EB1C9C500D2153A /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		82E634F31EB21C7300D2153A /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
@@ -172,9 +184,15 @@
 				82E634FF1EB235B900D2153A /* vid2.mov */,
 				82E634FD1EB22AB300D2153A /* vid1.mp4 */,
 				82B807841EB2566300F9D543 /* vid6.mov */,
+				82B807861EB33C4100F9D543 /* vid7.mov */,
+				82B807881EB340A900F9D543 /* vid8.mov */,
 				82E634F71EB2253100D2153A /* img01.png */,
 				82E634F81EB2253100D2153A /* img02.png */,
 				82E634F91EB2253100D2153A /* img03.png */,
+				823088FE1EB3438000404CC2 /* img04.png */,
+				823088FF1EB3438000404CC2 /* img05.png */,
+				823089421EB4C65B00404CC2 /* gradient.png */,
+				823089001EB3438000404CC2 /* img06.png */,
 				8278B44C1EA9F8890064EFFD /* AppDelegate.swift */,
 				8278B44E1EA9F8890064EFFD /* ViewController.swift */,
 				829BC4991EAB88F300F8A672 /* Interactor.swift */,
@@ -343,19 +361,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E634FE1EB22AFA00D2153A /* vid1.mp4 in Resources */,
+				823089431EB4C65B00404CC2 /* gradient.png in Resources */,
 				82B807851EB2566300F9D543 /* vid6.mov in Resources */,
 				8278B4571EA9F8890064EFFD /* LaunchScreen.storyboard in Resources */,
 				821B29141EADFAAA00E40B66 /* img3.jpg in Resources */,
 				82E635021EB2429C00D2153A /* vid3.mov in Resources */,
+				82B807871EB33C4100F9D543 /* vid7.mov in Resources */,
 				82E634FA1EB2253100D2153A /* img01.png in Resources */,
 				821B29131EADFAAA00E40B66 /* img2.jpg in Resources */,
+				823089031EB3438000404CC2 /* img06.png in Resources */,
 				82B807831EB2512800F9D543 /* vid5.mov in Resources */,
 				82E634FC1EB2253100D2153A /* img03.png in Resources */,
+				823089021EB3438000404CC2 /* img05.png in Resources */,
 				82E634F01EB1C63A00D2153A /* VideoView.xib in Resources */,
 				821B29121EADFAAA00E40B66 /* img1.jpg in Resources */,
 				8278B4541EA9F8890064EFFD /* Assets.xcassets in Resources */,
+				823089011EB3438000404CC2 /* img04.png in Resources */,
 				82E635001EB235B900D2153A /* vid2.mov in Resources */,
 				82B8077F1EB24B0900F9D543 /* vid4.mov in Resources */,
+				82B807891EB340A900F9D543 /* vid8.mov in Resources */,
 				8278B4521EA9F8890064EFFD /* Main.storyboard in Resources */,
 				82E634FB1EB2253100D2153A /* img02.png in Resources */,
 			);

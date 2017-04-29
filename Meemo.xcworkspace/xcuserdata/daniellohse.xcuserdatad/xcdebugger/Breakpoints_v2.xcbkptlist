@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Meemo/SummaryViewController.swift"
-            timestampString = "514911710.838389"
+            timestampString = "515061792.672813"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "handleGesture(_:)"
             landmarkType = "7">
          </BreakpointContent>
