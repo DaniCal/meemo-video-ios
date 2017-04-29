@@ -51,6 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-71" y="-76"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="DaV-Ig-1zP">
@@ -183,7 +184,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="UaA-KO-qky">
-                                    <rect key="frame" x="0.0" y="64" width="320" height="64"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meemo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0x-0i-Uy5">
@@ -204,7 +205,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="playlistCell" rowHeight="175" id="Lk5-Gv-gP0" customClass="PlaylistTableViewCell" customModule="Meemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="156" width="320" height="175"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lk5-Gv-gP0" id="GE4-Es-GHx">
                                             <frame key="frameInset" width="320" height="174"/>
@@ -370,7 +371,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="hef-v0-aht">
-                                    <rect key="frame" x="0.0" y="64" width="320" height="282"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="282"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img01.png" translatesAutoresizingMaskIntoConstraints="NO" id="0a6-5Q-eTt">
@@ -443,7 +444,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sessionCell" rowHeight="53" id="Zue-PN-ktR">
-                                        <rect key="frame" x="0.0" y="374" width="320" height="53"/>
+                                        <rect key="frame" x="0.0" y="310" width="320" height="53"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zue-PN-ktR" id="Eu1-t6-s9d">
                                             <frame key="frameInset" width="320" height="52"/>
@@ -497,6 +498,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="pns-Dc-alX" id="q1S-XH-eTs"/>
+                        <segue destination="qni-p9-tDL" kind="presentation" identifier="goToVideo" id="hav-mi-uQ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ss4-Zc-5B6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -510,8 +512,8 @@
         <image name="img01.png" width="750" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0F5-FR-1E9"/>
-        <segue reference="ZCq-lN-LUE"/>
+        <segue reference="uzf-Ic-20M"/>
+        <segue reference="BIU-BE-Oqe"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.13604035973548889" green="0.13792967796325684" blue="0.94144952297210693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

@@ -11,6 +11,12 @@ import UIKit
 class CourseViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var tableView: UITableView!
     
+    let videoSegueIdentifier = "goToVideo"
+
+    let interactor = Interactor()
+
+    var videoFile = "vid7"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorStyle = .none
@@ -34,6 +40,25 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+                if  segue.identifier == videoSegueIdentifier,
+                    let destination = segue.destination as? ModalViewController,
+                    let blogIndex = tableView.indexPathForSelectedRow?.row
+                {
+                    destination.transitioningDelegate = self
+                    destination.interactor = interactor
+                    destination.videoName = videoFile
+                    //destination.program = content.programs[blogIndex]
+                    
+                }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 6
     }
@@ -45,11 +70,19 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        self.performSegue(withIdentifier: videoSegueIdentifier , sender: indexPath)
+        self.performSegue(withIdentifier: videoSegueIdentifier , sender: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+}
 
+extension CourseViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissAnimator()
+    }
     
-    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactor.hasStarted ? interactor : nil
+    }
     
 }
