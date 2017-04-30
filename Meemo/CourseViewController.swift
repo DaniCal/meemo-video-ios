@@ -24,6 +24,11 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         self.tableView.separatorStyle = .none
         initNavigationBar()
         
+        tableView.backgroundColor = UIColor.clear
+        tableView.isOpaque = false
+        tableView.backgroundView = nil
+        
+        
     }
     
     func initNavigationBar(){
