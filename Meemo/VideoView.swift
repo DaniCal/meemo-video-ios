@@ -26,6 +26,10 @@ import AVFoundation
     }
     
     
+    func showButton(){
+        readMoreButton.isHidden = false
+    }
+    
     
     
     // Our custom view from the XIB file
@@ -38,6 +42,7 @@ import AVFoundation
     
     
     func xibSetup() {
+        
         view = loadViewFromNib()
         // use bounds not frame or it'll be offset
         view.frame = bounds

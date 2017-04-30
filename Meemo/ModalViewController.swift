@@ -151,8 +151,12 @@ class ModalViewController: UIViewController {
     }
     
     func updateVideoProgress(){
-        let ratio = Float((self.player?.currentTime().seconds)!) / self.duration
+        let time = Float((self.player?.currentTime().seconds)!)
+        let ratio = time / self.duration
         overlay?.setPogress(ratio)
+        if(time > 3){
+            overlay?.showButton()
+        }
     }
     
     func showSummaryView(){

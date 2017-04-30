@@ -24,9 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func createMockupData(){
-        let course_1 = MeemoCourse("How to lead with authenticity", "BILL GEORGE", 6, "img01")
+        let course_1 = MeemoCourse("Authentic Leadership & Self-Awareness", "BILL GEORGE", 6, "img01")
         let course_2 = MeemoCourse("Networking - What you need to know", "BETTY LIU", 6, "img05")
-        let course_3 = MeemoCourse("Get more done by applying 3 simple techniques", "BRIAN CERVINO", 6, "img06")
+        let course_3 = MeemoCourse("Simple techniques to get more done", "BRIAN CERVINO", 6, "img06")
         let course_4 = MeemoCourse("How to give better advice & feedback", "JULLIEN GORDON", 6, "img02")
         let course_5 = MeemoCourse("How to lead through Storytelling", "SHANE SNOW" ,6, "img04")
 
