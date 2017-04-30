@@ -84,6 +84,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "sessionCell", for: indexPath) as! SessionTableViewCell
         let session = self.course?.sessions[indexPath.row]
         cell.name.text = session!.name
+        cell.isSessionlocked((session?.locked)!)
         
         return cell
     }

@@ -466,22 +466,12 @@
                                                     <color key="textColor" red="0.99587804079055786" green="1" blue="0.99584418535232544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="img_play_plain" translatesAutoresizingMaskIntoConstraints="NO" id="cQE-QF-WE5">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="img_play_empty" translatesAutoresizingMaskIntoConstraints="NO" id="cQE-QF-WE5">
                                                     <frame key="frameInset" minX="25" minY="6" width="40" height="40"/>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BKR-Gk-GTX">
-                                                    <frame key="frameInset" minX="44" minY="41" width="2" height="11"/>
-                                                    <color key="backgroundColor" red="0.36862745098039218" green="0.86274509803921573" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="11" id="aaQ-It-LUf"/>
-                                                        <constraint firstAttribute="width" constant="2" id="f1I-Jd-jZ8"/>
-                                                    </constraints>
-                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="BKR-Gk-GTX" secondAttribute="bottom" id="MPZ-pV-Qzz"/>
-                                                <constraint firstItem="BKR-Gk-GTX" firstAttribute="centerX" secondItem="cQE-QF-WE5" secondAttribute="centerX" id="q0B-p0-Dpb"/>
                                                 <constraint firstItem="cQE-QF-WE5" firstAttribute="leading" secondItem="Eu1-t6-s9d" secondAttribute="leading" constant="25" id="qe3-lL-wDI"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -515,7 +505,7 @@
         <image name="button_start_course" width="158" height="41"/>
         <image name="gradient.png" width="750" height="400"/>
         <image name="img01.png" width="750" height="400"/>
-        <image name="img_play_plain" width="48" height="48"/>
+        <image name="img_play_empty" width="51" height="51"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZCq-lN-LUE"/>

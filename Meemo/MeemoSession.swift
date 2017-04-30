@@ -14,6 +14,7 @@ class MeemoSession: NSObject{
     var name: String?
     var duration: Int?
     var videoFileName: String?
+    var locked = true
     
     init(_ name: String, _ duration: Int, _ videoFileName: String){
         self.name = name
@@ -21,4 +22,8 @@ class MeemoSession: NSObject{
         self.videoFileName = videoFileName
     }
     
+    
+    func unlockSession(){
+        self.locked = false
+    }
 }

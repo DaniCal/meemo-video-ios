@@ -24,9 +24,26 @@ class SessionTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func lockSession(){
-//        playImage = Ima
+    func isSessionlocked(_ isLocked: Bool){
+        if(isLocked){
+            lockSession()
+        }else{
+            unlockSession()
+        }
     }
+
+    func unlockSession(){
+        playImage.image = UIImage(named: "img_play_plain")
+        name.alpha = 1.0
+        time.alpha = 1.0
+    }
+    
+    func lockSession(){
+        playImage.image = UIImage(named: "img_play_empty")
+        name.alpha = 0.5
+        time.alpha = 0.5
+    }
+    
     
 
 }

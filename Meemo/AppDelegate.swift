@@ -31,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let course_5 = MeemoCourse("How to lead through Storytelling", "SHANE SNOW" ,6, "img04")
 
         let session_1_1 = MeemoSession("Become Self-Aware", 296, "vid7")
+        session_1_1.unlockSession()
         let session_1_2 = MeemoSession("Understand your desires and fears", 96, "vid7")
         let session_1_3 = MeemoSession("Find pride", 99, "vid7")
         let session_1_4 = MeemoSession("Know your life story", 241, "vid7")
