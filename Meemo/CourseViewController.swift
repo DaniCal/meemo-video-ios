@@ -40,6 +40,12 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         //replace the back button title
         self.navigationController?.navigationBar.backItem?.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         
+        //Make the navigation bar transparaent
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        
     }
     
     override var prefersStatusBarHidden: Bool {
