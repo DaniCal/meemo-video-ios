@@ -21,6 +21,7 @@
 		8230894D1EB4EF2B00404CC2 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */; };
 		8230894F1EB60C2000404CC2 /* brian_cervino_01.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8230894E1EB60C2000404CC2 /* brian_cervino_01.mov */; };
 		823089511EB6111C00404CC2 /* BillGeorgeBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089501EB6111C00404CC2 /* BillGeorgeBig.png */; };
+		823089531EB6509E00404CC2 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089521EB6509E00404CC2 /* BadgeViewController.swift */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -87,6 +88,7 @@
 		8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
 		8230894E1EB60C2000404CC2 /* brian_cervino_01.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = brian_cervino_01.mov; path = ../../../../../Dropbox/Meemo/brian_cervino_01.mov; sourceTree = "<group>"; };
 		823089501EB6111C00404CC2 /* BillGeorgeBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BillGeorgeBig.png; path = ../../../../../Dropbox/Meemo/Prototype/BillGeorgeBig.png; sourceTree = "<group>"; };
+		823089521EB6509E00404CC2 /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				8278B44E1EA9F8890064EFFD /* ViewController.swift */,
 				829BC4991EAB88F300F8A672 /* Interactor.swift */,
 				8278B4501EA9F8890064EFFD /* Main.storyboard */,
+				823089521EB6509E00404CC2 /* BadgeViewController.swift */,
 				8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */,
 				8230894A1EB4E10900404CC2 /* CourseViewController.swift */,
 				82E634F51EB21DB600D2153A /* PlaylistTableViewCell.swift */,
@@ -478,6 +481,7 @@
 				829BC4961EAB78DD00F8A672 /* ModalViewController.swift in Sources */,
 				825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */,
 				829BC49A1EAB88F300F8A672 /* Interactor.swift in Sources */,
+				823089531EB6509E00404CC2 /* BadgeViewController.swift in Sources */,
 				8278B44D1EA9F8890064EFFD /* AppDelegate.swift in Sources */,
 				825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */,
 				82E634F21EB1C9C500D2153A /* VideoView.swift in Sources */,

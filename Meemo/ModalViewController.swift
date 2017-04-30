@@ -13,6 +13,7 @@ class ModalViewController: UIViewController {
     var duration:Float = 33
     var overlay:VideoView?
     var summarySegueIdentifier:String = "summary"
+    var showBadgeIdentidier:String = "showBadge"
     
     public var videoName:String = "vid2"
     
@@ -113,7 +114,8 @@ class ModalViewController: UIViewController {
         playerLayer?.frame = self.view.bounds
         self.view.layer.addSublayer(playerLayer!)
         self.player?.play()
-        
+        NotificationCenter.default.addObserver(self,selector: #selector(self.playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player?.currentItem)
+
         
         if(time != nil){
             self.player?.seek(to: time!)
@@ -147,7 +149,11 @@ class ModalViewController: UIViewController {
         overlay?.frame = self.view.bounds
         self.view.addSubview(overlay!)
         overlay?.readMoreButton.addTarget(self, action: #selector(self.showSummaryView), for: UIControlEvents.touchUpInside)
-        
+
+    }
+    
+    func playerDidFinishPlaying(){
+        self.performSegue(withIdentifier: showBadgeIdentidier , sender: nil)
     }
     
     func updateVideoProgress(){
