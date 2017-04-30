@@ -10,6 +10,7 @@ import UIKit
 
 class SessionTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var playImage: UIImageView!
     @IBOutlet weak var time: UILabel!
 
     override func awakeFromNib() {
@@ -21,6 +22,10 @@ class SessionTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func lockSession(){
+//        playImage = Ima
     }
     
 

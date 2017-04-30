@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -408,6 +407,9 @@
                                                 <constraint firstAttribute="width" constant="135" id="Og8-k0-B6N"/>
                                             </constraints>
                                             <state key="normal" title="Button" image="button_start_course"/>
+                                            <connections>
+                                                <action selector="startCourse:" destination="nGZ-ft-RXG" eventType="touchUpInside" id="7C5-s1-Jxs"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0Z-iT-mg9">
                                             <constraints>
@@ -450,44 +452,43 @@
                                             <frame key="frameInset" width="320" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Understand your desires and fears" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-ZA-b5o">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="41" id="IGA-kC-l24"/>
-                                                        <constraint firstAttribute="width" constant="159" id="pqn-wd-yAE"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Understand your desires and fears" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzt-ZA-b5o">
+                                                    <frame key="frameInset" minX="82" minY="6" width="159" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.99587804079055786" green="1" blue="0.99584418535232544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4:56" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkY-kw-tth">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="27" id="4pg-qy-Fm0"/>
-                                                        <constraint firstAttribute="height" constant="24" id="nMv-TQ-MiJ"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4:56" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkY-kw-tth">
+                                                    <frame key="frameInset" minX="260" minY="14" width="27" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                                     <color key="textColor" red="0.99587804079055786" green="1" blue="0.99584418535232544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_play_plain" translatesAutoresizingMaskIntoConstraints="NO" id="cQE-QF-WE5">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="UmM-uw-ODa"/>
-                                                        <constraint firstAttribute="width" constant="40" id="y8K-eB-mDW"/>
-                                                    </constraints>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="img_play_plain" translatesAutoresizingMaskIntoConstraints="NO" id="cQE-QF-WE5">
+                                                    <frame key="frameInset" minX="25" minY="6" width="40" height="40"/>
                                                 </imageView>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BKR-Gk-GTX">
+                                                    <frame key="frameInset" minX="44" minY="41" width="2" height="11"/>
+                                                    <color key="backgroundColor" red="0.36862745098039218" green="0.86274509803921573" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="aaQ-It-LUf"/>
+                                                        <constraint firstAttribute="width" constant="2" id="f1I-Jd-jZ8"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="cQE-QF-WE5" firstAttribute="centerY" secondItem="Eu1-t6-s9d" secondAttribute="centerY" id="20j-JQ-zX6"/>
-                                                <constraint firstItem="cQE-QF-WE5" firstAttribute="leading" secondItem="Eu1-t6-s9d" secondAttribute="leading" constant="25" id="5n0-ep-fib"/>
-                                                <constraint firstItem="CkY-kw-tth" firstAttribute="centerY" secondItem="Eu1-t6-s9d" secondAttribute="centerY" id="Hy5-kg-S1a"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="CkY-kw-tth" secondAttribute="trailing" constant="25" id="Mhe-LN-BgX"/>
-                                                <constraint firstItem="hzt-ZA-b5o" firstAttribute="centerY" secondItem="Eu1-t6-s9d" secondAttribute="centerY" id="cT1-UO-ZTZ"/>
-                                                <constraint firstItem="hzt-ZA-b5o" firstAttribute="leading" secondItem="Eu1-t6-s9d" secondAttribute="leading" constant="82" id="mpb-YE-LyN"/>
+                                                <constraint firstAttribute="bottom" secondItem="BKR-Gk-GTX" secondAttribute="bottom" id="MPZ-pV-Qzz"/>
+                                                <constraint firstItem="BKR-Gk-GTX" firstAttribute="centerX" secondItem="cQE-QF-WE5" secondAttribute="centerX" id="q0B-p0-Dpb"/>
+                                                <constraint firstItem="cQE-QF-WE5" firstAttribute="leading" secondItem="Eu1-t6-s9d" secondAttribute="leading" constant="25" id="qe3-lL-wDI"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="name" destination="hzt-ZA-b5o" id="lbS-I2-QVo"/>
+                                            <outlet property="playImage" destination="cQE-QF-WE5" id="3nw-np-NEK"/>
                                             <outlet property="time" destination="CkY-kw-tth" id="HOO-3G-2NF"/>
                                         </connections>
                                     </tableViewCell>
@@ -507,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ss4-Zc-5B6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="855" y="1086"/>
+            <point key="canvasLocation" x="855" y="1085.9154929577464"/>
         </scene>
     </scenes>
     <resources>

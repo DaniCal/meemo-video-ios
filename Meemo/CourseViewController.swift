@@ -9,6 +9,7 @@
 import UIKit
 
 class CourseViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+    
     @IBOutlet weak var tableView: UITableView!
     
     let videoSegueIdentifier = "goToVideo"
@@ -46,6 +47,14 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     
+    @IBAction func startCourse(_ sender: AnyObject) {
+        if((course?.sessions.count)! > 0){
+            self.performSegue(withIdentifier: videoSegueIdentifier , sender: nil)
+        }
+        
+
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
                 if  segue.identifier == videoSegueIdentifier,
@@ -56,7 +65,15 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
                     destination.interactor = interactor
                     destination.videoName = (course?.sessions[blogIndex].videoFileName)!
                     
+                }else if segue.identifier == videoSegueIdentifier,
+                    let destination = segue.destination as? ModalViewController
+                {
+                    destination.transitioningDelegate = self
+                    destination.interactor = interactor
+                    destination.videoName = (course?.sessions[0].videoFileName)!
                 }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
