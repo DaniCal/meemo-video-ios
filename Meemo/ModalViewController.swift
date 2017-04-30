@@ -10,7 +10,7 @@ class ModalViewController: UIViewController {
     var video:Bool = true
     var playerLayer:AVPlayerLayer?
     var timer = Timer.init()
-    var duration:Float = 120
+    var duration:Float = 33
     var overlay:VideoView?
     var summarySegueIdentifier:String = "summary"
     

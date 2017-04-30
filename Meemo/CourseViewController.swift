@@ -85,13 +85,15 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         let session = self.course?.sessions[indexPath.row]
         cell.name.text = session!.name
         cell.isSessionlocked((session?.locked)!)
-        
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: videoSegueIdentifier , sender: indexPath)
-        tableView.deselectRow(at: indexPath, animated: true)
+        if(!(course?.sessions[indexPath.row].locked)!){
+            self.performSegue(withIdentifier: videoSegueIdentifier , sender: indexPath)
+        }        
+        //tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }
