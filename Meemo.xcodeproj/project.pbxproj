@@ -19,9 +19,9 @@
 		823089491EB4D0A400404CC2 /* MeemoSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089481EB4D0A400404CC2 /* MeemoSession.swift */; };
 		8230894B1EB4E10900404CC2 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230894A1EB4E10900404CC2 /* CourseViewController.swift */; };
 		8230894D1EB4EF2B00404CC2 /* SessionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */; };
-		8230894F1EB60C2000404CC2 /* brian_cervino_01.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8230894E1EB60C2000404CC2 /* brian_cervino_01.mov */; };
 		823089511EB6111C00404CC2 /* BillGeorgeBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089501EB6111C00404CC2 /* BillGeorgeBig.png */; };
 		823089531EB6509E00404CC2 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089521EB6509E00404CC2 /* BadgeViewController.swift */; };
+		823089551EB662B500404CC2 /* brian_cervino_01.mov in Resources */ = {isa = PBXBuildFile; fileRef = 823089541EB662B500404CC2 /* brian_cervino_01.mov */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -86,9 +86,9 @@
 		823089481EB4D0A400404CC2 /* MeemoSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeemoSession.swift; sourceTree = "<group>"; };
 		8230894A1EB4E10900404CC2 /* CourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionTableViewCell.swift; sourceTree = "<group>"; };
-		8230894E1EB60C2000404CC2 /* brian_cervino_01.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = brian_cervino_01.mov; path = ../../../../../Dropbox/Meemo/brian_cervino_01.mov; sourceTree = "<group>"; };
 		823089501EB6111C00404CC2 /* BillGeorgeBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BillGeorgeBig.png; path = ../../../../../Dropbox/Meemo/Prototype/BillGeorgeBig.png; sourceTree = "<group>"; };
 		823089521EB6509E00404CC2 /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
+		823089541EB662B500404CC2 /* brian_cervino_01.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = brian_cervino_01.mov; path = ../../../../../Dropbox/Meemo/brian_cervino_01.mov; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 				82B807841EB2566300F9D543 /* vid6.mov */,
 				82B807861EB33C4100F9D543 /* vid7.mov */,
 				82B807881EB340A900F9D543 /* vid8.mov */,
-				8230894E1EB60C2000404CC2 /* brian_cervino_01.mov */,
+				823089541EB662B500404CC2 /* brian_cervino_01.mov */,
 				82E634F71EB2253100D2153A /* img01.png */,
 				823089501EB6111C00404CC2 /* BillGeorgeBig.png */,
 				82E634F81EB2253100D2153A /* img02.png */,
@@ -388,7 +388,6 @@
 				8278B4571EA9F8890064EFFD /* LaunchScreen.storyboard in Resources */,
 				821B29141EADFAAA00E40B66 /* img3.jpg in Resources */,
 				82E635021EB2429C00D2153A /* vid3.mov in Resources */,
-				8230894F1EB60C2000404CC2 /* brian_cervino_01.mov in Resources */,
 				82B807871EB33C4100F9D543 /* vid7.mov in Resources */,
 				82E634FA1EB2253100D2153A /* img01.png in Resources */,
 				821B29131EADFAAA00E40B66 /* img2.jpg in Resources */,
@@ -403,6 +402,7 @@
 				82E635001EB235B900D2153A /* vid2.mov in Resources */,
 				82B8077F1EB24B0900F9D543 /* vid4.mov in Resources */,
 				82B807891EB340A900F9D543 /* vid8.mov in Resources */,
+				823089551EB662B500404CC2 /* brian_cervino_01.mov in Resources */,
 				8278B4521EA9F8890064EFFD /* Main.storyboard in Resources */,
 				82E634FB1EB2253100D2153A /* img02.png in Resources */,
 			);

@@ -10,7 +10,8 @@ import UIKit
 
 class BadgeViewController: UIViewController{
     
-   
+    var sourceView: ModalViewController?
+    
     @IBOutlet weak var popup: UIView!
     
     @IBAction func dismissPopup(_ sender: AnyObject) {
@@ -19,7 +20,8 @@ class BadgeViewController: UIViewController{
     }
     
     @IBAction func watchNext(_ sender: AnyObject) {
-    
+        dismiss(animated: true, completion: nil)
+        sourceView?.playNextVideo()
     }
     
     override func viewDidLoad() {

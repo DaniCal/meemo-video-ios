@@ -118,17 +118,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Non fare domani lo che potresti fare oggi" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UkI-Qt-C3E">
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmc-pc-oge">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="summary_top" translatesAutoresizingMaskIntoConstraints="NO" id="Hjk-zQ-zDM">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="KNo-HE-tsh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bhn-w7-ye0">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHP-Lr-6GT">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="248" id="BMM-uB-JD4"/>
+                                                    <constraint firstAttribute="height" constant="394" id="l5S-v8-626"/>
+                                                </constraints>
+                                                <string key="text">• Block out 25 minutes of   uninterrupted focus• Start with one block   a day• Pick a task which can be   accomplished in 25min• Slowly expend to more   and more pomodoro   sessions of 25min</string>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodoro Technique" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciV-du-GXU">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="2QI-iH-TdW"/>
+                                                    <constraint firstAttribute="width" constant="274" id="Lq5-O7-EHl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="UHP-Lr-6GT" firstAttribute="top" secondItem="ciV-du-GXU" secondAttribute="bottom" constant="8" id="0km-2K-nfz"/>
+                                            <constraint firstItem="UHP-Lr-6GT" firstAttribute="centerX" secondItem="Bhn-w7-ye0" secondAttribute="centerX" id="GHZ-Sx-PKs"/>
+                                            <constraint firstItem="ciV-du-GXU" firstAttribute="centerX" secondItem="Bhn-w7-ye0" secondAttribute="centerX" id="hm1-nq-u7U"/>
+                                            <constraint firstItem="ciV-du-GXU" firstAttribute="top" secondItem="Bhn-w7-ye0" secondAttribute="top" constant="67" id="zH9-GD-nbJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.098039215686274508" blue="0.10196078431372549" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Hjk-zQ-zDM" secondAttribute="trailing" id="4Nt-le-tko"/>
+                                    <constraint firstItem="Bhn-w7-ye0" firstAttribute="top" secondItem="Hjk-zQ-zDM" secondAttribute="bottom" id="SC8-s6-qjJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bhn-w7-ye0" secondAttribute="bottom" id="SmO-8L-kBA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bhn-w7-ye0" secondAttribute="trailing" id="XVD-6e-hRo"/>
+                                    <constraint firstItem="Hjk-zQ-zDM" firstAttribute="leading" secondItem="qmc-pc-oge" secondAttribute="leading" id="hAx-sl-gmi"/>
+                                    <constraint firstItem="Hjk-zQ-zDM" firstAttribute="top" secondItem="qmc-pc-oge" secondAttribute="top" id="jtL-0c-RpW"/>
+                                    <constraint firstItem="Bhn-w7-ye0" firstAttribute="centerX" secondItem="qmc-pc-oge" secondAttribute="centerX" id="o1R-9d-rkx"/>
+                                    <constraint firstItem="Bhn-w7-ye0" firstAttribute="leading" secondItem="qmc-pc-oge" secondAttribute="leading" id="zng-XS-MLG"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="UkI-Qt-C3E" firstAttribute="centerY" secondItem="9Bh-xg-jun" secondAttribute="centerY" id="FaR-Sh-oKj"/>
-                            <constraint firstItem="UkI-Qt-C3E" firstAttribute="centerX" secondItem="9Bh-xg-jun" secondAttribute="centerX" id="lB6-Yp-ga8"/>
+                            <constraint firstItem="wt5-Ck-Ebw" firstAttribute="top" secondItem="qmc-pc-oge" secondAttribute="bottom" id="95b-UL-AUe"/>
+                            <constraint firstItem="qmc-pc-oge" firstAttribute="centerY" secondItem="9Bh-xg-jun" secondAttribute="centerY" id="Iqp-iT-VNy"/>
+                            <constraint firstItem="qmc-pc-oge" firstAttribute="leading" secondItem="9Bh-xg-jun" secondAttribute="leading" id="iJB-mC-UrX"/>
+                            <constraint firstAttribute="trailing" secondItem="qmc-pc-oge" secondAttribute="trailing" id="lKp-Cj-fCa"/>
+                            <constraint firstItem="qmc-pc-oge" firstAttribute="top" secondItem="9Bh-xg-jun" secondAttribute="top" id="w4J-lP-o8M"/>
+                            <constraint firstItem="qmc-pc-oge" firstAttribute="centerX" secondItem="9Bh-xg-jun" secondAttribute="centerX" id="yg2-ca-pzH"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Baz-tV-ox5" appends="YES" id="1aK-BB-zHF"/>
@@ -142,7 +191,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1815" y="-205"/>
+            <point key="canvasLocation" x="1826.25" y="-300"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="md4-LS-YIy">
@@ -646,6 +695,7 @@
         <image name="gradient_course_list" width="375" height="438"/>
         <image name="img01.png" width="750" height="400"/>
         <image name="img_play_empty" width="51" height="51"/>
+        <image name="summary_top" width="375" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uzf-Ic-20M"/>

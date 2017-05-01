@@ -27,7 +27,15 @@ class ModalViewController: UIViewController {
                 destinationViewController.transitioningDelegate = self
                 destinationViewController.interactor = summaryInteractor
             }
+        }else if (segue.identifier == showBadgeIdentidier){
+            if let destination = segue.destination as? BadgeViewController{
+                destination.sourceView = self
+            }
         }
+    }
+    
+    func playNextVideo(){
+        dismiss(animated: true, completion: nil)
     }
     
     
@@ -140,19 +148,26 @@ class ModalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.player?.pause()
+            setupView()
         
+    }
+    
+    func setupView(){
+        self.player?.pause()
+
         playVideo()
-         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.updateVideoProgress), userInfo: nil,repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.updateVideoProgress), userInfo: nil,repeats: true)
         
         overlay = VideoView()
         overlay?.frame = self.view.bounds
         self.view.addSubview(overlay!)
         overlay?.readMoreButton.addTarget(self, action: #selector(self.showSummaryView), for: UIControlEvents.touchUpInside)
-
+        
+    
     }
     
     func playerDidFinishPlaying(){
+        timer.invalidate()
         self.performSegue(withIdentifier: showBadgeIdentidier , sender: nil)
     }
     
