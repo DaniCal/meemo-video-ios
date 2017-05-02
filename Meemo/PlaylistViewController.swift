@@ -66,7 +66,7 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         
         cell.setProgramTitle(meemoCourse.name!)
         cell.setProgramAuthor(meemoCourse.author!)
-        cell.setImageData(meemoCourse.courseImageFile!)
+        cell.setImageData(meemoCourse.courseImageFileSmall!)
         return cell
     }
     

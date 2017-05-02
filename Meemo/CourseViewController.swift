@@ -10,6 +10,10 @@ import UIKit
 
 class CourseViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
+    @IBOutlet weak var courseAuthor: UILabel!
+    @IBOutlet weak var imageBig: UIImageView!
+    @IBOutlet weak var authorDescription: UILabel!
+    @IBOutlet weak var courseTitle: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     let videoSegueIdentifier = "goToVideo"
@@ -27,6 +31,10 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.backgroundColor = UIColor.clear
         tableView.isOpaque = false
         tableView.backgroundView = nil
+        
+        imageBig.image = UIImage(named: (course?.courseImageFileBig)!)
+        courseTitle.text = course?.name
+        courseAuthor.text = course?.author
         
         
     }
