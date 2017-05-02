@@ -24,12 +24,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func createMockupData(){
+        
+        //AUTHORDESCRIPTIONS
+        
+        let billDescription = "Bill is a Harvard Business School professor. He serves on the boards of directors of Exxon Mobil and Goldman Sachs"
+        let bettyDescription = "Betty is a news anchor for Bloomberg and award-winning journalist. She’s interviewed Warren Buffett & Lloyd Blankfein."
+        let brianDescription = "Brian is the Product Marketing Manager at Trello. He as trained people around the world how to tet more done every day. "
+        let jullienDescription = "Jullien Gordon is a life coach and has worked with Fortune 500 companies. He is the creator of The Innerview."
+        let shaneDescription = "Shane Snow is Co-Founder & CCO of Contently, and an award-winning journalist, and author."
+        
+        
         //COURSES
-        let course_1 = MeemoCourse("Authentic Leadership & Self-Awareness", "BILL GEORGE", 8, "01_bill", "01_bill_big")
-        let course_2 = MeemoCourse("Networking - What you need to know", "BETTY LIU", 6, "02_betty", "02_betty_big")
-        let course_3 = MeemoCourse("Simple techniques to get more done", "BRIAN CERVINO", 4, "03_brian", "03_brian_big")
-        let course_4 = MeemoCourse("How to give better advice & feedback", "JULLIEN GORDON", 6, "04_jullien", "04_jullien")
-        let course_5 = MeemoCourse("How to lead through Storytelling", "SHANE SNOW" ,10, "05_shane", "05_shane")
+        let course_1 = MeemoCourse("Authentic Leadership & Self-Awareness", "BILL GEORGE", billDescription, 8, "01_bill", "01_bill_big")
+        let course_2 = MeemoCourse("Become career ready - What you need to know", "BETTY LIU", bettyDescription, 6, "02_betty", "02_betty_big")
+        let course_3 = MeemoCourse("Simple techniques to get more done", "BRIAN CERVINO", brianDescription, 4, "03_brian", "03_brian_big")
+        let course_4 = MeemoCourse("Qualities of a great mentor", "JULLIEN GORDON", jullienDescription, 6, "04_jullien", "04_jullien_big")
+        let course_5 = MeemoCourse("How to lead through Storytelling", "SHANE SNOW", shaneDescription ,10, "05_shane","05_shane_big")
 
         //COURSE 01 - BILL GEORGE
         let session_1_1 = MeemoSession("Become Self-Aware", 296, "01_bill")
@@ -52,6 +62,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         course_1.addSession(session_1_8)
         
         //COURSE 02 - BETTY LIU
+        let session_2_1 = MeemoSession("Authentic networking", 86, "02_betty")
+        session_2_1.unlockSession()
+        let session_2_2 = MeemoSession("How are you perceived?", 86, "02_betty")
+        let session_2_3 = MeemoSession("Find your brand?", 86, "02_betty")
+        let session_2_4 = MeemoSession("Inbound Networking", 86, "02_betty")
+        let session_2_5 = MeemoSession("Find the right timing", 86, "02_betty")
+        let session_2_6 = MeemoSession("Care and maintain connections", 86, "02_betty")
+        let session_2_7 = MeemoSession("Look for opportunity", 86, "02_betty")
+        
+        course_2.addSession(session_2_1)
+        course_2.addSession(session_2_2)
+        course_2.addSession(session_2_3)
+        course_2.addSession(session_2_4)
+        course_2.addSession(session_2_5)
+        course_2.addSession(session_2_6)
+        course_2.addSession(session_2_7)
         
         
         //COURSE 03 - BRIAN CERVINO
@@ -65,6 +91,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         course_3.addSession(session_3_2)
         course_3.addSession(session_3_3)
         course_3.addSession(session_3_4)
+        
+        
+        
+        //COURSE 04 - JULLIEN GORDON
+        let session_4_1 = MeemoSession("How to give better advice and feedback", 245, "04_jullien")
+        let session_4_2 = MeemoSession("Becoming a role model", 245, "04_jullien")
+        let session_4_3 = MeemoSession("Value the opinions of others", 245, "04_jullien")
+        let session_4_4 = MeemoSession("Show enthusiasm in your field", 245, "04_jullien")
+
+
+        session_4_1.unlockSession()
+        course_4.addSession(session_4_1)
+        course_4.addSession(session_4_2)
+        course_4.addSession(session_4_3)
+        course_4.addSession(session_4_4)
+        
+        //COURSE 05 - SHANE SNOW
+        let session_5_1 = MeemoSession("The impact of storytelling", 234, "05_shane")
+        let session_5_2 = MeemoSession("Elements of effective storytelling", 234, "05_shane")
+        let session_5_3 = MeemoSession("Storytelling to build relationships", 234, "05_shane")
+        let session_5_4 = MeemoSession("The power of storytelling in marketing", 234, "05_shane")
+        let session_5_5 = MeemoSession("The storytelling matrix", 234, "05_shane")
+
+
+
+
+        session_5_1.unlockSession()
+        
+        course_5.addSession(session_5_1)
+        course_5.addSession(session_5_2)
+        course_5.addSession(session_5_3)
+        course_5.addSession(session_5_4)
+        course_5.addSession(session_5_5)
         
         content.append(contentsOf: [course_1, course_2, course_3, course_4, course_5])
         

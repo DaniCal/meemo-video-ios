@@ -24,6 +24,8 @@
 		823089571EB73EC900404CC2 /* 03_brian_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089561EB73EC900404CC2 /* 03_brian_big.png */; };
 		8230895A1EB8878900404CC2 /* 02_betty_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089581EB8878900404CC2 /* 02_betty_big.png */; };
 		8230895B1EB8878900404CC2 /* 01_bill_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089591EB8878900404CC2 /* 01_bill_big.png */; };
+		8230895D1EB88F7100404CC2 /* 05_shane_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 8230895C1EB88F7100404CC2 /* 05_shane_big.png */; };
+		8230895F1EB890EB00404CC2 /* 04_jullien_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 8230895E1EB890EB00404CC2 /* 04_jullien_big.png */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -88,6 +90,8 @@
 		823089561EB73EC900404CC2 /* 03_brian_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 03_brian_big.png; path = ../../../../../Dropbox/Meemo/Prototype/03_brian_big.png; sourceTree = "<group>"; };
 		823089581EB8878900404CC2 /* 02_betty_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 02_betty_big.png; path = ../../../../../Dropbox/Meemo/Prototype/02_betty_big.png; sourceTree = "<group>"; };
 		823089591EB8878900404CC2 /* 01_bill_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 01_bill_big.png; path = ../../../../../Dropbox/Meemo/Prototype/01_bill_big.png; sourceTree = "<group>"; };
+		8230895C1EB88F7100404CC2 /* 05_shane_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 05_shane_big.png; path = ../../../../../Dropbox/Meemo/Prototype/05_shane_big.png; sourceTree = "<group>"; };
+		8230895E1EB890EB00404CC2 /* 04_jullien_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 04_jullien_big.png; path = ../../../../../Dropbox/Meemo/Prototype/04_jullien_big.png; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 				823089591EB8878900404CC2 /* 01_bill_big.png */,
 				823089581EB8878900404CC2 /* 02_betty_big.png */,
 				823089561EB73EC900404CC2 /* 03_brian_big.png */,
+				8230895E1EB890EB00404CC2 /* 04_jullien_big.png */,
+				8230895C1EB88F7100404CC2 /* 05_shane_big.png */,
 				823089421EB4C65B00404CC2 /* gradient.png */,
 				8278B44C1EA9F8890064EFFD /* AppDelegate.swift */,
 				8278B44E1EA9F8890064EFFD /* ViewController.swift */,
@@ -374,6 +380,7 @@
 			files = (
 				823089571EB73EC900404CC2 /* 03_brian_big.png in Resources */,
 				823089431EB4C65B00404CC2 /* gradient.png in Resources */,
+				8230895F1EB890EB00404CC2 /* 04_jullien_big.png in Resources */,
 				82B807851EB2566300F9D543 /* 05_shane.mov in Resources */,
 				8230895A1EB8878900404CC2 /* 02_betty_big.png in Resources */,
 				8278B4571EA9F8890064EFFD /* LaunchScreen.storyboard in Resources */,
@@ -381,6 +388,7 @@
 				82B807871EB33C4100F9D543 /* 01_bill.mov in Resources */,
 				82E634FA1EB2253100D2153A /* 01_bill.png in Resources */,
 				821B29131EADFAAA00E40B66 /* img2.jpg in Resources */,
+				8230895D1EB88F7100404CC2 /* 05_shane_big.png in Resources */,
 				823089031EB3438000404CC2 /* 03_brian.png in Resources */,
 				82B807831EB2512800F9D543 /* 02_betty.mov in Resources */,
 				823089021EB3438000404CC2 /* 02_betty.png in Resources */,

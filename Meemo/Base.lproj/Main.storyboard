@@ -244,6 +244,7 @@
                                 <frame key="frameInset" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="UaA-KO-qky">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -269,13 +270,13 @@
                                         <rect key="frame" x="0.0" y="92" width="320" height="175"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lk5-Gv-gP0" id="GE4-Es-GHx">
-                                            <frame key="frameInset" width="320" height="174"/>
+                                            <frame key="frameInset" width="320" height="174.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oSj-Pl-33R">
                                                     <frame key="frameInset" minY="1" width="320" height="171"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img01.png" translatesAutoresizingMaskIntoConstraints="NO" id="bxu-NM-Tbc">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03_brian.png" translatesAutoresizingMaskIntoConstraints="NO" id="bxu-NM-Tbc">
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="170" id="WNU-X8-SVH"/>
                                                             </constraints>
@@ -353,7 +354,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="EtO-xc-rYo"/>
                     <connections>
@@ -435,7 +436,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="405"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brian.png" translatesAutoresizingMaskIntoConstraints="NO" id="0a6-5Q-eTt">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03_brian_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="0a6-5Q-eTt">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="370" id="IGE-oc-g0b"/>
                                             </constraints>
@@ -691,18 +692,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Brian.png" width="750" height="865"/>
+        <image name="03_brian.png" width="750" height="400"/>
+        <image name="03_brian_big.png" width="750" height="865"/>
         <image name="badge_clap" width="149" height="149"/>
         <image name="button_start_course" width="288" height="52"/>
         <image name="gradient.png" width="750" height="400"/>
         <image name="gradient_course_list" width="375" height="438"/>
-        <image name="img01.png" width="750" height="400"/>
         <image name="img_play_empty" width="51" height="51"/>
         <image name="summary_top" width="375" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uzf-Ic-20M"/>
-        <segue reference="hav-mi-uQ4"/>
+        <segue reference="0F5-FR-1E9"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.13604035973548889" green="0.13792967796325684" blue="0.94144952297210693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

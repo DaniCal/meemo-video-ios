@@ -35,6 +35,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
         imageBig.image = UIImage(named: (course?.courseImageFileBig)!)
         courseTitle.text = course?.name
         courseAuthor.text = course?.author
+        authorDescription.text = course?.authorDescription
         
         
     }
