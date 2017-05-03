@@ -13,15 +13,15 @@ import UIKit
     
     @objc optional func cubeViewDidScroll(_ cubeView: OHCubeView)
     
-    @objc optional func cubeViewDidFinishScroll(toIndex: Int)
+    @objc optional func cubeViewDidFinishScroll(_ toIndex: Int)
 }
 
 @available(iOS 9.0, *)
 open class OHCubeView: UIScrollView, UIScrollViewDelegate{
     
-    public var cubeDelegate: OHCubeViewDelegate?
+    open var cubeDelegate: OHCubeViewDelegate?
     
-    public var swipeDown:Bool = false
+    open var swipeDown:Bool = false
     
     fileprivate let maxAngle: CGFloat = 60.0
     
@@ -119,10 +119,10 @@ open class OHCubeView: UIScrollView, UIScrollViewDelegate{
     }
     
     open func scrollViewDidEndDecelerating(_ scrollView: UIScrollView){
-        var contentOffset = scrollView.contentOffset.x
-        var width = scrollView.frame.size.width
-        var page:Int = Int(contentOffset / width);
-        cubeDelegate?.cubeViewDidFinishScroll?(toIndex: page)
+        let contentOffset = scrollView.contentOffset.x
+        let width = scrollView.frame.size.width
+        let page:Int = Int(contentOffset / width);
+        cubeDelegate?.cubeViewDidFinishScroll?(page)
     }
     
     

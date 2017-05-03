@@ -7,58 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D88DEAC8F430AD4FCC6392CBC7E07CF /* MXParallaxHeader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD8EC18E3FD6E248CB2195C678CA071 /* MXParallaxHeader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F83AD14CDEBD948303F4EFB9286D130 /* MXScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FB4106133120AEE32A160B76D21F00 /* MXScrollViewController.m */; };
 		111E7EB9E6E93877A6C6D0FD842651BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		7EA1E649C6CF2E50E31F915963A4610D /* Pods-Meemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC351A1CE7CA8B92A0AC1D9D2797DA3E /* Pods-Meemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95C346FEE0FA9B09511F8FEDA0C94461 /* OHCubeView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD262FA4A9B390E63F8166C80BF8220D /* OHCubeView-dummy.m */; };
-		9FEBC3F7919E366C5CD687B863318708 /* OHCubeView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1016ED23BC4F860386809959BAFC3F28 /* OHCubeView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7D8637FDBA9B42E78DBB75CD8CD98EC /* Pods-Meemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D55A88C8EED61706832685859C52B561 /* Pods-Meemo-dummy.m */; };
-		F8046F1F3E3C8A0C53D837C8DF48930B /* OHCubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55CE468B70856FE54D7F45CAA88097C /* OHCubeView.swift */; };
-		FDEB45FF6765CC912D176A5FA6E2D58C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		1317769DB3D8FB960E4F875244220F72 /* Pods-Meemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D55A88C8EED61706832685859C52B561 /* Pods-Meemo-dummy.m */; };
+		290DE764D7F93262BD2613796AA51AE1 /* MXScrollViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 598C26BEECB1958CF82696BF2D27ABC1 /* MXScrollViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F60E97953FFABF8C75133335A34D234 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		8BB5EEC0F7FF87215A78291CA9EA9CFC /* MXParallaxHeader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B40798A593AE1CEBDCD5E8974C63328 /* MXParallaxHeader-dummy.m */; };
+		8FC5DFBA732D9510AF7AA48B233CAEE6 /* Pods-Meemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC351A1CE7CA8B92A0AC1D9D2797DA3E /* Pods-Meemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95C346FEE0FA9B09511F8FEDA0C94461 /* OHCubeView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB92E5A2FD2283736B8AE800C66C7A75 /* OHCubeView-dummy.m */; };
+		9FEBC3F7919E366C5CD687B863318708 /* OHCubeView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EDC40A661C848A48D7DEAE945B702B5 /* OHCubeView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5A74AB6E35786719EF5D1348B5B9D0F /* MXScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C007989544E14125B5D5F47614E5DA8B /* MXScrollView.m */; };
+		ADC88F735B1A5E6C2AF8B77018E33DBC /* MXScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0E9943EDCF13AF9F59A05AFB3CFD43 /* MXScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4C1F5A6316EA49BE062A1FDA25FD174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		CF32252E1F7B5BC9C17B768320F4B5F5 /* MXParallaxHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5B92832EF0D26F215AED25E8E03AB8 /* MXParallaxHeader.m */; };
+		E480E624052C25325AAFA81D26F84AFE /* MXParallaxHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FFE8597200FBBB90D24A3CE09736876 /* MXParallaxHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8046F1F3E3C8A0C53D837C8DF48930B /* OHCubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CA76B6107C06EF46A0A9C085505608 /* OHCubeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		803FF69E55420E77F9FE60EA93489B7F /* PBXContainerItemProxy */ = {
+		60D7ADF05282372098E3F0098ED215CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 615D419106F527AE0A4727EB8393E8D8;
 			remoteInfo = OHCubeView;
 		};
+		EE19E5C27B3992FE122DB3A28E3EEDC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE58340C183B963C900C9FF91F7C3E95;
+			remoteInfo = MXParallaxHeader;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02949D8F53DF12335648EAAA9D57BCF2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A71D5C65E6E623CCF9535FA2AA0F8F5 /* Pods-Meemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meemo.debug.xcconfig"; sourceTree = "<group>"; };
-		0F069CBA309B5D02042E4BCE60D0C262 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1016ED23BC4F860386809959BAFC3F28 /* OHCubeView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHCubeView-umbrella.h"; sourceTree = "<group>"; };
+		1907A6E5F6D15821C3D4EE851F6676CF /* Pods_Meemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EDC40A661C848A48D7DEAE945B702B5 /* OHCubeView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHCubeView-umbrella.h"; sourceTree = "<group>"; };
+		29990AA39E7484E82B76C508A9A163F4 /* MXParallaxHeader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MXParallaxHeader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CD52745E8F580CFA88945A8B0FF7F62 /* Pods-Meemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Meemo.modulemap"; sourceTree = "<group>"; };
+		2FFE8597200FBBB90D24A3CE09736876 /* MXParallaxHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXParallaxHeader.h; path = MXParallaxHeader/MXParallaxHeader.h; sourceTree = "<group>"; };
 		34F8A38C0351D6B6DEEB68DD10A63A66 /* Pods-Meemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Meemo.release.xcconfig"; sourceTree = "<group>"; };
-		3AA61809DB26FAEECA4C1E0428333094 /* OHCubeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHCubeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4739A5BF57F17DA515287EAC329B3F /* MXParallaxHeader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-prefix.pch"; sourceTree = "<group>"; };
+		45CA76B6107C06EF46A0A9C085505608 /* OHCubeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OHCubeView.swift; path = OHCubeView/OHCubeView.swift; sourceTree = "<group>"; };
+		4A5B92832EF0D26F215AED25E8E03AB8 /* MXParallaxHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXParallaxHeader.m; path = MXParallaxHeader/MXParallaxHeader.m; sourceTree = "<group>"; };
+		4AD69B8DC01ABE2BAF7F3144164AE0ED /* OHCubeView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OHCubeView.modulemap; sourceTree = "<group>"; };
 		5548CDAC59269468C9CEE8CA9C047925 /* Pods-Meemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Meemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		598C26BEECB1958CF82696BF2D27ABC1 /* MXScrollViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollViewController.h; path = MXParallaxHeader/MXScrollViewController.h; sourceTree = "<group>"; };
 		733273C890FABD15A3C73D2FDE7376F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8624E49137B05EEB6E3308DFBA286137 /* OHCubeView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHCubeView.xcconfig; sourceTree = "<group>"; };
+		7B40798A593AE1CEBDCD5E8974C63328 /* MXParallaxHeader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXParallaxHeader-dummy.m"; sourceTree = "<group>"; };
+		7BD8EC18E3FD6E248CB2195C678CA071 /* MXParallaxHeader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXParallaxHeader-umbrella.h"; sourceTree = "<group>"; };
+		8E0E9943EDCF13AF9F59A05AFB3CFD43 /* MXScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MXScrollView.h; path = MXParallaxHeader/MXScrollView.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B8ED641555446BDB04B1F66FAE893F2 /* OHCubeView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHCubeView-prefix.pch"; sourceTree = "<group>"; };
+		A6F30BA4645D1C68AE06ADF00F8A4A17 /* OHCubeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OHCubeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7B10B6B0BFBE84AE930726FE0102EA9 /* OHCubeView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OHCubeView.xcconfig; sourceTree = "<group>"; };
+		BA72786055569A8D8B9091275332CF81 /* OHCubeView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OHCubeView-prefix.pch"; sourceTree = "<group>"; };
+		C007989544E14125B5D5F47614E5DA8B /* MXScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXScrollView.m; path = MXParallaxHeader/MXScrollView.m; sourceTree = "<group>"; };
+		CB92E5A2FD2283736B8AE800C66C7A75 /* OHCubeView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHCubeView-dummy.m"; sourceTree = "<group>"; };
 		CC351A1CE7CA8B92A0AC1D9D2797DA3E /* Pods-Meemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Meemo-umbrella.h"; sourceTree = "<group>"; };
+		CC8DA659643C304B4DF28BDECDA2C009 /* MXParallaxHeader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MXParallaxHeader.modulemap; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D1FB4106133120AEE32A160B76D21F00 /* MXScrollViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MXScrollViewController.m; path = MXParallaxHeader/MXScrollViewController.m; sourceTree = "<group>"; };
 		D55A88C8EED61706832685859C52B561 /* Pods-Meemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Meemo-dummy.m"; sourceTree = "<group>"; };
-		D55CE468B70856FE54D7F45CAA88097C /* OHCubeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OHCubeView.swift; path = OHCubeView/OHCubeView.swift; sourceTree = "<group>"; };
-		DCE75D2A645707E1389521E498C55CE5 /* Pods_Meemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E40DA205372B30ACA896B7685D1D42 /* MXParallaxHeader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXParallaxHeader.xcconfig; sourceTree = "<group>"; };
 		E12692E076253D3D328AFBF629EBC947 /* Pods-Meemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Meemo-frameworks.sh"; sourceTree = "<group>"; };
-		E6F59E000D567E39FBBD0C3F741575F9 /* OHCubeView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OHCubeView.modulemap; sourceTree = "<group>"; };
+		E193270A1EC191F1F5C6AFE51A3AFD44 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFCA04E00C7AB9FEDEC87FF89901787D /* Pods-Meemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Meemo-resources.sh"; sourceTree = "<group>"; };
 		F6DEC486B3C82104059B050343D67F66 /* Pods-Meemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Meemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		FD262FA4A9B390E63F8166C80BF8220D /* OHCubeView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OHCubeView-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2EBABC07F22A7E84599A4D8EFC8B3B63 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDEB45FF6765CC912D176A5FA6E2D58C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4951D19389E397CA8AD39CF11C698792 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,9 +88,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6335C46B518C4A96BB3475F1443CC4FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4C1F5A6316EA49BE062A1FDA25FD174 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04AE21E4654C0C77FDFFB7FD98411AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F60E97953FFABF8C75133335A34D234 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		375F48B81BCD1BA9CD305CB5230FBD1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DB426111C918C5BDAC7C697A02C5E58 /* MXParallaxHeader */,
+				896C9B54E892848C113B100940042C12 /* OHCubeView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3DB426111C918C5BDAC7C697A02C5E58 /* MXParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				2FFE8597200FBBB90D24A3CE09736876 /* MXParallaxHeader.h */,
+				4A5B92832EF0D26F215AED25E8E03AB8 /* MXParallaxHeader.m */,
+				8E0E9943EDCF13AF9F59A05AFB3CFD43 /* MXScrollView.h */,
+				C007989544E14125B5D5F47614E5DA8B /* MXScrollView.m */,
+				598C26BEECB1958CF82696BF2D27ABC1 /* MXScrollViewController.h */,
+				D1FB4106133120AEE32A160B76D21F00 /* MXScrollViewController.m */,
+				BFEAA8AAC267B53065D48A74FEF5720C /* Support Files */,
+			);
+			path = MXParallaxHeader;
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +138,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		4AD0905028AE79123611D00C0DE295DC /* Products */ = {
+		431881AA4B794D22DE57CAFACF4072C4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AA61809DB26FAEECA4C1E0428333094 /* OHCubeView.framework */,
-				DCE75D2A645707E1389521E498C55CE5 /* Pods_Meemo.framework */,
+				29990AA39E7484E82B76C508A9A163F4 /* MXParallaxHeader.framework */,
+				A6F30BA4645D1C68AE06ADF00F8A4A17 /* OHCubeView.framework */,
+				1907A6E5F6D15821C3D4EE851F6676CF /* Pods_Meemo.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,38 +156,38 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7B9502108068619B9843C845579DC260 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0F069CBA309B5D02042E4BCE60D0C262 /* Info.plist */,
-				E6F59E000D567E39FBBD0C3F741575F9 /* OHCubeView.modulemap */,
-				8624E49137B05EEB6E3308DFBA286137 /* OHCubeView.xcconfig */,
-				FD262FA4A9B390E63F8166C80BF8220D /* OHCubeView-dummy.m */,
-				9B8ED641555446BDB04B1F66FAE893F2 /* OHCubeView-prefix.pch */,
-				1016ED23BC4F860386809959BAFC3F28 /* OHCubeView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/OHCubeView";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F4016E53E4EBD6D90F3B0FEA068A5FFE /* Pods */,
-				4AD0905028AE79123611D00C0DE295DC /* Products */,
+				375F48B81BCD1BA9CD305CB5230FBD1B /* Pods */,
+				431881AA4B794D22DE57CAFACF4072C4 /* Products */,
 				6EF776F6963EDE226695DFC12CCCD0F2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		B5A2E2DDB4F7F5364C54445A55B17B15 /* OHCubeView */ = {
+		896C9B54E892848C113B100940042C12 /* OHCubeView */ = {
 			isa = PBXGroup;
 			children = (
-				D55CE468B70856FE54D7F45CAA88097C /* OHCubeView.swift */,
-				7B9502108068619B9843C845579DC260 /* Support Files */,
+				45CA76B6107C06EF46A0A9C085505608 /* OHCubeView.swift */,
+				9FDCE84943E075020F153C9452462B7C /* Support Files */,
 			);
 			path = OHCubeView;
+			sourceTree = "<group>";
+		};
+		9FDCE84943E075020F153C9452462B7C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E193270A1EC191F1F5C6AFE51A3AFD44 /* Info.plist */,
+				4AD69B8DC01ABE2BAF7F3144164AE0ED /* OHCubeView.modulemap */,
+				B7B10B6B0BFBE84AE930726FE0102EA9 /* OHCubeView.xcconfig */,
+				CB92E5A2FD2283736B8AE800C66C7A75 /* OHCubeView-dummy.m */,
+				BA72786055569A8D8B9091275332CF81 /* OHCubeView-prefix.pch */,
+				1EDC40A661C848A48D7DEAE945B702B5 /* OHCubeView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OHCubeView";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -137,12 +198,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F4016E53E4EBD6D90F3B0FEA068A5FFE /* Pods */ = {
+		BFEAA8AAC267B53065D48A74FEF5720C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5A2E2DDB4F7F5364C54445A55B17B15 /* OHCubeView */,
+				02949D8F53DF12335648EAAA9D57BCF2 /* Info.plist */,
+				CC8DA659643C304B4DF28BDECDA2C009 /* MXParallaxHeader.modulemap */,
+				E0E40DA205372B30ACA896B7685D1D42 /* MXParallaxHeader.xcconfig */,
+				7B40798A593AE1CEBDCD5E8974C63328 /* MXParallaxHeader-dummy.m */,
+				3B4739A5BF57F17DA515287EAC329B3F /* MXParallaxHeader-prefix.pch */,
+				7BD8EC18E3FD6E248CB2195C678CA071 /* MXParallaxHeader-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/MXParallaxHeader";
 			sourceTree = "<group>";
 		};
 		F85939AFBF60BE9582C61763E42C989B /* Pods-Meemo */ = {
@@ -166,11 +233,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2232883AB9B2980B7D80174AE128513E /* Headers */ = {
+		1453378DA562C9F11792F61EC904C606 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA1E649C6CF2E50E31F915963A4610D /* Pods-Meemo-umbrella.h in Headers */,
+				8FC5DFBA732D9510AF7AA48B233CAEE6 /* Pods-Meemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,25 +249,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D23317A520E6DE83ABE99C16BBF6B6BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D88DEAC8F430AD4FCC6392CBC7E07CF /* MXParallaxHeader-umbrella.h in Headers */,
+				E480E624052C25325AAFA81D26F84AFE /* MXParallaxHeader.h in Headers */,
+				ADC88F735B1A5E6C2AF8B77018E33DBC /* MXScrollView.h in Headers */,
+				290DE764D7F93262BD2613796AA51AE1 /* MXScrollViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		369EAF1E919B1C38835AA2C0D19EF0EA /* Pods-Meemo */ = {
+		1CB4C50F4B1394C8EEFF82BB798E4120 /* Pods-Meemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DECDEF21AE5A59F100CE34386CF42AE6 /* Build configuration list for PBXNativeTarget "Pods-Meemo" */;
+			buildConfigurationList = FA7F697C08DB0997AAD599DCF4D3DF36 /* Build configuration list for PBXNativeTarget "Pods-Meemo" */;
 			buildPhases = (
-				77423B490072166D419CFEF8AEF985DC /* Sources */,
-				2EBABC07F22A7E84599A4D8EFC8B3B63 /* Frameworks */,
-				2232883AB9B2980B7D80174AE128513E /* Headers */,
+				CF7C292147416D6F36F642A2C044F8BB /* Sources */,
+				B04AE21E4654C0C77FDFFB7FD98411AC /* Frameworks */,
+				1453378DA562C9F11792F61EC904C606 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0C40735E16BA0F6359A4469A79C06780 /* PBXTargetDependency */,
+				109DEB1155F75952971CE31BA101B88F /* PBXTargetDependency */,
+				DA78718DAC068F044FFE54820E88B6D4 /* PBXTargetDependency */,
 			);
 			name = "Pods-Meemo";
 			productName = "Pods-Meemo";
-			productReference = DCE75D2A645707E1389521E498C55CE5 /* Pods_Meemo.framework */;
+			productReference = 1907A6E5F6D15821C3D4EE851F6676CF /* Pods_Meemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		615D419106F527AE0A4727EB8393E8D8 /* OHCubeView */ = {
@@ -217,7 +296,24 @@
 			);
 			name = OHCubeView;
 			productName = OHCubeView;
-			productReference = 3AA61809DB26FAEECA4C1E0428333094 /* OHCubeView.framework */;
+			productReference = A6F30BA4645D1C68AE06ADF00F8A4A17 /* OHCubeView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE58340C183B963C900C9FF91F7C3E95 /* MXParallaxHeader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 817BB0B4D37E8A5986D7C178B8F59F4D /* Build configuration list for PBXNativeTarget "MXParallaxHeader" */;
+			buildPhases = (
+				8C0EB8E2034BF9A80EFDA82A9975FD77 /* Sources */,
+				6335C46B518C4A96BB3475F1443CC4FC /* Frameworks */,
+				D23317A520E6DE83ABE99C16BBF6B6BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MXParallaxHeader;
+			productName = MXParallaxHeader;
+			productReference = 29990AA39E7484E82B76C508A9A163F4 /* MXParallaxHeader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +325,7 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
-					369EAF1E919B1C38835AA2C0D19EF0EA = {
+					1CB4C50F4B1394C8EEFF82BB798E4120 = {
 						LastSwiftMigration = 0800;
 					};
 					615D419106F527AE0A4727EB8393E8D8 = {
@@ -245,12 +341,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4AD0905028AE79123611D00C0DE295DC /* Products */;
+			productRefGroup = 431881AA4B794D22DE57CAFACF4072C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				AE58340C183B963C900C9FF91F7C3E95 /* MXParallaxHeader */,
 				615D419106F527AE0A4727EB8393E8D8 /* OHCubeView */,
-				369EAF1E919B1C38835AA2C0D19EF0EA /* Pods-Meemo */,
+				1CB4C50F4B1394C8EEFF82BB798E4120 /* Pods-Meemo */,
 			);
 		};
 /* End PBXProject section */
@@ -265,22 +362,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77423B490072166D419CFEF8AEF985DC /* Sources */ = {
+		8C0EB8E2034BF9A80EFDA82A9975FD77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D8637FDBA9B42E78DBB75CD8CD98EC /* Pods-Meemo-dummy.m in Sources */,
+				8BB5EEC0F7FF87215A78291CA9EA9CFC /* MXParallaxHeader-dummy.m in Sources */,
+				CF32252E1F7B5BC9C17B768320F4B5F5 /* MXParallaxHeader.m in Sources */,
+				A5A74AB6E35786719EF5D1348B5B9D0F /* MXScrollView.m in Sources */,
+				0F83AD14CDEBD948303F4EFB9286D130 /* MXScrollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7C292147416D6F36F642A2C044F8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1317769DB3D8FB960E4F875244220F72 /* Pods-Meemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C40735E16BA0F6359A4469A79C06780 /* PBXTargetDependency */ = {
+		109DEB1155F75952971CE31BA101B88F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MXParallaxHeader;
+			target = AE58340C183B963C900C9FF91F7C3E95 /* MXParallaxHeader */;
+			targetProxy = EE19E5C27B3992FE122DB3A28E3EEDC4 /* PBXContainerItemProxy */;
+		};
+		DA78718DAC068F044FFE54820E88B6D4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OHCubeView;
 			target = 615D419106F527AE0A4727EB8393E8D8 /* OHCubeView */;
-			targetProxy = 803FF69E55420E77F9FE60EA93489B7F /* PBXContainerItemProxy */;
+			targetProxy = 60D7ADF05282372098E3F0098ED215CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -327,7 +441,96 @@
 			};
 			name = Debug;
 		};
-		512825DD44603BFACA8E2C009A75BCFF /* Debug */ = {
+		662BCC150F207850295A7F5F177D5220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B10B6B0BFBE84AE930726FE0102EA9 /* OHCubeView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OHCubeView/OHCubeView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OHCubeView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OHCubeView/OHCubeView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OHCubeView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6FE19A17131BC34427F952840EE8160D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E40DA205372B30ACA896B7685D1D42 /* MXParallaxHeader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MXParallaxHeader/MXParallaxHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXParallaxHeader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MXParallaxHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7861595585918D1785EBD78A29E017F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E40DA205372B30ACA896B7685D1D42 /* MXParallaxHeader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MXParallaxHeader/MXParallaxHeader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXParallaxHeader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MXParallaxHeader/MXParallaxHeader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MXParallaxHeader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89F976EB3D14822801B875DDDAC5EB95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A71D5C65E6E623CCF9535FA2AA0F8F5 /* Pods-Meemo.debug.xcconfig */;
 			buildSettings = {
@@ -362,74 +565,9 @@
 			};
 			name = Debug;
 		};
-		662BCC150F207850295A7F5F177D5220 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8624E49137B05EEB6E3308DFBA286137 /* OHCubeView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OHCubeView/OHCubeView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/OHCubeView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/OHCubeView/OHCubeView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = OHCubeView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		960227B77E17DB973F597DBAEEF40F1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34F8A38C0351D6B6DEEB68DD10A63A66 /* Pods-Meemo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Meemo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Meemo/Pods-Meemo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Meemo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		AE95F6FA0267B5B589D29643A8D9535E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8624E49137B05EEB6E3308DFBA286137 /* OHCubeView.xcconfig */;
+			baseConfigurationReference = B7B10B6B0BFBE84AE930726FE0102EA9 /* OHCubeView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -495,6 +633,40 @@
 			};
 			name = Release;
 		};
+		D6C90523EBC2157611CA397DBB20F826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F8A38C0351D6B6DEEB68DD10A63A66 /* Pods-Meemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Meemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Meemo/Pods-Meemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Meemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,11 +688,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DECDEF21AE5A59F100CE34386CF42AE6 /* Build configuration list for PBXNativeTarget "Pods-Meemo" */ = {
+		817BB0B4D37E8A5986D7C178B8F59F4D /* Build configuration list for PBXNativeTarget "MXParallaxHeader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				512825DD44603BFACA8E2C009A75BCFF /* Debug */,
-				960227B77E17DB973F597DBAEEF40F1C /* Release */,
+				6FE19A17131BC34427F952840EE8160D /* Debug */,
+				7861595585918D1785EBD78A29E017F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA7F697C08DB0997AAD599DCF4D3DF36 /* Build configuration list for PBXNativeTarget "Pods-Meemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F976EB3D14822801B875DDDAC5EB95 /* Debug */,
+				D6C90523EBC2157611CA397DBB20F826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

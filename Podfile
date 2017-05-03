@@ -3,4 +3,5 @@ use_frameworks!
 
 target 'Meemo' do
     pod 'OHCubeView'
+    pod 'MXParallaxHeader'
 end

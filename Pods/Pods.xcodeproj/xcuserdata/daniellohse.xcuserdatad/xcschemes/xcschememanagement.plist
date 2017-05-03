@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>MXParallaxHeader.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>OHCubeView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>369EAF1E919B1C38835AA2C0D19EF0EA</key>
+		<key>1CB4C50F4B1394C8EEFF82BB798E4120</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>615D419106F527AE0A4727EB8393E8D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE58340C183B963C900C9FF91F7C3E95</key>
 		<dict>
 			<key>primary</key>
 			<true/>
