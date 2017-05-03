@@ -33,6 +33,7 @@ class HeaderViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 //    func parallaxHeaderDidScroll(_ parallaxHeader: MXParallaxHeader) {
 //        //        let angle = parallaxHeader.progress * CGFloat(M_PI) * 2
 //        //        self.falcon.transform = CGAffineTransform.identity.rotated(by: angle)

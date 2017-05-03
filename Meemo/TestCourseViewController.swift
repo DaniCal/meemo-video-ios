@@ -14,6 +14,8 @@ class TestCourseViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var tableView: UITableView!
     
     var course:MeemoCourse?
+    let interactor = Interactor()
+    let videoSegueIdentifier = "goToVideo"
 
 
     override func viewDidLoad() {
@@ -25,12 +27,37 @@ class TestCourseViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.backgroundView = nil
         
         authorDescription.text = course?.authorDescription
-
         
         // Do any additional setup after loading the view.
     }
     
     @IBAction func startCourse(_ sender: AnyObject) {
+        if((course?.sessions.count)! > 0){
+            self.performSegue(withIdentifier: videoSegueIdentifier , sender: nil)
+        }
+
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if  segue.identifier == videoSegueIdentifier,
+            let destination = segue.destination as? ModalViewController,
+            let blogIndex = tableView.indexPathForSelectedRow?.row
+        {
+            destination.transitioningDelegate = self
+            destination.interactor = interactor
+            destination.videoName = (course?.sessions[blogIndex].videoFileName)!
+            
+        }else if segue.identifier == videoSegueIdentifier,
+            let destination = segue.destination as? ModalViewController
+        {
+            destination.transitioningDelegate = self
+            destination.interactor = interactor
+            destination.videoName = (course?.sessions[0].videoFileName)!
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,6 +80,13 @@ class TestCourseViewController: UIViewController, UITableViewDelegate, UITableVi
 
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(!(course?.sessions[indexPath.row].locked)!){
+            self.performSegue(withIdentifier: videoSegueIdentifier , sender: indexPath)
+        }
+        //tableView.deselectRow(at: indexPath, animated: true)
+    }
 
     /*
     // MARK: - Navigation
@@ -64,4 +98,16 @@ class TestCourseViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     */
 
+}
+
+
+extension TestCourseViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissAnimator()
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactor.hasStarted ? interactor : nil
+    }
+    
 }

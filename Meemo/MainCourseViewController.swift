@@ -18,15 +18,37 @@ class MainCourseViewController: MXScrollViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initNavigationBar()
         // Do any additional setup after loading the view.
+        initNavigationBar()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+       
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //Triggers when segues to ProgramView
+        if  segue.identifier == headerSegueIdentifier,
+            let destination = segue.destination as? HeaderViewController
+        {
+            destination.course = course
+            
+        }else if segue.identifier == sessionListIdentifier,
+            let destination = segue.destination as? TestCourseViewController
+        {
+            destination.course = course
+        }
+    }
+
     func initNavigationBar(){
         //Make the navigation bar appear
         self.navigationController?.setNavigationBarHidden(false, animated: true)
@@ -44,29 +66,9 @@ class MainCourseViewController: MXScrollViewController {
         //Make the navigation bar transparaent
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
+//        self.navigationController?.navigationBar.isTranslucent = true
         self.navigationController?.view.backgroundColor = .clear
         
-    }
-    
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        //Triggers when segues to ProgramView
-        if  segue.identifier == headerSegueIdentifier,
-            let destination = segue.destination as? HeaderViewController
-        {
-            destination.course = course
-            
-        }else if segue.identifier == sessionListIdentifier,
-            let destination = segue.destination as? TestCourseViewController
-        {
-            destination.course = course
-        }
     }
 
 

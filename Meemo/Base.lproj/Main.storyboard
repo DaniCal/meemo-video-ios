@@ -576,7 +576,7 @@
                         <outlet property="courseTitle" destination="3X7-jS-v5r" id="ElT-nf-VFf"/>
                         <outlet property="imageBig" destination="0a6-5Q-eTt" id="fFU-0G-mh7"/>
                         <outlet property="tableView" destination="pns-Dc-alX" id="q1S-XH-eTs"/>
-                        <segue destination="qni-p9-tDL" kind="presentation" identifier="goToVideo" id="hav-mi-uQ4"/>
+                        <segue destination="qni-p9-tDL" kind="presentation" identifier="goToVideo2" id="hav-mi-uQ4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ss4-Zc-5B6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -594,11 +594,11 @@
                     <view key="view" contentMode="scaleToFill" id="F4G-u8-LEG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="headerHeight">
-                            <integer key="value" value="300"/>
+                            <real key="value" value="270"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="headerMinimumHeight">
                             <integer key="value" value="20"/>
@@ -648,18 +648,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="XwR-IR-T4w" firstAttribute="leading" secondItem="FfU-ML-SoZ" secondAttribute="leading" id="21A-MM-wsW"/>
+                            <constraint firstItem="XwR-IR-T4w" firstAttribute="top" secondItem="FfU-ML-SoZ" secondAttribute="top" id="3Wa-dG-uTv"/>
                             <constraint firstItem="meG-TG-ei4" firstAttribute="centerX" secondItem="FfU-ML-SoZ" secondAttribute="centerX" id="4ct-Aa-lXL"/>
-                            <constraint firstItem="3Li-eh-joq" firstAttribute="top" secondItem="lFQ-FH-h2T" secondAttribute="bottom" id="9FH-05-5oA"/>
+                            <constraint firstAttribute="trailing" secondItem="lFQ-FH-h2T" secondAttribute="trailing" id="JP6-C7-bWr"/>
+                            <constraint firstItem="3Li-eh-joq" firstAttribute="top" secondItem="XwR-IR-T4w" secondAttribute="bottom" id="LRg-c9-lST"/>
                             <constraint firstItem="meG-TG-ei4" firstAttribute="top" secondItem="WSA-RQ-eRZ" secondAttribute="bottom" constant="5" id="NfA-2X-6v4"/>
                             <constraint firstItem="WSA-RQ-eRZ" firstAttribute="centerX" secondItem="FfU-ML-SoZ" secondAttribute="centerX" id="Rum-ZA-ywV"/>
-                            <constraint firstItem="XwR-IR-T4w" firstAttribute="leading" secondItem="FfU-ML-SoZ" secondAttribute="leading" id="dZJ-lU-M3c"/>
-                            <constraint firstAttribute="trailing" secondItem="lFQ-FH-h2T" secondAttribute="trailing" id="h6r-GF-crH"/>
-                            <constraint firstItem="lFQ-FH-h2T" firstAttribute="leading" secondItem="FfU-ML-SoZ" secondAttribute="leading" id="p3r-MX-b7q"/>
-                            <constraint firstAttribute="trailing" secondItem="XwR-IR-T4w" secondAttribute="trailing" id="tfG-Jy-tiP"/>
+                            <constraint firstAttribute="trailing" secondItem="XwR-IR-T4w" secondAttribute="trailing" id="Wy3-wo-iLp"/>
+                            <constraint firstItem="3Li-eh-joq" firstAttribute="top" secondItem="lFQ-FH-h2T" secondAttribute="bottom" id="jzy-0t-X3L"/>
+                            <constraint firstItem="lFQ-FH-h2T" firstAttribute="leading" secondItem="FfU-ML-SoZ" secondAttribute="leading" id="rhK-P2-gm2"/>
                             <constraint firstItem="3Li-eh-joq" firstAttribute="top" secondItem="meG-TG-ei4" secondAttribute="bottom" constant="12" id="tuv-UC-Kbt"/>
-                            <constraint firstItem="3Li-eh-joq" firstAttribute="top" secondItem="XwR-IR-T4w" secondAttribute="bottom" id="tvW-ET-heg"/>
-                            <constraint firstItem="XwR-IR-T4w" firstAttribute="top" secondItem="FfU-ML-SoZ" secondAttribute="top" id="zMb-6u-G9v"/>
-                            <constraint firstItem="lFQ-FH-h2T" firstAttribute="top" secondItem="FfU-ML-SoZ" secondAttribute="top" id="zUc-Zf-EOT"/>
+                            <constraint firstItem="lFQ-FH-h2T" firstAttribute="top" secondItem="FfU-ML-SoZ" secondAttribute="top" id="uc1-bl-gKA"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -672,7 +672,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKQ-b0-9Mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="1745"/>
+            <point key="canvasLocation" x="577.5" y="1744.0140845070423"/>
         </scene>
         <!--Test Course View Controller-->
         <scene sceneID="PyF-54-1bc">
@@ -789,6 +789,7 @@
                     <connections>
                         <outlet property="authorDescription" destination="uEI-bg-fD3" id="3fQ-UE-jmM"/>
                         <outlet property="tableView" destination="BMs-jo-vpr" id="9ED-Rh-0vd"/>
+                        <segue destination="qni-p9-tDL" kind="presentation" identifier="goToVideo" id="hpX-Lw-kxM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mo4-w4-X5A" userLabel="First Responder" sceneMemberID="firstResponder"/>
