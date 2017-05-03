@@ -9,6 +9,8 @@
 import UIKit
 
 class TestCourseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+   
+    @IBOutlet weak var authorDescription: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     var course:MeemoCourse?
@@ -21,14 +23,15 @@ class TestCourseViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.backgroundColor = UIColor.clear
         tableView.isOpaque = false
         tableView.backgroundView = nil
+        
+        authorDescription.text = course?.authorDescription
 
         
         // Do any additional setup after loading the view.
     }
     
-   
-
-    
+    @IBAction func startCourse(_ sender: AnyObject) {
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -371,7 +371,6 @@
                     <connections>
                         <outlet property="tableView" destination="kKb-k5-cRk" id="cHA-ve-s8c"/>
                         <segue destination="qni-p9-tDL" kind="presentation" identifier="goToVideo" id="0F5-FR-1E9"/>
-                        <segue destination="nGZ-ft-RXG" kind="show" identifier="" id="74Y-xc-zKB"/>
                         <segue destination="bcV-Jf-Lii" kind="show" identifier="goToCourse" id="G1e-KG-pz5"/>
                     </connections>
                 </viewController>
@@ -614,10 +613,10 @@
             </objects>
             <point key="canvasLocation" x="-641" y="2129"/>
         </scene>
-        <!--Falcon View Controller-->
+        <!--Header View Controller-->
         <scene sceneID="oqg-N8-ZbL">
             <objects>
-                <viewController id="k74-g1-uya" customClass="MXFalconViewController" customModule="Meemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="k74-g1-uya" customClass="HeaderViewController" customModule="Meemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C4O-0n-dNh"/>
                         <viewControllerLayoutGuide type="bottom" id="3Li-eh-joq"/>
@@ -665,6 +664,11 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="285"/>
+                    <connections>
+                        <outlet property="authorImage" destination="lFQ-FH-h2T" id="iRr-h3-WT3"/>
+                        <outlet property="authorName" destination="WSA-RQ-eRZ" id="rTm-RK-fB2"/>
+                        <outlet property="courseTitle" destination="meG-TG-ei4" id="q3X-q6-Pt6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKQ-b0-9Mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -692,6 +696,7 @@
                                         <state key="normal" title="Button" image="button_start_course"/>
                                         <connections>
                                             <action selector="startCourse:" destination="nGZ-ft-RXG" eventType="touchUpInside" id="25V-Nh-DKv"/>
+                                            <action selector="startCourse:" destination="uzd-Wc-nGA" eventType="touchUpInside" id="Nsn-53-gxC"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -795,6 +800,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="authorDescription" destination="uEI-bg-fD3" id="3fQ-UE-jmM"/>
                         <outlet property="tableView" destination="BMs-jo-vpr" id="9ED-Rh-0vd"/>
                     </connections>
                 </viewController>

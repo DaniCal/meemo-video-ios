@@ -7,16 +7,23 @@
 //
 
 import UIKit
-import MXParallaxHeader
+//import MXParallaxHeader
 
 
-class MXFalconViewController: UIViewController {
+class HeaderViewController: UIViewController {
 
     var course:MeemoCourse?
 
+    @IBOutlet weak var authorImage: UIImageView!
+    @IBOutlet weak var authorName: UILabel!
     
+    @IBOutlet weak var courseTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        authorName.text = course?.author
+        authorImage.image = UIImage(named:(course?.courseImageFileBig)!)
+        courseTitle.text = course?.name
 
         // Do any additional setup after loading the view.
     }
@@ -26,10 +33,10 @@ class MXFalconViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func parallaxHeaderDidScroll(_ parallaxHeader: MXParallaxHeader) {
-        //        let angle = parallaxHeader.progress * CGFloat(M_PI) * 2
-        //        self.falcon.transform = CGAffineTransform.identity.rotated(by: angle)
-    }
+//    func parallaxHeaderDidScroll(_ parallaxHeader: MXParallaxHeader) {
+//        //        let angle = parallaxHeader.progress * CGFloat(M_PI) * 2
+//        //        self.falcon.transform = CGAffineTransform.identity.rotated(by: angle)
+//    }
 
 
     /*
