@@ -27,6 +27,7 @@
 		8230895D1EB88F7100404CC2 /* 05_shane_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 8230895C1EB88F7100404CC2 /* 05_shane_big.png */; };
 		8230895F1EB890EB00404CC2 /* 04_jullien_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 8230895E1EB890EB00404CC2 /* 04_jullien_big.png */; };
 		823089651EBA121A00404CC2 /* MXFalconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089641EBA121A00404CC2 /* MXFalconViewController.swift */; };
+		823089671EBA1F1B00404CC2 /* TestCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089661EBA1F1B00404CC2 /* TestCourseViewController.swift */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -94,6 +95,7 @@
 		8230895C1EB88F7100404CC2 /* 05_shane_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 05_shane_big.png; path = ../../../../../Dropbox/Meemo/Prototype/05_shane_big.png; sourceTree = "<group>"; };
 		8230895E1EB890EB00404CC2 /* 04_jullien_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 04_jullien_big.png; path = ../../../../../Dropbox/Meemo/Prototype/04_jullien_big.png; sourceTree = "<group>"; };
 		823089641EBA121A00404CC2 /* MXFalconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MXFalconViewController.swift; sourceTree = "<group>"; };
+		823089661EBA1F1B00404CC2 /* TestCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCourseViewController.swift; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				8278B44E1EA9F8890064EFFD /* ViewController.swift */,
 				829BC4991EAB88F300F8A672 /* Interactor.swift */,
 				8278B4501EA9F8890064EFFD /* Main.storyboard */,
+				823089661EBA1F1B00404CC2 /* TestCourseViewController.swift */,
 				823089641EBA121A00404CC2 /* MXFalconViewController.swift */,
 				823089521EB6509E00404CC2 /* BadgeViewController.swift */,
 				8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */,
@@ -480,6 +483,7 @@
 				829BC4961EAB78DD00F8A672 /* ModalViewController.swift in Sources */,
 				825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */,
 				829BC49A1EAB88F300F8A672 /* Interactor.swift in Sources */,
+				823089671EBA1F1B00404CC2 /* TestCourseViewController.swift in Sources */,
 				823089531EB6509E00404CC2 /* BadgeViewController.swift in Sources */,
 				8278B44D1EA9F8890064EFFD /* AppDelegate.swift in Sources */,
 				825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */,
