@@ -9,9 +9,10 @@
 import UIKit
 
 class SessionTableViewCell: UITableViewCell {
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var playImage: UIImageView!
     @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var playImage: UIImageView!
+    @IBOutlet weak var name: UILabel!
+
 
     override func awakeFromNib() {
                 super.awakeFromNib()

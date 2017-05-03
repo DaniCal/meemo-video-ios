@@ -10,6 +10,9 @@ import UIKit
 
 class TestCourseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
+    
+    var course:MeemoCourse?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +22,13 @@ class TestCourseViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.isOpaque = false
         tableView.backgroundView = nil
 
+        
         // Do any additional setup after loading the view.
     }
+    
+   
+
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -28,12 +36,16 @@ class TestCourseViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return (course?.sessions.count)!
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "myCell2", for: indexPath) as! SessionTableViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "sessionCell", for: indexPath) as! SessionTableViewCell
+        let session = self.course?.sessions[indexPath.row]
+        cell.name.text = session!.name
+        cell.isSessionlocked((session?.locked)!)
+
         cell.selectionStyle = UITableViewCellSelectionStyle.none
 
         return cell

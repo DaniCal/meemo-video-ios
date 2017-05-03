@@ -1,5 +1,5 @@
 //
-//  HeaderViewController.swift
+//  MainCourseViewController.swift
 //  Meemo
 //
 //  Created by Daniel Lohse on 5/3/17.
@@ -9,11 +9,12 @@
 import UIKit
 import MXParallaxHeader
 
+class MainCourseViewController: MXScrollViewController {
 
-class MXFalconViewController: UIViewController {
-
+    
     var course:MeemoCourse?
-
+    var headerSegueIdentifier = "parallaxHeader"
+    var sessionListIdentifier = "sessionList"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +27,20 @@ class MXFalconViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func parallaxHeaderDidScroll(_ parallaxHeader: MXParallaxHeader) {
-        //        let angle = parallaxHeader.progress * CGFloat(M_PI) * 2
-        //        self.falcon.transform = CGAffineTransform.identity.rotated(by: angle)
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //Triggers when segues to ProgramView
+        if  segue.identifier == headerSegueIdentifier,
+            let destination = segue.destination as? MXFalconViewController
+        {
+            destination.course = course
+            
+        }else if segue.identifier == sessionListIdentifier,
+            let destination = segue.destination as? TestCourseViewController
+        {
+            destination.course = course
+        }
     }
 
 

@@ -44,7 +44,7 @@ class PlaylistViewController: UIViewController, UITableViewDataSource, UITableVi
         
         //Triggers when segues to ProgramView
         if  segue.identifier == courseSegueIdentifier,
-            let destination = segue.destination as? CourseViewController,
+            let destination = segue.destination as? MainCourseViewController,
             let blogIndex = tableView.indexPathForSelectedRow?.row
         {
             destination.course = content[blogIndex]
