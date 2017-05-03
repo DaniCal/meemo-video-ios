@@ -28,6 +28,7 @@ class TestCourseViewController: UIViewController, UITableViewDelegate, UITableVi
         
         authorDescription.text = course?.authorDescription
         
+
         // Do any additional setup after loading the view.
     }
     
@@ -37,7 +38,6 @@ class TestCourseViewController: UIViewController, UITableViewDelegate, UITableVi
         }
 
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

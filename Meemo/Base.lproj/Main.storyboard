@@ -381,7 +381,7 @@
         <!--Navigation Controller-->
         <scene sceneID="cbA-0M-fJL">
             <objects>
-                <navigationController id="fS4-ag-dIg" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="fS4-ag-dIg" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nyy-Ae-dRT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -598,7 +598,7 @@
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="headerHeight">
-                            <real key="value" value="270"/>
+                            <real key="value" value="320"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="headerMinimumHeight">
                             <integer key="value" value="20"/>
@@ -611,7 +611,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfs-Qd-QjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-641" y="2129"/>
+            <point key="canvasLocation" x="-641.25" y="2127.4647887323945"/>
         </scene>
         <!--Header View Controller-->
         <scene sceneID="oqg-N8-ZbL">
@@ -622,11 +622,15 @@
                         <viewControllerLayoutGuide type="bottom" id="3Li-eh-joq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="FfU-ML-SoZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01_bill_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="lFQ-FH-h2T"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient_course_list" translatesAutoresizingMaskIntoConstraints="NO" id="XwR-IR-T4w"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient_course_list" translatesAutoresizingMaskIntoConstraints="NO" id="XwR-IR-T4w">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="CSH-1U-aO7"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRIAN CERVINO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSA-RQ-eRZ">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="197" id="VbV-Cv-MlM"/>
@@ -646,24 +650,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XwR-IR-T4w" firstAttribute="leading" secondItem="FfU-ML-SoZ" secondAttribute="leading" id="21A-MM-wsW"/>
-                            <constraint firstItem="XwR-IR-T4w" firstAttribute="top" secondItem="FfU-ML-SoZ" secondAttribute="top" id="3Wa-dG-uTv"/>
                             <constraint firstItem="meG-TG-ei4" firstAttribute="centerX" secondItem="FfU-ML-SoZ" secondAttribute="centerX" id="4ct-Aa-lXL"/>
+                            <constraint firstItem="XwR-IR-T4w" firstAttribute="leading" secondItem="FfU-ML-SoZ" secondAttribute="leading" id="6ro-Xy-J3N"/>
                             <constraint firstAttribute="trailing" secondItem="lFQ-FH-h2T" secondAttribute="trailing" id="JP6-C7-bWr"/>
-                            <constraint firstItem="3Li-eh-joq" firstAttribute="top" secondItem="XwR-IR-T4w" secondAttribute="bottom" id="LRg-c9-lST"/>
                             <constraint firstItem="meG-TG-ei4" firstAttribute="top" secondItem="WSA-RQ-eRZ" secondAttribute="bottom" constant="5" id="NfA-2X-6v4"/>
                             <constraint firstItem="WSA-RQ-eRZ" firstAttribute="centerX" secondItem="FfU-ML-SoZ" secondAttribute="centerX" id="Rum-ZA-ywV"/>
-                            <constraint firstAttribute="trailing" secondItem="XwR-IR-T4w" secondAttribute="trailing" id="Wy3-wo-iLp"/>
+                            <constraint firstItem="3Li-eh-joq" firstAttribute="top" secondItem="XwR-IR-T4w" secondAttribute="bottom" id="ext-d0-q0A"/>
                             <constraint firstItem="3Li-eh-joq" firstAttribute="top" secondItem="lFQ-FH-h2T" secondAttribute="bottom" id="jzy-0t-X3L"/>
                             <constraint firstItem="lFQ-FH-h2T" firstAttribute="leading" secondItem="FfU-ML-SoZ" secondAttribute="leading" id="rhK-P2-gm2"/>
+                            <constraint firstAttribute="trailing" secondItem="XwR-IR-T4w" secondAttribute="trailing" id="sEX-G4-HeC"/>
                             <constraint firstItem="3Li-eh-joq" firstAttribute="top" secondItem="meG-TG-ei4" secondAttribute="bottom" constant="12" id="tuv-UC-Kbt"/>
                             <constraint firstItem="lFQ-FH-h2T" firstAttribute="top" secondItem="FfU-ML-SoZ" secondAttribute="top" id="uc1-bl-gKA"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="270"/>
+                    <size key="freeformSize" width="320" height="320"/>
                     <connections>
                         <outlet property="authorImage" destination="lFQ-FH-h2T" id="iRr-h3-WT3"/>
                         <outlet property="authorName" destination="WSA-RQ-eRZ" id="rTm-RK-fB2"/>
@@ -763,6 +766,11 @@
                                     <outlet property="delegate" destination="uzd-Wc-nGA" id="oCP-dp-wCW"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient_scroll" translatesAutoresizingMaskIntoConstraints="NO" id="xJS-hm-lm6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="yPi-Wn-Ppa"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNk-X8-UHt">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="245" id="ex1-53-fcp"/>
@@ -777,10 +785,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xJS-hm-lm6" secondAttribute="trailing" id="1xB-4f-AfC"/>
                             <constraint firstItem="nNk-X8-UHt" firstAttribute="top" secondItem="q5L-hx-WUX" secondAttribute="top" constant="1" id="6Mt-8p-6ZN"/>
                             <constraint firstItem="BMs-jo-vpr" firstAttribute="top" secondItem="ZHN-d1-vfJ" secondAttribute="bottom" id="B0c-gv-hoU"/>
                             <constraint firstAttribute="trailing" secondItem="BMs-jo-vpr" secondAttribute="trailing" id="BLl-46-0Pc"/>
+                            <constraint firstItem="xJS-hm-lm6" firstAttribute="top" secondItem="q5L-hx-WUX" secondAttribute="top" id="GKl-Ic-pUg"/>
                             <constraint firstItem="nNk-X8-UHt" firstAttribute="centerX" secondItem="q5L-hx-WUX" secondAttribute="centerX" id="S9f-fc-xE9"/>
+                            <constraint firstItem="xJS-hm-lm6" firstAttribute="leading" secondItem="q5L-hx-WUX" secondAttribute="leading" id="XH7-JQ-e7q"/>
                             <constraint firstItem="BMs-jo-vpr" firstAttribute="centerX" secondItem="q5L-hx-WUX" secondAttribute="centerX" id="Zs7-29-HyX"/>
                             <constraint firstItem="Xcn-0a-H8A" firstAttribute="top" secondItem="BMs-jo-vpr" secondAttribute="bottom" id="f9n-lx-TID"/>
                             <constraint firstItem="BMs-jo-vpr" firstAttribute="leading" secondItem="q5L-hx-WUX" secondAttribute="leading" id="ysU-y6-SG3"/>
@@ -923,12 +934,13 @@
         <image name="button_start_course" width="288" height="52"/>
         <image name="gradient.png" width="750" height="400"/>
         <image name="gradient_course_list" width="375" height="438"/>
+        <image name="gradient_scroll" width="375" height="102"/>
         <image name="img_play_empty" width="51" height="51"/>
         <image name="summary_top" width="375" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uzf-Ic-20M"/>
-        <segue reference="hav-mi-uQ4"/>
+        <segue reference="ZCq-lN-LUE"/>
+        <segue reference="hpX-Lw-kxM"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.13604035973548889" green="0.13792967796325684" blue="0.94144952297210693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

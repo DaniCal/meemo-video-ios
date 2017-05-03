@@ -20,6 +20,7 @@ class MainCourseViewController: MXScrollViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         initNavigationBar()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,23 +52,28 @@ class MainCourseViewController: MXScrollViewController {
 
     func initNavigationBar(){
         //Make the navigation bar appear
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.navigationBar.isHidden = true
         
-        //replace the back button image item
-        var backBtn = UIImage(named: "nav_back_icon")
-        backBtn = backBtn?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        self.navigationController?.navigationBar.backIndicatorImage =  backBtn
-        self.navigationController!.navigationBar.backIndicatorTransitionMaskImage = backBtn;
-        
-        //replace the back button title
-        self.navigationController?.navigationBar.backItem?.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
-        
-        //Make the navigation bar transparaent
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+////        self.navigationController?.navigationBar.shadowImage = UIImage()
+////        
+////        //replace the back button image item
+//        var backBtn = UIImage(named: "nav_back_icon")
+//        backBtn = backBtn?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+//        self.navigationController?.navigationBar.backIndicatorImage =  backBtn
+//        self.navigationController!.navigationBar.backIndicatorTransitionMaskImage = backBtn;
+////
+////        //replace the back button title
+//        self.navigationController?.navigationBar.backItem?.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+//        
+//        let color = UIColor(red: 21.0/255, green: 21.0/255, blue: 24.0/255, alpha: 1.0)
+//
+//        
+//        //Make the navigation bar transparaent
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
 //        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
+//        self.navigationController?.view.backgroundColor = color
         
     }
 
