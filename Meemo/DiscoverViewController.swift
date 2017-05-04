@@ -16,10 +16,17 @@ class DiscoverViewController: UIViewController {
     @IBOutlet weak var dailyInspirationImage: UIImageView!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let courseSegueIdentifier = "goToCourse"
+    let videoSegueIdentifier = "goToVideo"
 
     var selectedItem:Int = 0
     var content:[MeemoCourse] = []
     var contentMixed:[MeemoCourse] = []
+    
+    let interactor = Interactor()
+
+    @IBAction func playInspiration(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: videoSegueIdentifier , sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +48,16 @@ class DiscoverViewController: UIViewController {
             destination.course = content[selectedItem]
             
         }
+        else if  segue.identifier == videoSegueIdentifier,
+            let destination = segue.destination as? ModalViewController
+        {
+            destination.transitioningDelegate = self
+            destination.interactor = interactor
+            destination.videoName = "01_bill"
+            
+        }
+        
+        
     }
     
 //    func hideNavigationBar(){
@@ -87,4 +104,15 @@ extension DiscoverViewController: UICollectionViewDataSource, UICollectionViewDe
         self.performSegue(withIdentifier: courseSegueIdentifier , sender: indexPath)
 
     }
+}
+
+extension DiscoverViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return DismissAnimator()
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactor.hasStarted ? interactor : nil
+    }
+    
 }

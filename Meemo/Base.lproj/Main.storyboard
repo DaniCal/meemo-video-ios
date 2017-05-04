@@ -104,7 +104,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="988" y="-204"/>
+            <point key="canvasLocation" x="668" y="1073"/>
         </scene>
         <!--Summary View Controller-->
         <scene sceneID="5NR-1H-wjl">
@@ -631,20 +631,31 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke7-jc-lNp">
+                                                <connections>
+                                                    <action selector="playInspiration:" destination="gRl-ZU-2GY" eventType="touchUpInside" id="dzd-45-Eco"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="Alj-k7-ONd" firstAttribute="centerY" secondItem="6HW-bL-aNT" secondAttribute="centerY" id="1lp-aL-Lss"/>
                                             <constraint firstAttribute="bottom" secondItem="Alj-k7-ONd" secondAttribute="bottom" id="6CY-32-iMc"/>
+                                            <constraint firstItem="ke7-jc-lNp" firstAttribute="top" secondItem="6HW-bL-aNT" secondAttribute="top" id="7AR-PQ-j4Z"/>
+                                            <constraint firstItem="ke7-jc-lNp" firstAttribute="centerX" secondItem="6HW-bL-aNT" secondAttribute="centerX" id="BLp-QF-UdG"/>
+                                            <constraint firstAttribute="bottom" secondItem="ke7-jc-lNp" secondAttribute="bottom" id="FDb-gA-kt6"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="153" id="GIA-rz-ITg"/>
                                             <constraint firstItem="gNm-zg-OCP" firstAttribute="top" secondItem="szs-Wm-IKD" secondAttribute="bottom" constant="12" id="JEK-zU-Ggi"/>
+                                            <constraint firstItem="ke7-jc-lNp" firstAttribute="leading" secondItem="6HW-bL-aNT" secondAttribute="leading" id="Lrf-pw-gSl"/>
                                             <constraint firstItem="szs-Wm-IKD" firstAttribute="top" secondItem="6HW-bL-aNT" secondAttribute="top" constant="43" id="MhD-P9-TOJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="ke7-jc-lNp" secondAttribute="trailing" id="Rmx-Tk-9N8"/>
                                             <constraint firstAttribute="height" constant="153" id="Teb-KI-Kza"/>
                                             <constraint firstItem="Alj-k7-ONd" firstAttribute="centerX" secondItem="6HW-bL-aNT" secondAttribute="centerX" id="VMA-TK-2PK"/>
                                             <constraint firstAttribute="trailing" secondItem="b7j-yB-XaP" secondAttribute="trailing" constant="8" id="W1o-xW-Oif"/>
                                             <constraint firstItem="szs-Wm-IKD" firstAttribute="leading" secondItem="6HW-bL-aNT" secondAttribute="leading" constant="8" id="WBW-qr-19K"/>
                                             <constraint firstAttribute="trailing" secondItem="Alj-k7-ONd" secondAttribute="trailing" id="YU1-oz-b6l"/>
                                             <constraint firstAttribute="bottom" secondItem="b7j-yB-XaP" secondAttribute="bottom" constant="8" id="cxD-Og-nZO"/>
+                                            <constraint firstItem="ke7-jc-lNp" firstAttribute="centerY" secondItem="6HW-bL-aNT" secondAttribute="centerY" id="mE0-OJ-RTA"/>
                                             <constraint firstItem="Alj-k7-ONd" firstAttribute="top" secondItem="6HW-bL-aNT" secondAttribute="top" id="q1I-6h-vAg"/>
                                             <constraint firstAttribute="trailing" secondItem="szs-Wm-IKD" secondAttribute="trailing" constant="8" id="sXG-Rc-rlR"/>
                                             <constraint firstItem="gNm-zg-OCP" firstAttribute="centerX" secondItem="6HW-bL-aNT" secondAttribute="centerX" id="tEQ-GR-Mjw"/>
@@ -849,6 +860,7 @@
                         <outlet property="collectionViewB" destination="nNp-bg-kHg" id="1JS-om-Lxk"/>
                         <outlet property="dailyInspirationImage" destination="Alj-k7-ONd" id="MHt-0v-gql"/>
                         <segue destination="bcV-Jf-Lii" kind="show" identifier="goToCourse" id="H7m-7K-0Ua"/>
+                        <segue destination="qni-p9-tDL" kind="presentation" identifier="goToVideo" id="DFq-fD-duo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hc4-ds-Vz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1212,7 +1224,7 @@
         <image name="summary_top" width="375" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hpX-Lw-kxM"/>
+        <segue reference="DFq-fD-duo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.13604035973548889" green="0.13792967796325684" blue="0.94144952297210693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

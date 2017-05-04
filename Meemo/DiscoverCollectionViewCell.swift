@@ -14,6 +14,9 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var authorName: UILabel!
     
+    let interactor = Interactor()
+
+    
     var course:MeemoCourse?{
         didSet{
             self.updateUI()
