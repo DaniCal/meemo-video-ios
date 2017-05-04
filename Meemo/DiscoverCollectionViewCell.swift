@@ -13,14 +13,33 @@ class DiscoverCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var courseTitle: UILabel!
     
     @IBOutlet weak var authorName: UILabel!
-    //min 20
     
+    var course:MeemoCourse?{
+        didSet{
+            self.updateUI()
+            
+        }
+    }
+    
+    private func updateUI(){
+        if let course = course {
+            courseImage.image = UIImage(named: course.courseImageFileSquare!)
+            courseTitle.text = course.name
+            authorName.text = course.author
+        }else{
+            courseImage.image = nil
+            courseTitle.text = nil
+            authorName = nil
+        }
+    }
     
     
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        courseImage.layer.cornerRadius = 3.0
+        
+        courseImage.clipsToBounds = true
+        courseImage.layer.cornerRadius = 2.0
         
         //self.clipsToBounds = true
     }

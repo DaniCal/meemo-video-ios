@@ -10,18 +10,22 @@ import UIKit
 
 class DiscoverViewController: UIViewController {
 
-    @IBOutlet weak var collectionView: UICollectionView!
     
-    var content:[MeemoCourse] = []
+    @IBOutlet weak var collectionView: UICollectionView!
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let courseSegueIdentifier = "goToCourse"
 
+    var content:[MeemoCourse] = []
+    var contentMixed:[MeemoCourse] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        content = appDelegate.content
 
     }
 }
 
-extension DiscoverViewController: UICollectionViewDataSource{
+extension DiscoverViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -32,8 +36,13 @@ extension DiscoverViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "discoverCell", for: indexPath) as! DiscoverCollectionViewCell
-        //cell.course = content[indexPath.item]
+        cell.course = content[indexPath.item]
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        self.performSegue(withIdentifier: courseSegueIdentifier , sender: indexPath)
+
     }
 }

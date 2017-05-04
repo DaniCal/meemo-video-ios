@@ -31,6 +31,11 @@
 		823089691EBA279A00404CC2 /* MainCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089681EBA279A00404CC2 /* MainCourseViewController.swift */; };
 		8230896B1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230896A1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift */; };
 		8230896D1EBB189600404CC2 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230896C1EBB189600404CC2 /* DiscoverViewController.swift */; };
+		823089741EBB25D400404CC2 /* 01_bill_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089701EBB25D400404CC2 /* 01_bill_square.png */; };
+		823089751EBB25D400404CC2 /* 02_betty_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089711EBB25D400404CC2 /* 02_betty_square.png */; };
+		823089761EBB25D400404CC2 /* 03_brian_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089721EBB25D400404CC2 /* 03_brian_square.png */; };
+		823089771EBB25D400404CC2 /* 05_shane_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089731EBB25D400404CC2 /* 05_shane_square.png */; };
+		823089791EBB284700404CC2 /* DailyInspiration.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089781EBB284700404CC2 /* DailyInspiration.png */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -102,6 +107,11 @@
 		823089681EBA279A00404CC2 /* MainCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseViewController.swift; sourceTree = "<group>"; };
 		8230896A1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewCell.swift; sourceTree = "<group>"; };
 		8230896C1EBB189600404CC2 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		823089701EBB25D400404CC2 /* 01_bill_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 01_bill_square.png; path = ../../../../../Dropbox/Meemo/Prototype/01_bill_square.png; sourceTree = "<group>"; };
+		823089711EBB25D400404CC2 /* 02_betty_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 02_betty_square.png; path = ../../../../../Dropbox/Meemo/Prototype/02_betty_square.png; sourceTree = "<group>"; };
+		823089721EBB25D400404CC2 /* 03_brian_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 03_brian_square.png; path = ../../../../../Dropbox/Meemo/Prototype/03_brian_square.png; sourceTree = "<group>"; };
+		823089731EBB25D400404CC2 /* 05_shane_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 05_shane_square.png; path = ../../../../../Dropbox/Meemo/Prototype/05_shane_square.png; sourceTree = "<group>"; };
+		823089781EBB284700404CC2 /* DailyInspiration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DailyInspiration.png; path = ../../../../../Dropbox/Meemo/Prototype/DailyInspiration.png; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -217,7 +227,12 @@
 				823089561EB73EC900404CC2 /* 03_brian_big.png */,
 				8230895E1EB890EB00404CC2 /* 04_jullien_big.png */,
 				8230895C1EB88F7100404CC2 /* 05_shane_big.png */,
+				823089701EBB25D400404CC2 /* 01_bill_square.png */,
+				823089711EBB25D400404CC2 /* 02_betty_square.png */,
+				823089721EBB25D400404CC2 /* 03_brian_square.png */,
+				823089731EBB25D400404CC2 /* 05_shane_square.png */,
 				823089421EB4C65B00404CC2 /* gradient.png */,
+				823089781EBB284700404CC2 /* DailyInspiration.png */,
 				8278B44C1EA9F8890064EFFD /* AppDelegate.swift */,
 				8278B44E1EA9F8890064EFFD /* ViewController.swift */,
 				829BC4991EAB88F300F8A672 /* Interactor.swift */,
@@ -395,8 +410,11 @@
 			files = (
 				823089571EB73EC900404CC2 /* 03_brian_big.png in Resources */,
 				823089431EB4C65B00404CC2 /* gradient.png in Resources */,
+				823089751EBB25D400404CC2 /* 02_betty_square.png in Resources */,
+				823089771EBB25D400404CC2 /* 05_shane_square.png in Resources */,
 				8230895F1EB890EB00404CC2 /* 04_jullien_big.png in Resources */,
 				82B807851EB2566300F9D543 /* 05_shane.mov in Resources */,
+				823089791EBB284700404CC2 /* DailyInspiration.png in Resources */,
 				8230895A1EB8878900404CC2 /* 02_betty_big.png in Resources */,
 				8278B4571EA9F8890064EFFD /* LaunchScreen.storyboard in Resources */,
 				821B29141EADFAAA00E40B66 /* img3.jpg in Resources */,
@@ -406,9 +424,11 @@
 				8230895D1EB88F7100404CC2 /* 05_shane_big.png in Resources */,
 				823089031EB3438000404CC2 /* 03_brian.png in Resources */,
 				82B807831EB2512800F9D543 /* 02_betty.mov in Resources */,
+				823089761EBB25D400404CC2 /* 03_brian_square.png in Resources */,
 				823089021EB3438000404CC2 /* 02_betty.png in Resources */,
 				82E634F01EB1C63A00D2153A /* VideoView.xib in Resources */,
 				821B29121EADFAAA00E40B66 /* img1.jpg in Resources */,
+				823089741EBB25D400404CC2 /* 01_bill_square.png in Resources */,
 				8278B4541EA9F8890064EFFD /* Assets.xcassets in Resources */,
 				823089011EB3438000404CC2 /* 05_shane.png in Resources */,
 				82B807891EB340A900F9D543 /* 04_jullien.mov in Resources */,
