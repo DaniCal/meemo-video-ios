@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fS4-ag-dIg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gRl-ZU-2GY">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -583,6 +583,102 @@
             </objects>
             <point key="canvasLocation" x="1678" y="1970"/>
         </scene>
+        <!--Discover View Controller-->
+        <scene sceneID="pe1-Kj-AOU">
+            <objects>
+                <viewController id="gRl-ZU-2GY" customClass="DiscoverViewController" customModule="Meemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qKN-Cp-MtU"/>
+                        <viewControllerLayoutGuide type="bottom" id="j2e-a4-cGu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y2Q-iG-Hld">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KZK-vE-pi6">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="96t-CA-4Kw"/>
+                                    <constraint firstAttribute="width" constant="304" id="Yyz-QM-YRd"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N0Y-4W-k6A">
+                                    <size key="itemSize" width="130" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="discoverCell" id="ge6-Zi-abe" customClass="DiscoverCollectionViewCell" customModule="Meemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03_brian_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="j7N-hW-ckO">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="130" id="9hJ-Ax-Xve"/>
+                                                        <constraint firstAttribute="width" constant="130" id="fZ0-ul-vTH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple techniques to get more done" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcS-F3-ywK">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="I8G-cG-pID"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brian Cervino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZi-1a-QUg">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="17" id="HWB-cC-VPh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="PcS-F3-ywK" secondAttribute="trailing" id="2gd-Rc-1kG"/>
+                                            <constraint firstItem="jZi-1a-QUg" firstAttribute="centerX" secondItem="ge6-Zi-abe" secondAttribute="centerX" id="4Cw-MG-iy8"/>
+                                            <constraint firstItem="PcS-F3-ywK" firstAttribute="top" secondItem="j7N-hW-ckO" secondAttribute="bottom" constant="3" id="5Zy-GI-OPM"/>
+                                            <constraint firstItem="jZi-1a-QUg" firstAttribute="leading" secondItem="ge6-Zi-abe" secondAttribute="leading" id="8BF-0k-vYq"/>
+                                            <constraint firstItem="PcS-F3-ywK" firstAttribute="leading" secondItem="ge6-Zi-abe" secondAttribute="leading" id="FJM-lW-8R9"/>
+                                            <constraint firstItem="j7N-hW-ckO" firstAttribute="leading" secondItem="ge6-Zi-abe" secondAttribute="leading" id="IES-on-bID"/>
+                                            <constraint firstItem="jZi-1a-QUg" firstAttribute="top" secondItem="PcS-F3-ywK" secondAttribute="bottom" id="NBT-b3-l22"/>
+                                            <constraint firstItem="PcS-F3-ywK" firstAttribute="centerX" secondItem="ge6-Zi-abe" secondAttribute="centerX" id="NjA-eV-OBJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="j7N-hW-ckO" secondAttribute="trailing" id="qVf-XR-gNK"/>
+                                            <constraint firstAttribute="trailing" secondItem="jZi-1a-QUg" secondAttribute="trailing" id="qaK-le-gdU"/>
+                                            <constraint firstItem="j7N-hW-ckO" firstAttribute="top" secondItem="ge6-Zi-abe" secondAttribute="top" id="ulu-7i-Bc6"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="authorName" destination="jZi-1a-QUg" id="ig7-Qr-Swi"/>
+                                            <outlet property="courseImage" destination="j7N-hW-ckO" id="BuJ-et-sB7"/>
+                                            <outlet property="courseTitle" destination="PcS-F3-ywK" id="HoZ-ie-59P"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="gRl-ZU-2GY" id="FNX-MO-IvI"/>
+                                    <outlet property="delegate" destination="gRl-ZU-2GY" id="tu9-Z7-Zdc"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KZK-vE-pi6" firstAttribute="top" secondItem="qKN-Cp-MtU" secondAttribute="bottom" constant="45" id="F8y-K3-kJb"/>
+                            <constraint firstItem="KZK-vE-pi6" firstAttribute="leading" secondItem="Y2Q-iG-Hld" secondAttribute="leadingMargin" id="lWi-UN-rXD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="KZK-vE-pi6" id="jjn-Cr-ijC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hc4-ds-Vz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543.75" y="1175.7042253521126"/>
+        </scene>
         <!--Main Course View Controller-->
         <scene sceneID="Lx7-2O-Hza">
             <objects>
@@ -626,7 +722,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01_bill_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="lFQ-FH-h2T"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient_course_list" translatesAutoresizingMaskIntoConstraints="NO" id="XwR-IR-T4w">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient_course_list" translatesAutoresizingMaskIntoConstraints="NO" id="XwR-IR-T4w">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="CSH-1U-aO7"/>
                                 </constraints>
@@ -939,8 +1035,8 @@
         <image name="summary_top" width="375" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="hav-mi-uQ4"/>
         <segue reference="ZCq-lN-LUE"/>
-        <segue reference="hpX-Lw-kxM"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.13604035973548889" green="0.13792967796325684" blue="0.94144952297210693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

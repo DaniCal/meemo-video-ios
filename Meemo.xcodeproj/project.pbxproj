@@ -29,6 +29,8 @@
 		823089651EBA121A00404CC2 /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089641EBA121A00404CC2 /* HeaderViewController.swift */; };
 		823089671EBA1F1B00404CC2 /* TestCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089661EBA1F1B00404CC2 /* TestCourseViewController.swift */; };
 		823089691EBA279A00404CC2 /* MainCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823089681EBA279A00404CC2 /* MainCourseViewController.swift */; };
+		8230896B1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230896A1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift */; };
+		8230896D1EBB189600404CC2 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230896C1EBB189600404CC2 /* DiscoverViewController.swift */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -98,6 +100,8 @@
 		823089641EBA121A00404CC2 /* HeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
 		823089661EBA1F1B00404CC2 /* TestCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCourseViewController.swift; sourceTree = "<group>"; };
 		823089681EBA279A00404CC2 /* MainCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCourseViewController.swift; sourceTree = "<group>"; };
+		8230896A1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewCell.swift; sourceTree = "<group>"; };
+		8230896C1EBB189600404CC2 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 				8278B44E1EA9F8890064EFFD /* ViewController.swift */,
 				829BC4991EAB88F300F8A672 /* Interactor.swift */,
 				8278B4501EA9F8890064EFFD /* Main.storyboard */,
+				8230896C1EBB189600404CC2 /* DiscoverViewController.swift */,
+				8230896A1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift */,
 				823089661EBA1F1B00404CC2 /* TestCourseViewController.swift */,
 				823089681EBA279A00404CC2 /* MainCourseViewController.swift */,
 				8230894A1EB4E10900404CC2 /* CourseViewController.swift */,
@@ -488,6 +494,7 @@
 				829BC49A1EAB88F300F8A672 /* Interactor.swift in Sources */,
 				823089671EBA1F1B00404CC2 /* TestCourseViewController.swift in Sources */,
 				823089531EB6509E00404CC2 /* BadgeViewController.swift in Sources */,
+				8230896B1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift in Sources */,
 				8278B44D1EA9F8890064EFFD /* AppDelegate.swift in Sources */,
 				825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */,
 				82E634F21EB1C9C500D2153A /* VideoView.swift in Sources */,
@@ -500,6 +507,7 @@
 				8230894D1EB4EF2B00404CC2 /* SessionTableViewCell.swift in Sources */,
 				821B290E1EADF6E900E40B66 /* CubeViewController.swift in Sources */,
 				82E634F61EB21DB600D2153A /* PlaylistTableViewCell.swift in Sources */,
+				8230896D1EBB189600404CC2 /* DiscoverViewController.swift in Sources */,
 				823089471EB4D07800404CC2 /* MeemoCourse.swift in Sources */,
 				823089651EBA121A00404CC2 /* HeaderViewController.swift in Sources */,
 			);
