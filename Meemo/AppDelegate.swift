@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let course_1 = MeemoCourse("Authentic Leadership & Self-Awareness", "BILL GEORGE", billDescription, 8, "01_bill", "01_bill_big", "01_bill_square")
         let course_2 = MeemoCourse("Become career ready - What you need to know", "BETTY LIU", bettyDescription, 6, "02_betty", "02_betty_big", "02_betty_square")
         let course_3 = MeemoCourse("Simple techniques to get more done", "BRIAN CERVINO", brianDescription, 4, "03_brian", "03_brian_big", "03_brian_square")
-        let course_4 = MeemoCourse("Qualities of a great mentor", "JULLIEN GORDON", jullienDescription, 6, "04_jullien", "04_jullien_big", "03_brian_big")
+        let course_4 = MeemoCourse("Qualities of a great mentor", "JULLIEN GORDON", jullienDescription, 6, "04_jullien", "04_jullien_big", "04_jullien_square")
         let course_5 = MeemoCourse("How to lead through Storytelling", "SHANE SNOW", shaneDescription ,10, "05_shane","05_shane_big", "05_shane_square")
 
         //COURSE 01 - BILL GEORGE

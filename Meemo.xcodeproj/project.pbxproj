@@ -36,6 +36,7 @@
 		823089761EBB25D400404CC2 /* 03_brian_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089721EBB25D400404CC2 /* 03_brian_square.png */; };
 		823089771EBB25D400404CC2 /* 05_shane_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089731EBB25D400404CC2 /* 05_shane_square.png */; };
 		823089791EBB284700404CC2 /* DailyInspiration.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089781EBB284700404CC2 /* DailyInspiration.png */; };
+		8230897B1EBB2FA100404CC2 /* 04_jullien_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 8230897A1EBB2FA100404CC2 /* 04_jullien_square.png */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -112,6 +113,7 @@
 		823089721EBB25D400404CC2 /* 03_brian_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 03_brian_square.png; path = ../../../../../Dropbox/Meemo/Prototype/03_brian_square.png; sourceTree = "<group>"; };
 		823089731EBB25D400404CC2 /* 05_shane_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 05_shane_square.png; path = ../../../../../Dropbox/Meemo/Prototype/05_shane_square.png; sourceTree = "<group>"; };
 		823089781EBB284700404CC2 /* DailyInspiration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DailyInspiration.png; path = ../../../../../Dropbox/Meemo/Prototype/DailyInspiration.png; sourceTree = "<group>"; };
+		8230897A1EBB2FA100404CC2 /* 04_jullien_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 04_jullien_square.png; path = ../../../../../Dropbox/Meemo/Prototype/04_jullien_square.png; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				823089701EBB25D400404CC2 /* 01_bill_square.png */,
 				823089711EBB25D400404CC2 /* 02_betty_square.png */,
 				823089721EBB25D400404CC2 /* 03_brian_square.png */,
+				8230897A1EBB2FA100404CC2 /* 04_jullien_square.png */,
 				823089731EBB25D400404CC2 /* 05_shane_square.png */,
 				823089421EB4C65B00404CC2 /* gradient.png */,
 				823089781EBB284700404CC2 /* DailyInspiration.png */,
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				823089571EB73EC900404CC2 /* 03_brian_big.png in Resources */,
+				8230897B1EBB2FA100404CC2 /* 04_jullien_square.png in Resources */,
 				823089431EB4C65B00404CC2 /* gradient.png in Resources */,
 				823089751EBB25D400404CC2 /* 02_betty_square.png in Resources */,
 				823089771EBB25D400404CC2 /* 05_shane_square.png in Resources */,
