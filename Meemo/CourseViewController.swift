@@ -26,7 +26,7 @@ class CourseViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.separatorStyle = .none
-        initNavigationBar()
+//        initNavigationBar()
         
         tableView.backgroundColor = UIColor.clear
         tableView.isOpaque = false

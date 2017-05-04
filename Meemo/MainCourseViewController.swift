@@ -19,7 +19,10 @@ class MainCourseViewController: MXScrollViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        initNavigationBar()
+//        initNavigationBar()
+        
+        view.backgroundColor = UIColor(red: 21.0/255, green: 21.0/255, blue: 24.0/255, alpha: 1.0)
+
         
     }
 

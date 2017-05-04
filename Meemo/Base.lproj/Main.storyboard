@@ -815,7 +815,7 @@
                                     <constraint firstItem="KZK-vE-pi6" firstAttribute="top" secondItem="a3w-p5-ZR6" secondAttribute="bottom" constant="10" id="P8V-wh-6gL"/>
                                     <constraint firstItem="6HW-bL-aNT" firstAttribute="leading" secondItem="a9s-h6-GT7" secondAttribute="leading" constant="16" id="QlW-76-kGO"/>
                                     <constraint firstItem="nNp-bg-kHg" firstAttribute="leading" secondItem="a9s-h6-GT7" secondAttribute="leading" constant="16" id="Vu9-up-NPa"/>
-                                    <constraint firstAttribute="bottom" secondItem="z6Z-8B-OXr" secondAttribute="bottom" constant="701" id="YPp-Sx-ij4"/>
+                                    <constraint firstAttribute="bottom" secondItem="z6Z-8B-OXr" secondAttribute="bottom" constant="682" id="YPp-Sx-ij4"/>
                                     <constraint firstItem="KZK-vE-pi6" firstAttribute="leading" secondItem="a9s-h6-GT7" secondAttribute="leading" constant="16" id="Yo4-Vv-SbD"/>
                                     <constraint firstItem="6HW-bL-aNT" firstAttribute="top" secondItem="z6Z-8B-OXr" secondAttribute="bottom" constant="21" id="ah3-1s-JeO"/>
                                     <constraint firstItem="6HW-bL-aNT" firstAttribute="leading" secondItem="a9s-h6-GT7" secondAttribute="leading" constant="16" id="c2p-Sj-ec9"/>
@@ -831,13 +831,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="a9s-h6-GT7" firstAttribute="centerY" secondItem="Y2Q-iG-Hld" secondAttribute="centerY" id="3hZ-bg-mCB"/>
-                            <constraint firstItem="a9s-h6-GT7" firstAttribute="height" secondItem="Y2Q-iG-Hld" secondAttribute="height" id="4V9-g9-m88"/>
+                            <constraint firstItem="a9s-h6-GT7" firstAttribute="centerY" secondItem="Y2Q-iG-Hld" secondAttribute="centerY" constant="9.5" id="3hZ-bg-mCB"/>
+                            <constraint firstItem="a9s-h6-GT7" firstAttribute="height" secondItem="Y2Q-iG-Hld" secondAttribute="height" constant="-19" id="4V9-g9-m88"/>
                             <constraint firstAttribute="trailing" secondItem="a9s-h6-GT7" secondAttribute="trailing" id="Jct-O0-zcB"/>
                             <constraint firstItem="j2e-a4-cGu" firstAttribute="top" secondItem="a9s-h6-GT7" secondAttribute="bottom" id="Ns6-pT-4bW"/>
                             <constraint firstItem="a9s-h6-GT7" firstAttribute="width" secondItem="Y2Q-iG-Hld" secondAttribute="width" id="TR7-lE-kBV"/>
                             <constraint firstItem="a9s-h6-GT7" firstAttribute="leading" secondItem="Y2Q-iG-Hld" secondAttribute="leading" id="i2p-Hj-3XA"/>
-                            <constraint firstItem="a9s-h6-GT7" firstAttribute="top" secondItem="Y2Q-iG-Hld" secondAttribute="top" id="jal-pR-0Ib"/>
+                            <constraint firstItem="a9s-h6-GT7" firstAttribute="top" secondItem="Y2Q-iG-Hld" secondAttribute="top" constant="19" id="jal-pR-0Ib"/>
                             <constraint firstItem="a9s-h6-GT7" firstAttribute="centerX" secondItem="Y2Q-iG-Hld" secondAttribute="centerX" id="lJg-X5-bAL"/>
                         </constraints>
                     </view>
@@ -847,12 +847,13 @@
                     <connections>
                         <outlet property="collectionViewA" destination="KZK-vE-pi6" id="Kc7-lU-j1b"/>
                         <outlet property="collectionViewB" destination="nNp-bg-kHg" id="1JS-om-Lxk"/>
+                        <outlet property="dailyInspirationImage" destination="Alj-k7-ONd" id="MHt-0v-gql"/>
                         <segue destination="bcV-Jf-Lii" kind="show" identifier="goToCourse" id="H7m-7K-0Ua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hc4-ds-Vz9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1483" y="2127"/>
+            <point key="canvasLocation" x="-1483.125" y="2126.4084507042253"/>
         </scene>
         <!--Main Course View Controller-->
         <scene sceneID="Lx7-2O-Hza">
@@ -865,7 +866,6 @@
                     <view key="view" contentMode="scaleToFill" id="F4G-u8-LEG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="740"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="headerHeight">
@@ -946,7 +946,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EKQ-b0-9Mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="1888"/>
+            <point key="canvasLocation" x="577.5" y="1887.6760563380283"/>
         </scene>
         <!--Test Course View Controller-->
         <scene sceneID="PyF-54-1bc">
@@ -1054,7 +1054,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.094117647058823528" alpha="0.0" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xJS-hm-lm6" secondAttribute="trailing" id="1xB-4f-AfC"/>
                             <constraint firstItem="nNk-X8-UHt" firstAttribute="top" secondItem="q5L-hx-WUX" secondAttribute="top" constant="1" id="6Mt-8p-6ZN"/>

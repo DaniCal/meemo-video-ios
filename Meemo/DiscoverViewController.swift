@@ -13,6 +13,7 @@ class DiscoverViewController: UIViewController {
     @IBOutlet weak var collectionViewA: UICollectionView!
     @IBOutlet weak var collectionViewB: UICollectionView!
     
+    @IBOutlet weak var dailyInspirationImage: UIImageView!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let courseSegueIdentifier = "goToCourse"
 
@@ -23,7 +24,11 @@ class DiscoverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         content = appDelegate.content
-        
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.navigationBar.isHidden = true
+
+        view.backgroundColor = UIColor(red: 21.0/255, green: 21.0/255, blue: 24.0/255, alpha: 1.0)
+        dailyInspirationImage.layer.cornerRadius = 2.0
 
     }
     
@@ -38,10 +43,10 @@ class DiscoverViewController: UIViewController {
         }
     }
     
-    func hideNavigationBar(){
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-    }
+//    func hideNavigationBar(){
+//        self.navigationController?.navigationBar.isTranslucent = true
+//        self.navigationController?.setNavigationBarHidden(true, animated: true)
+//    }
     
 
 }
