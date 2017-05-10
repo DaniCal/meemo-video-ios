@@ -805,13 +805,13 @@
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-eG-5Gt">
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_bill_square.png" translatesAutoresizingMaskIntoConstraints="NO" id="CCT-gA-zav">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_communication" translatesAutoresizingMaskIntoConstraints="NO" id="CCT-gA-zav">
                                                         <frame key="frameInset" width="136" height="136"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZ1-4e-gw0">
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leadership" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYH-by-twh">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Communication" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYH-by-twh">
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="38" id="1OI-ez-Vba"/>
                                                                 </constraints>
@@ -820,7 +820,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.41978346456692911" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="vYH-by-twh" firstAttribute="centerX" secondItem="iZ1-4e-gw0" secondAttribute="centerX" id="L23-yd-uCi"/>
                                                             <constraint firstItem="vYH-by-twh" firstAttribute="centerY" secondItem="iZ1-4e-gw0" secondAttribute="centerY" id="X3r-Ei-gxv"/>
@@ -841,13 +841,13 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maV-NH-WWy">
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_bill_square.png" translatesAutoresizingMaskIntoConstraints="NO" id="wFi-nV-MFs">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_productivity" translatesAutoresizingMaskIntoConstraints="NO" id="wFi-nV-MFs">
                                                         <frame key="frameInset" width="136" height="136"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-Hx-iy7">
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leadership" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raY-E1-eQE">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Productivity" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raY-E1-eQE">
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="36" id="iV5-2l-uFR"/>
                                                                 </constraints>
@@ -856,7 +856,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.41978346459999999" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="raY-E1-eQE" secondAttribute="trailing" id="JBX-iq-GXY"/>
                                                             <constraint firstItem="raY-E1-eQE" firstAttribute="centerY" secondItem="2uN-Hx-iy7" secondAttribute="centerY" id="aoJ-ob-Z6S"/>
@@ -879,13 +879,13 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdM-ia-1ea">
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_bill_square.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vyb-5d-9WV">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_agile" translatesAutoresizingMaskIntoConstraints="NO" id="Vyb-5d-9WV">
                                                         <frame key="frameInset" width="136" height="136"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9w-Fs-aae">
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leadership" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-xF-q3X">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agile" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-xF-q3X">
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="36" id="2tc-dy-I0H"/>
                                                                 </constraints>
@@ -894,7 +894,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.41978346459999999" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="uYF-xF-q3X" firstAttribute="centerY" secondItem="r9w-Fs-aae" secondAttribute="centerY" id="Cch-xq-OfN"/>
                                                             <constraint firstItem="uYF-xF-q3X" firstAttribute="leading" secondItem="r9w-Fs-aae" secondAttribute="leading" id="FLv-tl-2X9"/>
@@ -917,13 +917,13 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfh-F2-R5H">
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_bill_square.png" translatesAutoresizingMaskIntoConstraints="NO" id="JDL-t4-sOQ">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_time" translatesAutoresizingMaskIntoConstraints="NO" id="JDL-t4-sOQ">
                                                         <frame key="frameInset" width="136" height="136"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hga-i3-fn6">
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leadership" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ks-CE-eVL">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ks-CE-eVL">
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="36" id="CUO-WH-0gm"/>
                                                                 </constraints>
@@ -932,7 +932,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.41978346459999999" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="9Ks-CE-eVL" secondAttribute="trailing" id="Bj0-Fi-kG1"/>
                                                             <constraint firstItem="9Ks-CE-eVL" firstAttribute="leading" secondItem="hga-i3-fn6" secondAttribute="leading" id="lUZ-5S-2s9"/>
@@ -955,7 +955,7 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vqr-bU-Xjc">
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="01_bill_square.png" translatesAutoresizingMaskIntoConstraints="NO" id="5TG-L4-ft5">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_leadership" translatesAutoresizingMaskIntoConstraints="NO" id="5TG-L4-ft5">
                                                         <frame key="frameInset" width="136" height="136"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
@@ -970,7 +970,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.41978346459999999" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstItem="9xf-dS-q3u" firstAttribute="centerY" secondItem="LAJ-pb-bFP" secondAttribute="centerY" id="0Jg-uX-Qph"/>
                                                             <constraint firstItem="9xf-dS-q3u" firstAttribute="centerX" secondItem="LAJ-pb-bFP" secondAttribute="centerX" id="Y39-dm-D28"/>
@@ -989,6 +989,44 @@
                                                     <constraint firstAttribute="height" constant="136" id="qJ7-hu-1C8"/>
                                                     <constraint firstItem="LAJ-pb-bFP" firstAttribute="centerY" secondItem="Vqr-bU-Xjc" secondAttribute="centerY" id="wiw-6U-QCH"/>
                                                     <constraint firstAttribute="bottom" secondItem="LAJ-pb-bFP" secondAttribute="bottom" id="wrA-NO-wTZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8s-3j-l8e">
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_team" translatesAutoresizingMaskIntoConstraints="NO" id="7fd-Tz-86m">
+                                                        <frame key="frameInset" width="136" height="136"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XbY-2M-Nsx">
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="unD-aB-KtD">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="36" id="nzu-E6-5YE"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="unD-aB-KtD" firstAttribute="centerX" secondItem="XbY-2M-Nsx" secondAttribute="centerX" id="EFb-ly-aE5"/>
+                                                            <constraint firstItem="unD-aB-KtD" firstAttribute="leading" secondItem="XbY-2M-Nsx" secondAttribute="leading" id="JSH-R1-Llj"/>
+                                                            <constraint firstItem="unD-aB-KtD" firstAttribute="centerY" secondItem="XbY-2M-Nsx" secondAttribute="centerY" id="axs-EX-DSv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="unD-aB-KtD" secondAttribute="trailing" id="kBe-Nf-JUB"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="XbY-2M-Nsx" firstAttribute="centerX" secondItem="t8s-3j-l8e" secondAttribute="centerX" id="3ux-IK-7gk"/>
+                                                    <constraint firstAttribute="width" constant="136" id="B76-7K-Az1"/>
+                                                    <constraint firstItem="XbY-2M-Nsx" firstAttribute="top" secondItem="t8s-3j-l8e" secondAttribute="top" id="G8q-hu-Iqh"/>
+                                                    <constraint firstAttribute="height" constant="136" id="JLu-KF-hL5"/>
+                                                    <constraint firstItem="XbY-2M-Nsx" firstAttribute="leading" secondItem="t8s-3j-l8e" secondAttribute="leading" id="LA2-0R-KT0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XbY-2M-Nsx" secondAttribute="trailing" id="RMc-xF-TBo"/>
+                                                    <constraint firstAttribute="bottom" secondItem="XbY-2M-Nsx" secondAttribute="bottom" id="v6K-ET-Drm"/>
+                                                    <constraint firstItem="XbY-2M-Nsx" firstAttribute="centerY" secondItem="t8s-3j-l8e" secondAttribute="centerY" id="xvU-WC-Pev"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1013,10 +1051,12 @@
                                             <constraint firstAttribute="bottom" secondItem="Vqr-bU-Xjc" secondAttribute="bottom" constant="17" id="YRA-Rz-sCk"/>
                                             <constraint firstItem="nNp-bg-kHg" firstAttribute="leading" secondItem="ip2-2c-cIf" secondAttribute="leading" constant="16" id="Znh-tk-1hU"/>
                                             <constraint firstAttribute="trailing" secondItem="maV-NH-WWy" secondAttribute="trailing" constant="16" id="bY3-m1-Km1"/>
+                                            <constraint firstAttribute="trailing" secondItem="t8s-3j-l8e" secondAttribute="trailing" constant="16" id="c2a-UP-3Ov"/>
                                             <constraint firstItem="a3w-p5-ZR6" firstAttribute="top" secondItem="6HW-bL-aNT" secondAttribute="bottom" constant="24" id="cOC-fn-zDn"/>
                                             <constraint firstItem="6HW-bL-aNT" firstAttribute="leading" secondItem="ip2-2c-cIf" secondAttribute="leading" constant="16" id="chS-Kj-jIG"/>
                                             <constraint firstAttribute="height" constant="1230" id="g4b-Uv-HY0"/>
                                             <constraint firstAttribute="trailing" secondItem="yse-vL-O2S" secondAttribute="trailing" constant="16" id="gQy-a4-ctQ"/>
+                                            <constraint firstItem="t8s-3j-l8e" firstAttribute="top" secondItem="Bfh-F2-R5H" secondAttribute="bottom" constant="16" id="hjI-E7-19p"/>
                                             <constraint firstItem="z6Z-8B-OXr" firstAttribute="top" secondItem="ip2-2c-cIf" secondAttribute="top" constant="20" id="igY-j4-els"/>
                                             <constraint firstAttribute="trailing" secondItem="XRQ-bP-SJY" secondAttribute="trailing" constant="16" id="jFB-c7-UQR"/>
                                             <constraint firstItem="Vqr-bU-Xjc" firstAttribute="top" secondItem="HdM-ia-1ea" secondAttribute="bottom" constant="16" id="jVV-e0-DDa"/>
@@ -1409,10 +1449,15 @@
     </scenes>
     <resources>
         <image name="01_bill_big.png" width="750" height="865"/>
-        <image name="01_bill_square.png" width="303" height="303"/>
         <image name="03_brian.png" width="750" height="400"/>
         <image name="03_brian_big.png" width="750" height="865"/>
         <image name="DailyInspiration.png" width="679" height="358"/>
+        <image name="background_agile" width="303" height="303"/>
+        <image name="background_communication" width="303" height="303"/>
+        <image name="background_leadership" width="303" height="303"/>
+        <image name="background_productivity" width="303" height="303"/>
+        <image name="background_team" width="303" height="303"/>
+        <image name="background_time" width="303" height="303"/>
         <image name="badge_clap" width="149" height="149"/>
         <image name="button_start_course" width="288" height="52"/>
         <image name="gradient.png" width="750" height="400"/>
