@@ -591,14 +591,12 @@
                         <viewControllerLayoutGuide type="bottom" id="j2e-a4-cGu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Y2Q-iG-Hld">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1224"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1230"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9s-h6-GT7">
-                                <frame key="frameInset" width="320" height="1224"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9s-h6-GT7">
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ip2-2c-cIf">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ip2-2c-cIf">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6Z-8B-OXr">
                                                 <constraints>
@@ -1012,10 +1010,12 @@
                                             <constraint firstAttribute="trailing" secondItem="a3w-p5-ZR6" secondAttribute="trailing" constant="16" id="Wo5-fD-8F4"/>
                                             <constraint firstItem="ybT-eG-5Gt" firstAttribute="leading" secondItem="ip2-2c-cIf" secondAttribute="leading" constant="16" id="Wu9-TM-k7t"/>
                                             <constraint firstItem="nNp-bg-kHg" firstAttribute="top" secondItem="yse-vL-O2S" secondAttribute="bottom" constant="12" id="XBw-Pl-3t9"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vqr-bU-Xjc" secondAttribute="bottom" constant="17" id="YRA-Rz-sCk"/>
                                             <constraint firstItem="nNp-bg-kHg" firstAttribute="leading" secondItem="ip2-2c-cIf" secondAttribute="leading" constant="16" id="Znh-tk-1hU"/>
                                             <constraint firstAttribute="trailing" secondItem="maV-NH-WWy" secondAttribute="trailing" constant="16" id="bY3-m1-Km1"/>
                                             <constraint firstItem="a3w-p5-ZR6" firstAttribute="top" secondItem="6HW-bL-aNT" secondAttribute="bottom" constant="24" id="cOC-fn-zDn"/>
                                             <constraint firstItem="6HW-bL-aNT" firstAttribute="leading" secondItem="ip2-2c-cIf" secondAttribute="leading" constant="16" id="chS-Kj-jIG"/>
+                                            <constraint firstAttribute="height" constant="1230" id="g4b-Uv-HY0"/>
                                             <constraint firstAttribute="trailing" secondItem="yse-vL-O2S" secondAttribute="trailing" constant="16" id="gQy-a4-ctQ"/>
                                             <constraint firstItem="z6Z-8B-OXr" firstAttribute="top" secondItem="ip2-2c-cIf" secondAttribute="top" constant="20" id="igY-j4-els"/>
                                             <constraint firstAttribute="trailing" secondItem="XRQ-bP-SJY" secondAttribute="trailing" constant="16" id="jFB-c7-UQR"/>
@@ -1033,10 +1033,11 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="ip2-2c-cIf" secondAttribute="trailing" id="4on-P8-jgX"/>
+                                    <constraint firstAttribute="bottom" secondItem="ip2-2c-cIf" secondAttribute="bottom" id="9GC-sj-9Fn"/>
                                     <constraint firstItem="ip2-2c-cIf" firstAttribute="leading" secondItem="a9s-h6-GT7" secondAttribute="leading" id="B9H-8E-E7i"/>
-                                    <constraint firstAttribute="bottom" secondItem="ip2-2c-cIf" secondAttribute="bottom" constant="1224" id="V6A-sI-NEB"/>
                                     <constraint firstItem="ip2-2c-cIf" firstAttribute="top" secondItem="a9s-h6-GT7" secondAttribute="top" id="YrD-TA-chH"/>
                                     <constraint firstItem="ip2-2c-cIf" firstAttribute="width" secondItem="a9s-h6-GT7" secondAttribute="width" id="aMc-n0-mKY"/>
+                                    <constraint firstAttribute="height" constant="1230" id="otG-Ed-sSJ"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -1050,7 +1051,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cRl-P0-1wU"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="1224"/>
+                    <size key="freeformSize" width="320" height="1230"/>
                     <connections>
                         <outlet property="collectionViewA" destination="KZK-vE-pi6" id="Kc7-lU-j1b"/>
                         <outlet property="collectionViewB" destination="nNp-bg-kHg" id="1JS-om-Lxk"/>
@@ -1073,7 +1074,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1iL-yU-dQm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="F4G-u8-LEG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="1224"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1230"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
                     <userDefinedRuntimeAttributes>
