@@ -13,6 +13,7 @@ class DiscoverViewController: UIViewController {
     @IBOutlet weak var collectionViewA: UICollectionView!
     @IBOutlet weak var collectionViewB: UICollectionView!
     
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var dailyInspirationImage: UIImageView!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let courseSegueIdentifier = "goToCourse"
@@ -31,6 +32,7 @@ class DiscoverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         content = appDelegate.content
+        
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.isHidden = true
 
@@ -53,7 +55,7 @@ class DiscoverViewController: UIViewController {
         {
             destination.transitioningDelegate = self
             destination.interactor = interactor
-            destination.videoName = "01_bill"
+            destination.videoName = "headhunting_mixdown_1"
             
         }
         

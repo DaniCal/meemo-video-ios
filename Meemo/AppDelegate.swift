@@ -95,13 +95,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //COURSE 04 - JULLIEN GORDON
-        let session_4_1 = MeemoSession("How to give better advice and feedback", 245, "04_jullien")
-        let session_4_2 = MeemoSession("Becoming a role model", 245, "04_jullien")
-        let session_4_3 = MeemoSession("Value the opinions of others", 245, "04_jullien")
-        let session_4_4 = MeemoSession("Show enthusiasm in your field", 245, "04_jullien")
+        let session_4_1 = MeemoSession("How to give better advice and feedback", 245, "headhunting_mixdown_1")
+        let session_4_2 = MeemoSession("Becoming a role model", 245, "headhunting_mixdown_2")
+        let session_4_3 = MeemoSession("Value the opinions of others", 245, "01_getting_started")
+        let session_4_4 = MeemoSession("Show enthusiasm in your field", 245, "01_getting_started_big")
 
 
         session_4_1.unlockSession()
+        session_4_2.unlockSession()
+        session_4_3.unlockSession()
+        session_4_4.unlockSession()
+
+
+
         course_4.addSession(session_4_1)
         course_4.addSession(session_4_2)
         course_4.addSession(session_4_3)

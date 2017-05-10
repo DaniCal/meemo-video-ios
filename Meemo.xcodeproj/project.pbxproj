@@ -37,6 +37,9 @@
 		823089771EBB25D400404CC2 /* 05_shane_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089731EBB25D400404CC2 /* 05_shane_square.png */; };
 		823089791EBB284700404CC2 /* DailyInspiration.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089781EBB284700404CC2 /* DailyInspiration.png */; };
 		8230897B1EBB2FA100404CC2 /* 04_jullien_square.png in Resources */ = {isa = PBXBuildFile; fileRef = 8230897A1EBB2FA100404CC2 /* 04_jullien_square.png */; };
+		82320FF41EBE30EE0063D01A /* headhunting_mixdown_1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82320FF31EBE30EE0063D01A /* headhunting_mixdown_1.mov */; };
+		82320FF61EBE62FC0063D01A /* headhunting_mixdown_2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82320FF51EBE62FC0063D01A /* headhunting_mixdown_2.mov */; };
+		82320FF81EBF38DC0063D01A /* 01_getting_started.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82320FF71EBF38DC0063D01A /* 01_getting_started.mov */; };
 		825524041EB0E87C0085BD87 /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524031EB0E87C0085BD87 /* SummaryViewController.swift */; };
 		825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524051EB0F0120085BD87 /* PresentAnimator.swift */; };
 		825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825524071EB110EF0085BD87 /* VideoViewController.swift */; };
@@ -52,6 +55,7 @@
 		829BC4961EAB78DD00F8A672 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC4951EAB78DD00F8A672 /* ModalViewController.swift */; };
 		829BC4981EAB79DD00F8A672 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC4971EAB79DD00F8A672 /* DismissAnimator.swift */; };
 		829BC49A1EAB88F300F8A672 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC4991EAB88F300F8A672 /* Interactor.swift */; };
+		829EB1031EBF4F98004D7537 /* 01_getting_started_big.mov in Resources */ = {isa = PBXBuildFile; fileRef = 829EB1021EBF4F98004D7537 /* 01_getting_started_big.mov */; };
 		82B807831EB2512800F9D543 /* 02_betty.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B807821EB2512800F9D543 /* 02_betty.mov */; };
 		82B807851EB2566300F9D543 /* 05_shane.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B807841EB2566300F9D543 /* 05_shane.mov */; };
 		82B807871EB33C4100F9D543 /* 01_bill.mov in Resources */ = {isa = PBXBuildFile; fileRef = 82B807861EB33C4100F9D543 /* 01_bill.mov */; };
@@ -114,6 +118,9 @@
 		823089731EBB25D400404CC2 /* 05_shane_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 05_shane_square.png; path = ../../../../../Dropbox/Meemo/Prototype/05_shane_square.png; sourceTree = "<group>"; };
 		823089781EBB284700404CC2 /* DailyInspiration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DailyInspiration.png; path = ../../../../../Dropbox/Meemo/Prototype/DailyInspiration.png; sourceTree = "<group>"; };
 		8230897A1EBB2FA100404CC2 /* 04_jullien_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 04_jullien_square.png; path = ../../../../../Dropbox/Meemo/Prototype/04_jullien_square.png; sourceTree = "<group>"; };
+		82320FF31EBE30EE0063D01A /* headhunting_mixdown_1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = headhunting_mixdown_1.mov; path = "../../../Meemo/Content/Recording/Video 06.05.17 /headhunting_mixdown_1.mov"; sourceTree = "<group>"; };
+		82320FF51EBE62FC0063D01A /* headhunting_mixdown_2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = headhunting_mixdown_2.mov; path = "../../../Meemo/Content/Recording/Video 06.05.17 /headhunting_mixdown_2.mov"; sourceTree = "<group>"; };
+		82320FF71EBF38DC0063D01A /* 01_getting_started.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = 01_getting_started.mov; path = "../../../Meemo/Content/Recording/Video 06.05.17 /01_getting_started.mov"; sourceTree = "<group>"; };
 		825524031EB0E87C0085BD87 /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		825524051EB0F0120085BD87 /* PresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
 		825524071EB110EF0085BD87 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +142,7 @@
 		829BC4951EAB78DD00F8A672 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		829BC4971EAB79DD00F8A672 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		829BC4991EAB88F300F8A672 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		829EB1021EBF4F98004D7537 /* 01_getting_started_big.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = 01_getting_started_big.mov; path = "../../../Meemo/Content/Recording/Video 06.05.17 /01_getting_started_big.mov"; sourceTree = "<group>"; };
 		82B807821EB2512800F9D543 /* 02_betty.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = 02_betty.mov; path = ../../../../02_betty.mov; sourceTree = "<group>"; };
 		82B807841EB2566300F9D543 /* 05_shane.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = 05_shane.mov; path = ../../../../05_shane.mov; sourceTree = "<group>"; };
 		82B807861EB33C4100F9D543 /* 01_bill.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = 01_bill.mov; path = ../../../../01_bill.mov; sourceTree = "<group>"; };
@@ -235,7 +243,11 @@
 				8230897A1EBB2FA100404CC2 /* 04_jullien_square.png */,
 				823089731EBB25D400404CC2 /* 05_shane_square.png */,
 				823089421EB4C65B00404CC2 /* gradient.png */,
+				82320FF71EBF38DC0063D01A /* 01_getting_started.mov */,
+				829EB1021EBF4F98004D7537 /* 01_getting_started_big.mov */,
 				823089781EBB284700404CC2 /* DailyInspiration.png */,
+				82320FF31EBE30EE0063D01A /* headhunting_mixdown_1.mov */,
+				82320FF51EBE62FC0063D01A /* headhunting_mixdown_2.mov */,
 				8278B44C1EA9F8890064EFFD /* AppDelegate.swift */,
 				8278B44E1EA9F8890064EFFD /* ViewController.swift */,
 				829BC4991EAB88F300F8A672 /* Interactor.swift */,
@@ -429,7 +441,10 @@
 				823089031EB3438000404CC2 /* 03_brian.png in Resources */,
 				82B807831EB2512800F9D543 /* 02_betty.mov in Resources */,
 				823089761EBB25D400404CC2 /* 03_brian_square.png in Resources */,
+				82320FF61EBE62FC0063D01A /* headhunting_mixdown_2.mov in Resources */,
+				829EB1031EBF4F98004D7537 /* 01_getting_started_big.mov in Resources */,
 				823089021EB3438000404CC2 /* 02_betty.png in Resources */,
+				82320FF41EBE30EE0063D01A /* headhunting_mixdown_1.mov in Resources */,
 				82E634F01EB1C63A00D2153A /* VideoView.xib in Resources */,
 				821B29121EADFAAA00E40B66 /* img1.jpg in Resources */,
 				823089741EBB25D400404CC2 /* 01_bill_square.png in Resources */,
@@ -439,6 +454,7 @@
 				8230895B1EB8878900404CC2 /* 01_bill_big.png in Resources */,
 				823089551EB662B500404CC2 /* 03_brian.mov in Resources */,
 				8278B4521EA9F8890064EFFD /* Main.storyboard in Resources */,
+				82320FF81EBF38DC0063D01A /* 01_getting_started.mov in Resources */,
 				82E634FB1EB2253100D2153A /* 04_jullien.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
