@@ -17,6 +17,8 @@ class DiscoverViewController: UIViewController {
     @IBOutlet weak var dailyInspirationImage: UIImageView!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let courseSegueIdentifier = "goToCourse"
+    let topicSegueIdentifier = "goToTopic"
+
     let videoSegueIdentifier = "goToVideo"
 
     var selectedItem:Int = 0
@@ -27,6 +29,9 @@ class DiscoverViewController: UIViewController {
 
     @IBAction func playInspiration(_ sender: AnyObject) {
         self.performSegue(withIdentifier: videoSegueIdentifier , sender: nil)
+    }
+    @IBAction func showCommunicationCollection(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: topicSegueIdentifier , sender: nil)
     }
     
     override func viewDidLoad() {
@@ -56,6 +61,11 @@ class DiscoverViewController: UIViewController {
             destination.transitioningDelegate = self
             destination.interactor = interactor
             destination.videoName = "headhunting_mixdown_1"
+            
+        }else if  segue.identifier == topicSegueIdentifier,
+            let destination = segue.destination as? TopicViewController
+        {
+            destination.course = content[0]
             
         }
         

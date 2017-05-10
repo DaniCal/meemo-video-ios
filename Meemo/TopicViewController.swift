@@ -1,28 +1,27 @@
 //
-//  MainCourseViewController.swift
+//  TopicViewController.swift
 //  Meemo
 //
-//  Created by Daniel Lohse on 5/3/17.
+//  Created by Daniel Lohse on 5/10/17.
 //  Copyright © 2017 Superstudio. All rights reserved.
 //
 
 import UIKit
 import MXParallaxHeader
 
-class MainCourseViewController: MXScrollViewController {
 
-    
+class TopicViewController: MXScrollViewController {
+
+    var headerSegueIdentifier = "topicHeader"
+    var topicListIdentifier = "topicList"
     var course:MeemoCourse?
-    var headerSegueIdentifier = "courseHeader"
-    var sessionListIdentifier = "sessionList"
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
         view.backgroundColor = UIColor(red: 21.0/255, green: 21.0/255, blue: 24.0/255, alpha: 1.0)
 
-        
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,25 +29,21 @@ class MainCourseViewController: MXScrollViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
-    
+  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         //Triggers when segues to ProgramView
         if  segue.identifier == headerSegueIdentifier,
-            let destination = segue.destination as? HeaderViewController
+            let destination = segue.destination as? TopicHeaderViewController
         {
-            destination.course = course
+            //destination.course = course
             
-        }else if segue.identifier == sessionListIdentifier,
-            let destination = segue.destination as? TestCourseViewController
+        }else if segue.identifier == topicListIdentifier,
+            let destination = segue.destination as? TopicListViewController
         {
-            destination.course = course
+            //destination.course = course
         }
     }
-
-
 
     /*
     // MARK: - Navigation

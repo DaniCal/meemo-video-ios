@@ -11,6 +11,9 @@
 		821B29121EADFAAA00E40B66 /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 821B290F1EADFAAA00E40B66 /* img1.jpg */; };
 		821B29131EADFAAA00E40B66 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 821B29101EADFAAA00E40B66 /* img2.jpg */; };
 		821B29141EADFAAA00E40B66 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 821B29111EADFAAA00E40B66 /* img3.jpg */; };
+		8227BC621EC3438A006EF51A /* TopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227BC611EC3438A006EF51A /* TopicViewController.swift */; };
+		8227BC641EC3468E006EF51A /* TopicHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227BC631EC3468E006EF51A /* TopicHeaderViewController.swift */; };
+		8227BC661EC35003006EF51A /* TopicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227BC651EC35003006EF51A /* TopicListViewController.swift */; };
 		823089011EB3438000404CC2 /* 05_shane.png in Resources */ = {isa = PBXBuildFile; fileRef = 823088FE1EB3438000404CC2 /* 05_shane.png */; };
 		823089021EB3438000404CC2 /* 02_betty.png in Resources */ = {isa = PBXBuildFile; fileRef = 823088FF1EB3438000404CC2 /* 02_betty.png */; };
 		823089031EB3438000404CC2 /* 03_brian.png in Resources */ = {isa = PBXBuildFile; fileRef = 823089001EB3438000404CC2 /* 03_brian.png */; };
@@ -92,6 +95,9 @@
 		821B290F1EADFAAA00E40B66 /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img1.jpg; path = ../../../../../Dropbox/Pictures/img1.jpg; sourceTree = "<group>"; };
 		821B29101EADFAAA00E40B66 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img2.jpg; path = ../../../../../Dropbox/Pictures/img2.jpg; sourceTree = "<group>"; };
 		821B29111EADFAAA00E40B66 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img3.jpg; path = ../../../../../Dropbox/Pictures/img3.jpg; sourceTree = "<group>"; };
+		8227BC611EC3438A006EF51A /* TopicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicViewController.swift; sourceTree = "<group>"; };
+		8227BC631EC3468E006EF51A /* TopicHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicHeaderViewController.swift; sourceTree = "<group>"; };
+		8227BC651EC35003006EF51A /* TopicListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicListViewController.swift; sourceTree = "<group>"; };
 		823088FE1EB3438000404CC2 /* 05_shane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 05_shane.png; path = ../../../Meemo/05_shane.png; sourceTree = "<group>"; };
 		823088FF1EB3438000404CC2 /* 02_betty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 02_betty.png; path = ../../../Meemo/02_betty.png; sourceTree = "<group>"; };
 		823089001EB3438000404CC2 /* 03_brian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 03_brian.png; path = ../../../Meemo/03_brian.png; sourceTree = "<group>"; };
@@ -256,8 +262,11 @@
 				8230896A1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift */,
 				823089661EBA1F1B00404CC2 /* TestCourseViewController.swift */,
 				823089681EBA279A00404CC2 /* MainCourseViewController.swift */,
+				8227BC611EC3438A006EF51A /* TopicViewController.swift */,
+				8227BC651EC35003006EF51A /* TopicListViewController.swift */,
 				8230894A1EB4E10900404CC2 /* CourseViewController.swift */,
 				823089641EBA121A00404CC2 /* HeaderViewController.swift */,
+				8227BC631EC3468E006EF51A /* TopicHeaderViewController.swift */,
 				823089521EB6509E00404CC2 /* BadgeViewController.swift */,
 				8230894C1EB4EF2B00404CC2 /* SessionTableViewCell.swift */,
 				82E634F51EB21DB600D2153A /* PlaylistTableViewCell.swift */,
@@ -531,13 +540,16 @@
 				8278B44F1EA9F8890064EFFD /* ViewController.swift in Sources */,
 				829BC4961EAB78DD00F8A672 /* ModalViewController.swift in Sources */,
 				825524081EB110EF0085BD87 /* VideoViewController.swift in Sources */,
+				8227BC661EC35003006EF51A /* TopicListViewController.swift in Sources */,
 				829BC49A1EAB88F300F8A672 /* Interactor.swift in Sources */,
 				823089671EBA1F1B00404CC2 /* TestCourseViewController.swift in Sources */,
 				823089531EB6509E00404CC2 /* BadgeViewController.swift in Sources */,
 				8230896B1EBB0C2E00404CC2 /* DiscoverCollectionViewCell.swift in Sources */,
 				8278B44D1EA9F8890064EFFD /* AppDelegate.swift in Sources */,
 				825524061EB0F0120085BD87 /* PresentAnimator.swift in Sources */,
+				8227BC641EC3468E006EF51A /* TopicHeaderViewController.swift in Sources */,
 				82E634F21EB1C9C500D2153A /* VideoView.swift in Sources */,
+				8227BC621EC3438A006EF51A /* TopicViewController.swift in Sources */,
 				82E634F41EB21C7300D2153A /* PlaylistViewController.swift in Sources */,
 				823089691EBA279A00404CC2 /* MainCourseViewController.swift in Sources */,
 				8230894B1EB4E10900404CC2 /* CourseViewController.swift in Sources */,
